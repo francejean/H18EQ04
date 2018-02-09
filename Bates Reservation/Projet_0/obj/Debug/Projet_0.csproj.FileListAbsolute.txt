@@ -10,3 +10,6 @@ C:\Users\CDesi\Desktop\Bates Reservation\Projet_0\obj\Debug\Projet_0.Properties.
 C:\Users\CDesi\Desktop\Bates Reservation\Projet_0\obj\Debug\Projet_0.csproj.GenerateResource.Cache
 C:\Users\CDesi\Desktop\Bates Reservation\Projet_0\obj\Debug\Projet_0.exe
 C:\Users\CDesi\Desktop\Bates Reservation\Projet_0\obj\Debug\Projet_0.pdb
+C:\Users\Doum\Documents\GitHub\Dominic\Bates Reservation\Projet_0\bin\Debug\Projet_0.exe.config
+C:\Users\Doum\Documents\GitHub\Dominic\Bates Reservation\Projet_0\obj\Debug\Projet_0.exe
+C:\Users\Doum\Documents\GitHub\Dominic\Bates Reservation\Projet_0\obj\Debug\Projet_0.pdb
