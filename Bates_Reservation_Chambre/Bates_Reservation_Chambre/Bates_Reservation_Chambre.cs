@@ -8,9 +8,9 @@ using System.Windows.Forms;
 
 namespace Bates_Reservation_Chambre
 {
-    public partial class Bates_Reservation_Form2 : Bate_s_Reservation_Base_Biblioteque.Bates_Reservation_Bibilo
+    public partial class Bates_Reservation_Chambre : Bate_s_Reservation_Base_Biblioteque.Bates_Reservation_Bibilo
     {
-        public Bates_Reservation_Form2()
+        public Bates_Reservation_Chambre()
         {
             InitializeComponent();
         }

@@ -1,6 +1,6 @@
 ﻿namespace Bates_Reservation_Chambre
 {
-    partial class Bates_Reservation_Form2
+    partial class Bates_Reservation_Chambre
     {
         /// <summary>
         /// Variable nécessaire au concepteur.
