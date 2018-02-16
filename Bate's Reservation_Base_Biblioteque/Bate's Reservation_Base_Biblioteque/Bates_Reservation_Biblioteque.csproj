@@ -8,9 +8,10 @@
     <OutputType>Library</OutputType>
     <RootNamespace>Bate_s_Reservation_Base_Biblioteque</RootNamespace>
     <AssemblyName>Bate%27s Reservation_Base_Biblioteque</AssemblyName>
-    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
