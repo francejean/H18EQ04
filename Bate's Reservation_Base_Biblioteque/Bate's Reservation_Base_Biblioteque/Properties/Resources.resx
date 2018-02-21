@@ -3925,4 +3925,334 @@
   <data name="zoom_select" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\zoom-select.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Bates_Reservation_american_express_128x128" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_american-express_128x128.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_application_exit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_application-exit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_application_exit_block" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_application-exit_block.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_arrow_left" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_arrow-left.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_arrow_left_block" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_arrow-left_block.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_arrow_left_double" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_arrow-left-double.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_arrow_left_double_Block" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_arrow-left-double_Block.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_arrow_right" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_arrow-right.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_arrow_right_block" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_arrow-right_block.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_arrow_right_double" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_arrow-right-double.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_arrow_right_double_block" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_arrow-right-double_block.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_Attention_block_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_Attention_block_S.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_Busy_Block_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_Busy_Block_S.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_Busy_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_Busy_S.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_Button_Add_Block_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_Button_Add_Block_S.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_Button_Add_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_Button_Add_S.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_Button_Attention_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_Button_Attention_S.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_Button_Cancel_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_Button_Cancel_S.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_Button_Complete_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_Button_Complete_S.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_Button_Del_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_Button_Del_S.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_Button_Ongoing_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_Button_Ongoing_S.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_Button_Refresh_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_Button_Refresh_S.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_calendar_128x128" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_calendar_128x128.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_call_128x128" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_call_128x128.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_Cancel_Block_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_Cancel_Block_S.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_Complete_block_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_Complete_block_S.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_credit_card_128x128" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_credit-card_128x128.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_Del_Block_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_Del_Block_S.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_dialog_error" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_dialog-error.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_dialog_error_block" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_dialog-error_block.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_dialog_information" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_dialog-information.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_dialog_information_block" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_dialog-information_block.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_document_decrypt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_document-decrypt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_document_edit_decrypt_verify" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_document-edit-decrypt-verify.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_document_edit_verify" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_document-edit-verify.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_document_encrypt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_document-encrypt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_document_preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_document-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_document_revert" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_document-revert.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_document_save" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_document-save.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_edit_128x128" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_edit_128x128.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_edit_delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_edit-delete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_edit_delete_block" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_edit-delete_block.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_edit_find" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_edit-find.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_edit_redo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_edit-redo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_edit_redo_block" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_edit-redo_block.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_edit_undo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_edit-undo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_edit_undo_block" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_edit-undo_block.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_emblem_important" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_emblem-important.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_emblem_important_block" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_emblem-important_block.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_flag" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_flag.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_flag_black" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_flag-black.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_flag_blue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_flag-blue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_flag_green" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_flag-green.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_flag_red" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_flag-red.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_flag_yellow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_flag-yellow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_games_hint" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_games-hint.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_go_first" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_go-first.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_go_first_view_page" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_go-first-view-page.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_go_last" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_go-last.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_go_last_view_page" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_go-last-view-page.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_go_next" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_go-next.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_go_next_view_page" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_go-next-view-page.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_go_previous" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_go-previous.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_go_previous_view_page" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_go-previous-view-page.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_help_hint" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_help-hint.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_im_Add_user" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_im_Add_user.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_im_Add_user_block" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_im_Add_user_block.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_im_ban_kick_user" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_im-ban-kick-user.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_im_ban_user" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_im-ban-user.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_im_invisible_user" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_im-invisible-user.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_im_kick_user" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_im-kick-user.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_im_user" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_im-user.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_im_user_away" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_im-user-away.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_im_user_away_extend" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_im-user-away-extend.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_im_user_busy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_im-user-busy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_im_user_Del" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_im-user_Del.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_im_user_offline" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_im-user-offline.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_im_user_view" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_im-user-view.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_im_user_view_Block" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_im-user-view_Block.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_layer_visible_off" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_layer-visible-off.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_layer_visible_on" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_layer-visible-on.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_list_add" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_list-add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_list_add_block" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_list-add_block.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_list_remove" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_list-remove.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_list_remove_block" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_list-remove_block.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_Logo.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_Logo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_Logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_money_128x128" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_money_128x128.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_notes_128x128" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_notes_128x128.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_object_locked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_object-locked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_object_unlocked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_object-unlocked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_Ongoing_Block_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_Ongoing_Block_S.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_process_stop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_process-stop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_project_plan_128x128" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_project-plan_128x128.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_research_128x128" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_research_128x128.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_save_128x128" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_save_128x128.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_search_128x128" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_search_128x128.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_task_accepted" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_task-accepted.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_task_attempt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_task-attempt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_task_attention" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_task-attention.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_task_complete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_task-complete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_task_delegate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_task-delegate.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_task_ongoing" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_task-ongoing.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_task_reject" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_task-reject.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_user_away_extended" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_user-away-extended.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_user_invisible" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_user-invisible.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_user_offline" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_user-offline.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_user_online" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_user-online.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_video_television" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_video-television.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bates_Reservation_visa_128x128" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bates_Reservation_visa_128x128.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>
