@@ -61,6 +61,12 @@
     <Compile Include="Button_Add_S.Designer.cs">
       <DependentUpon>Button_Add_S.cs</DependentUpon>
     </Compile>
+    <Compile Include="DateTimePicker_S.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DateTimePicker_S.Designer.cs">
+      <DependentUpon>DateTimePicker_S.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form_Base_Template.cs">
       <SubType>Form</SubType>
     </Compile>

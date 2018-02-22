@@ -33,7 +33,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.button_gotofirst_G = new System.Windows.Forms.Button();
             this.TextBox_Info_S = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.label9 = new System.Windows.Forms.Label();
             this.button_exit_G = new System.Windows.Forms.Button();
@@ -97,15 +96,10 @@
             this.TextBox_Info_S.Size = new System.Drawing.Size(100, 20);
             this.TextBox_Info_S.TabIndex = 46;
             // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(12, 270);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 47;
-            // 
             // dateTimePicker2
             // 
+            this.dateTimePicker2.CustomFormat = "dddd yyyy/mm/dd   hh:mm:ss";
+            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePicker2.Location = new System.Drawing.Point(12, 296);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(200, 20);
@@ -174,7 +168,6 @@
             this.Controls.Add(this.Button_Add_S);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.dateTimePicker2);
-            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.TextBox_Info_S);
             this.Controls.Add(this.button_gotofirst_G);
             this.Controls.Add(this.panel1);
@@ -196,7 +189,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button_gotofirst_G;
         private System.Windows.Forms.TextBox TextBox_Info_S;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button button_exit_G;
