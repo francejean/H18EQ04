@@ -14,5 +14,10 @@ namespace Bates_Reservation_Chambre
         {
             InitializeComponent();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("En construction...", "Information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        }
     }
 }

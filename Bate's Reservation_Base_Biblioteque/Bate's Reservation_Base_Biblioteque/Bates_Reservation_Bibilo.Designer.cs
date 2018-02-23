@@ -136,7 +136,6 @@
             // 
             // Bates_Reservation_Label_Save_S
             // 
-            this.Bates_Reservation_Label_Save_S.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.Bates_Reservation_Label_Save_S.AutoSize = true;
             this.Bates_Reservation_Label_Save_S.ForeColor = System.Drawing.SystemColors.Window;
             this.Bates_Reservation_Label_Save_S.Location = new System.Drawing.Point(992, 414);
@@ -147,7 +146,6 @@
             // 
             // Bates_Reservation_Label_Edit_S
             // 
-            this.Bates_Reservation_Label_Edit_S.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.Bates_Reservation_Label_Edit_S.AutoSize = true;
             this.Bates_Reservation_Label_Edit_S.ForeColor = System.Drawing.SystemColors.Window;
             this.Bates_Reservation_Label_Edit_S.Location = new System.Drawing.Point(1006, 346);
@@ -158,7 +156,6 @@
             // 
             // Bates_Reservation_Label_Undo_S
             // 
-            this.Bates_Reservation_Label_Undo_S.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.Bates_Reservation_Label_Undo_S.AutoSize = true;
             this.Bates_Reservation_Label_Undo_S.ForeColor = System.Drawing.SystemColors.Window;
             this.Bates_Reservation_Label_Undo_S.Location = new System.Drawing.Point(1006, 278);
@@ -169,7 +166,6 @@
             // 
             // Bates_Reservation_Label_View_S
             // 
-            this.Bates_Reservation_Label_View_S.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.Bates_Reservation_Label_View_S.AutoSize = true;
             this.Bates_Reservation_Label_View_S.ForeColor = System.Drawing.SystemColors.Window;
             this.Bates_Reservation_Label_View_S.Location = new System.Drawing.Point(1000, 210);
@@ -180,7 +176,6 @@
             // 
             // Bates_Reservation_Label_Del_S
             // 
-            this.Bates_Reservation_Label_Del_S.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.Bates_Reservation_Label_Del_S.AutoSize = true;
             this.Bates_Reservation_Label_Del_S.ForeColor = System.Drawing.SystemColors.Window;
             this.Bates_Reservation_Label_Del_S.Location = new System.Drawing.Point(1000, 142);
@@ -191,7 +186,6 @@
             // 
             // Bates_Reservation_Label_Add_S
             // 
-            this.Bates_Reservation_Label_Add_S.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.Bates_Reservation_Label_Add_S.AutoSize = true;
             this.Bates_Reservation_Label_Add_S.ForeColor = System.Drawing.SystemColors.Window;
             this.Bates_Reservation_Label_Add_S.Location = new System.Drawing.Point(1006, 74);
@@ -202,7 +196,6 @@
             // 
             // Bates_Reservation_Button_Edit_S
             // 
-            this.Bates_Reservation_Button_Edit_S.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.Bates_Reservation_Button_Edit_S.BackColor = System.Drawing.Color.Transparent;
             this.Bates_Reservation_Button_Edit_S.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.Bates_Reservation_notes_128x128;
             this.Bates_Reservation_Button_Edit_S.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -217,7 +210,6 @@
             // 
             // Bates_Reservation_Button_Undo_S
             // 
-            this.Bates_Reservation_Button_Undo_S.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.Bates_Reservation_Button_Undo_S.BackColor = System.Drawing.Color.Transparent;
             this.Bates_Reservation_Button_Undo_S.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.Bates_Reservation_Busy_S;
             this.Bates_Reservation_Button_Undo_S.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -232,7 +224,6 @@
             // 
             // Bates_Reservation_Button_Save_S
             // 
-            this.Bates_Reservation_Button_Save_S.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.Bates_Reservation_Button_Save_S.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.Bates_Reservation_document_save;
             this.Bates_Reservation_Button_Save_S.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Bates_Reservation_Button_Save_S.FlatAppearance.BorderSize = 0;
@@ -246,7 +237,6 @@
             // 
             // Bates_Reservation_RichTextBox_S
             // 
-            this.Bates_Reservation_RichTextBox_S.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.Bates_Reservation_RichTextBox_S.BackColor = System.Drawing.SystemColors.Control;
             this.Bates_Reservation_RichTextBox_S.Location = new System.Drawing.Point(1062, 25);
             this.Bates_Reservation_RichTextBox_S.Name = "Bates_Reservation_RichTextBox_S";
@@ -256,7 +246,6 @@
             // 
             // Bates_Reservation_Button_View_S
             // 
-            this.Bates_Reservation_Button_View_S.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.Bates_Reservation_Button_View_S.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.Bates_Reservation_layer_visible_on;
             this.Bates_Reservation_Button_View_S.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Bates_Reservation_Button_View_S.FlatAppearance.BorderSize = 0;
@@ -270,7 +259,6 @@
             // 
             // Bates_Reservation_Button_Add_S
             // 
-            this.Bates_Reservation_Button_Add_S.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.Bates_Reservation_Button_Add_S.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.Bates_Reservation_list_add;
             this.Bates_Reservation_Button_Add_S.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Bates_Reservation_Button_Add_S.FlatAppearance.BorderSize = 0;
@@ -284,7 +272,6 @@
             // 
             // Bates_Reservation_Button_Del_S
             // 
-            this.Bates_Reservation_Button_Del_S.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.Bates_Reservation_Button_Del_S.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.Bates_Reservation_list_remove;
             this.Bates_Reservation_Button_Del_S.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Bates_Reservation_Button_Del_S.FlatAppearance.BorderSize = 0;
@@ -298,7 +285,6 @@
             // 
             // Bates_Reservation_TabControl_S
             // 
-            this.Bates_Reservation_TabControl_S.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.Bates_Reservation_TabControl_S.Controls.Add(this.tabPage1);
             this.Bates_Reservation_TabControl_S.Controls.Add(this.tabPage2);
             this.Bates_Reservation_TabControl_S.Controls.Add(this.tabPage3);
