@@ -1,6 +1,6 @@
-﻿namespace Bates_Reservation_Reservation
+﻿namespace Bates_Reservation_Transaction
 {
-    partial class Bates_Reservation_Reservation
+    partial class Form1
     {
         /// <summary>
         /// Variable nécessaire au concepteur.
@@ -29,8 +29,11 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Text = "Form1";
         }
 
         #endregion
     }
 }
+

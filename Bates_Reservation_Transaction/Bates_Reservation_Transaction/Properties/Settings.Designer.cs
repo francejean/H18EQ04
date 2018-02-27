@@ -8,11 +8,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Bates_Reservation_Reservation.Properties {
+namespace Bates_Reservation_Transaction.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "14.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "15.5.0.0")]
     internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
@@ -27,7 +27,7 @@ namespace Bates_Reservation_Reservation.Properties {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
         [global::System.Configuration.DefaultSettingValueAttribute("Data Source=mssql.local.shawinigan.info;Initial Catalog=h18equipe4;Persist Securi" +
-            "ty Info=True;User ID=h18equipe4etd1;Password=349413747")]
+            "ty Info=True;User ID=h18equipe4etd4;Password=104622192")]
         public string h18equipe4ConnectionString {
             get {
                 return ((string)(this["h18equipe4ConnectionString"]));

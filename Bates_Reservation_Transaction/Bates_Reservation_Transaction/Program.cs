@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Bates_Reservation_Reservation
+namespace Bates_Reservation_Transaction
 {
     static class Program
     {
@@ -16,7 +16,7 @@ namespace Bates_Reservation_Reservation
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Bates_Reservation_Reservation());
+            Application.Run(new Form1());
         }
     }
 }

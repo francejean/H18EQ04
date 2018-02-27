@@ -1,6 +1,6 @@
-﻿namespace Bates_Reservation_Reservation
+﻿namespace Bates_Reservation_Transaction
 {
-    partial class Bates_Reservation_Reservation
+    partial class Bates_Reservation_Transaction
     {
         /// <summary>
         /// Variable nécessaire au concepteur.
