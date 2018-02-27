@@ -29,333 +29,329 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Bates_Reservation_Bibilo));
-            this.dateTimePicker_G = new System.Windows.Forms.DateTimePicker();
-            this.panel2_G = new System.Windows.Forms.Panel();
-            this.label_numversion_G = new System.Windows.Forms.Label();
-            this.label_version_G = new System.Windows.Forms.Label();
-            this.panel1_G = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.button_undo_G = new System.Windows.Forms.Button();
-            this.button_save_G = new System.Windows.Forms.Button();
-            this.button_list_G = new System.Windows.Forms.Button();
-            this.button_gotoend_G = new System.Windows.Forms.Button();
-            this.button_next_G = new System.Windows.Forms.Button();
-            this.button_gotofirst_G = new System.Windows.Forms.Button();
-            this.button_previous_G = new System.Windows.Forms.Button();
-            this.button_consult_G = new System.Windows.Forms.Button();
-            this.button_del_G = new System.Windows.Forms.Button();
-            this.button_mod_G = new System.Windows.Forms.Button();
-            this.button_exit_G = new System.Windows.Forms.Button();
-            this.pictureBox_G = new System.Windows.Forms.PictureBox();
+            this.Bates_Reservation_Label_numversion_G = new System.Windows.Forms.Label();
+            this.Bates_Reservation_Label_version_G = new System.Windows.Forms.Label();
+            this.Bates_Reservation_Button_Panel_G = new System.Windows.Forms.Panel();
+            this.Bates_Reservation_Label_Save_S = new System.Windows.Forms.Label();
+            this.Bates_Reservation_Label_Edit_S = new System.Windows.Forms.Label();
+            this.Bates_Reservation_Label_Undo_S = new System.Windows.Forms.Label();
+            this.Bates_Reservation_Label_View_S = new System.Windows.Forms.Label();
+            this.Bates_Reservation_Label_Del_S = new System.Windows.Forms.Label();
+            this.Bates_Reservation_Label_Add_S = new System.Windows.Forms.Label();
+            this.Bates_Reservation_Button_Edit_S = new System.Windows.Forms.Button();
+            this.Bates_Reservation_Button_Undo_S = new System.Windows.Forms.Button();
+            this.Bates_Reservation_Button_Save_S = new System.Windows.Forms.Button();
+            this.Bates_Reservation_RichTextBox_S = new System.Windows.Forms.RichTextBox();
+            this.Bates_Reservation_Button_View_S = new System.Windows.Forms.Button();
+            this.Bates_Reservation_Button_Add_S = new System.Windows.Forms.Button();
+            this.Bates_Reservation_Button_Del_S = new System.Windows.Forms.Button();
+            this.Bates_Reservation_TabControl_S = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.tabPage6 = new System.Windows.Forms.TabPage();
             this.Label_Quit_G = new System.Windows.Forms.Label();
-            this.Panel_Button_Add_G = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label10 = new System.Windows.Forms.Label();
-            this.Panel_Button_Save_G = new System.Windows.Forms.Panel();
-            this.Panel_Button_Modify_G = new System.Windows.Forms.Panel();
-            this.Panel_Button_Undo_G = new System.Windows.Forms.Panel();
-            this.Panel_Button_Del_G = new System.Windows.Forms.Panel();
-            this.Panel_Button_Consult_G = new System.Windows.Forms.Panel();
-            this.Panel_Button_View_G = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel1_G.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_G)).BeginInit();
-            this.Panel_Button_Add_G.SuspendLayout();
-            this.Panel_Button_Save_G.SuspendLayout();
-            this.Panel_Button_Modify_G.SuspendLayout();
-            this.Panel_Button_Undo_G.SuspendLayout();
-            this.Panel_Button_Del_G.SuspendLayout();
-            this.Panel_Button_Consult_G.SuspendLayout();
-            this.Panel_Button_View_G.SuspendLayout();
+            this.Bates_Reservation_Button_Exit_G = new System.Windows.Forms.Button();
+            this.Bates_Reservation_Button_Gotoend_G = new System.Windows.Forms.Button();
+            this.Bates_Reservation_Button_Next_G = new System.Windows.Forms.Button();
+            this.Bates_Reservation_Button_Gotofirst_G = new System.Windows.Forms.Button();
+            this.Bates_Reservation_Button_Previous_G = new System.Windows.Forms.Button();
+            this.Bates_Reservation_PictureBox_G = new System.Windows.Forms.PictureBox();
+            this.Bates_Reservation_Label_List_G = new System.Windows.Forms.Label();
+            this.Bates_Reservation_Label_View_G = new System.Windows.Forms.Label();
+            this.Bates_Reservation_Button_List_G = new System.Windows.Forms.Button();
+            this.Bates_Reservation_Button_Del_G = new System.Windows.Forms.Button();
+            this.Bates_Reservation_Button_View_G = new System.Windows.Forms.Button();
+            this.Bates_Reservation_Label_Del_G = new System.Windows.Forms.Label();
+            this.Bates_Reservation_Label_Save_G = new System.Windows.Forms.Label();
+            this.Bates_Reservation_Button_Save_G = new System.Windows.Forms.Button();
+            this.Bates_Reservation_Label_Undo_G = new System.Windows.Forms.Label();
+            this.Bates_Reservation_Button_Undo_G = new System.Windows.Forms.Button();
+            this.Bates_Reservation_Label_Edit_G = new System.Windows.Forms.Label();
+            this.Bates_Reservation_Label_Add_G = new System.Windows.Forms.Label();
+            this.Bates_Reservation_Button_Edit_G = new System.Windows.Forms.Button();
+            this.Bates_Reservation_Button_Add_G = new System.Windows.Forms.Button();
+            this.Bates_Reservation_Label_Section_G = new System.Windows.Forms.Label();
+            this.dateTimePicker_S1 = new Bate_s_Reservation_Base_Biblioteque.DateTimePicker_S();
+            this.Bates_Reservation_Button_ToolStrip_G = new System.Windows.Forms.ToolStrip();
+            this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
+            this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
+            this.Bates_Reservation_Button_Panel_G.SuspendLayout();
+            this.Bates_Reservation_TabControl_S.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Bates_Reservation_PictureBox_G)).BeginInit();
+            this.Bates_Reservation_Button_ToolStrip_G.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dateTimePicker_G
+            // Bates_Reservation_Label_numversion_G
             // 
-            this.dateTimePicker_G.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.dateTimePicker_G.CustomFormat = "yyyy/mm/dd";
-            this.dateTimePicker_G.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker_G.Location = new System.Drawing.Point(1408, 12);
-            this.dateTimePicker_G.Name = "dateTimePicker_G";
-            this.dateTimePicker_G.Size = new System.Drawing.Size(143, 20);
-            this.dateTimePicker_G.TabIndex = 37;
+            this.Bates_Reservation_Label_numversion_G.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.Bates_Reservation_Label_numversion_G.AutoSize = true;
+            this.Bates_Reservation_Label_numversion_G.Location = new System.Drawing.Point(1488, 9);
+            this.Bates_Reservation_Label_numversion_G.Name = "Bates_Reservation_Label_numversion_G";
+            this.Bates_Reservation_Label_numversion_G.Size = new System.Drawing.Size(35, 13);
+            this.Bates_Reservation_Label_numversion_G.TabIndex = 22;
+            this.Bates_Reservation_Label_numversion_G.Text = "label2";
             // 
-            // panel2_G
+            // Bates_Reservation_Label_version_G
             // 
-            this.panel2_G.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.Bates_Reservation_Label_version_G.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.Bates_Reservation_Label_version_G.AutoSize = true;
+            this.Bates_Reservation_Label_version_G.ForeColor = System.Drawing.SystemColors.Window;
+            this.Bates_Reservation_Label_version_G.Location = new System.Drawing.Point(1412, 9);
+            this.Bates_Reservation_Label_version_G.Name = "Bates_Reservation_Label_version_G";
+            this.Bates_Reservation_Label_version_G.Size = new System.Drawing.Size(42, 13);
+            this.Bates_Reservation_Label_version_G.TabIndex = 21;
+            this.Bates_Reservation_Label_version_G.Text = "Version";
+            // 
+            // Bates_Reservation_Button_Panel_G
+            // 
+            this.Bates_Reservation_Button_Panel_G.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel2_G.BackColor = System.Drawing.SystemColors.Window;
-            this.panel2_G.Location = new System.Drawing.Point(14, 13);
-            this.panel2_G.Name = "panel2_G";
-            this.panel2_G.Size = new System.Drawing.Size(1512, 561);
-            this.panel2_G.TabIndex = 0;
+            this.Bates_Reservation_Button_Panel_G.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.Bates_Reservation_Button_Panel_G.Controls.Add(this.Bates_Reservation_Label_Save_S);
+            this.Bates_Reservation_Button_Panel_G.Controls.Add(this.Bates_Reservation_Label_Edit_S);
+            this.Bates_Reservation_Button_Panel_G.Controls.Add(this.Bates_Reservation_Label_Undo_S);
+            this.Bates_Reservation_Button_Panel_G.Controls.Add(this.Bates_Reservation_Label_View_S);
+            this.Bates_Reservation_Button_Panel_G.Controls.Add(this.Bates_Reservation_Label_Del_S);
+            this.Bates_Reservation_Button_Panel_G.Controls.Add(this.Bates_Reservation_Label_Add_S);
+            this.Bates_Reservation_Button_Panel_G.Controls.Add(this.Bates_Reservation_Button_Edit_S);
+            this.Bates_Reservation_Button_Panel_G.Controls.Add(this.Bates_Reservation_Button_Undo_S);
+            this.Bates_Reservation_Button_Panel_G.Controls.Add(this.Bates_Reservation_Button_Save_S);
+            this.Bates_Reservation_Button_Panel_G.Controls.Add(this.Bates_Reservation_RichTextBox_S);
+            this.Bates_Reservation_Button_Panel_G.Controls.Add(this.Bates_Reservation_Button_View_S);
+            this.Bates_Reservation_Button_Panel_G.Controls.Add(this.Bates_Reservation_Button_Add_S);
+            this.Bates_Reservation_Button_Panel_G.Controls.Add(this.Bates_Reservation_Button_Del_S);
+            this.Bates_Reservation_Button_Panel_G.Controls.Add(this.Bates_Reservation_TabControl_S);
+            this.Bates_Reservation_Button_Panel_G.Controls.Add(this.Bates_Reservation_Label_numversion_G);
+            this.Bates_Reservation_Button_Panel_G.Controls.Add(this.Bates_Reservation_Label_version_G);
+            this.Bates_Reservation_Button_Panel_G.Location = new System.Drawing.Point(12, 172);
+            this.Bates_Reservation_Button_Panel_G.Name = "Bates_Reservation_Button_Panel_G";
+            this.Bates_Reservation_Button_Panel_G.Size = new System.Drawing.Size(1539, 586);
+            this.Bates_Reservation_Button_Panel_G.TabIndex = 30;
             // 
-            // label_numversion_G
+            // Bates_Reservation_Label_Save_S
             // 
-            this.label_numversion_G.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label_numversion_G.AutoSize = true;
-            this.label_numversion_G.Location = new System.Drawing.Point(1488, -2);
-            this.label_numversion_G.Name = "label_numversion_G";
-            this.label_numversion_G.Size = new System.Drawing.Size(35, 13);
-            this.label_numversion_G.TabIndex = 22;
-            this.label_numversion_G.Text = "label2";
+            this.Bates_Reservation_Label_Save_S.AutoSize = true;
+            this.Bates_Reservation_Label_Save_S.ForeColor = System.Drawing.SystemColors.Window;
+            this.Bates_Reservation_Label_Save_S.Location = new System.Drawing.Point(992, 414);
+            this.Bates_Reservation_Label_Save_S.Name = "Bates_Reservation_Label_Save_S";
+            this.Bates_Reservation_Label_Save_S.Size = new System.Drawing.Size(68, 13);
+            this.Bates_Reservation_Label_Save_S.TabIndex = 43;
+            this.Bates_Reservation_Label_Save_S.Text = "Sauvegarder";
             // 
-            // label_version_G
+            // Bates_Reservation_Label_Edit_S
             // 
-            this.label_version_G.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label_version_G.AutoSize = true;
-            this.label_version_G.ForeColor = System.Drawing.SystemColors.Window;
-            this.label_version_G.Location = new System.Drawing.Point(1410, -2);
-            this.label_version_G.Name = "label_version_G";
-            this.label_version_G.Size = new System.Drawing.Size(42, 13);
-            this.label_version_G.TabIndex = 21;
-            this.label_version_G.Text = "Version";
+            this.Bates_Reservation_Label_Edit_S.AutoSize = true;
+            this.Bates_Reservation_Label_Edit_S.ForeColor = System.Drawing.SystemColors.Window;
+            this.Bates_Reservation_Label_Edit_S.Location = new System.Drawing.Point(1006, 346);
+            this.Bates_Reservation_Label_Edit_S.Name = "Bates_Reservation_Label_Edit_S";
+            this.Bates_Reservation_Label_Edit_S.Size = new System.Drawing.Size(42, 13);
+            this.Bates_Reservation_Label_Edit_S.TabIndex = 42;
+            this.Bates_Reservation_Label_Edit_S.Text = "Modifer";
             // 
-            // panel1_G
+            // Bates_Reservation_Label_Undo_S
             // 
-            this.panel1_G.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1_G.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.panel1_G.Controls.Add(this.panel2_G);
-            this.panel1_G.Controls.Add(this.label_numversion_G);
-            this.panel1_G.Controls.Add(this.label_version_G);
-            this.panel1_G.Location = new System.Drawing.Point(12, 172);
-            this.panel1_G.Name = "panel1_G";
-            this.panel1_G.Size = new System.Drawing.Size(1539, 586);
-            this.panel1_G.TabIndex = 30;
+            this.Bates_Reservation_Label_Undo_S.AutoSize = true;
+            this.Bates_Reservation_Label_Undo_S.ForeColor = System.Drawing.SystemColors.Window;
+            this.Bates_Reservation_Label_Undo_S.Location = new System.Drawing.Point(1006, 278);
+            this.Bates_Reservation_Label_Undo_S.Name = "Bates_Reservation_Label_Undo_S";
+            this.Bates_Reservation_Label_Undo_S.Size = new System.Drawing.Size(43, 13);
+            this.Bates_Reservation_Label_Undo_S.TabIndex = 41;
+            this.Bates_Reservation_Label_Undo_S.Text = "Annuler";
             // 
-            // label2
+            // Bates_Reservation_Label_View_S
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(14, 99);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(65, 13);
-            this.label2.TabIndex = 41;
-            this.label2.Text = "Sauvegarde";
+            this.Bates_Reservation_Label_View_S.AutoSize = true;
+            this.Bates_Reservation_Label_View_S.ForeColor = System.Drawing.SystemColors.Window;
+            this.Bates_Reservation_Label_View_S.Location = new System.Drawing.Point(1000, 210);
+            this.Bates_Reservation_Label_View_S.Name = "Bates_Reservation_Label_View_S";
+            this.Bates_Reservation_Label_View_S.Size = new System.Drawing.Size(51, 13);
+            this.Bates_Reservation_Label_View_S.TabIndex = 40;
+            this.Bates_Reservation_Label_View_S.Text = "Consulter";
             // 
-            // label3
+            // Bates_Reservation_Label_Del_S
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(19, 99);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(44, 13);
-            this.label3.TabIndex = 42;
-            this.label3.Text = "Modifier";
+            this.Bates_Reservation_Label_Del_S.AutoSize = true;
+            this.Bates_Reservation_Label_Del_S.ForeColor = System.Drawing.SystemColors.Window;
+            this.Bates_Reservation_Label_Del_S.Location = new System.Drawing.Point(1000, 142);
+            this.Bates_Reservation_Label_Del_S.Name = "Bates_Reservation_Label_Del_S";
+            this.Bates_Reservation_Label_Del_S.Size = new System.Drawing.Size(54, 13);
+            this.Bates_Reservation_Label_Del_S.TabIndex = 39;
+            this.Bates_Reservation_Label_Del_S.Text = "Supprimer";
             // 
-            // label4
+            // Bates_Reservation_Label_Add_S
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(24, 99);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(43, 13);
-            this.label4.TabIndex = 43;
-            this.label4.Text = "Annuler";
+            this.Bates_Reservation_Label_Add_S.AutoSize = true;
+            this.Bates_Reservation_Label_Add_S.ForeColor = System.Drawing.SystemColors.Window;
+            this.Bates_Reservation_Label_Add_S.Location = new System.Drawing.Point(1006, 74);
+            this.Bates_Reservation_Label_Add_S.Name = "Bates_Reservation_Label_Add_S";
+            this.Bates_Reservation_Label_Add_S.Size = new System.Drawing.Size(31, 13);
+            this.Bates_Reservation_Label_Add_S.TabIndex = 31;
+            this.Bates_Reservation_Label_Add_S.Text = "Ajout";
             // 
-            // label5
+            // Bates_Reservation_Button_Edit_S
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(18, 99);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(54, 13);
-            this.label5.TabIndex = 44;
-            this.label5.Text = "Supprimer";
+            this.Bates_Reservation_Button_Edit_S.BackColor = System.Drawing.Color.Transparent;
+            this.Bates_Reservation_Button_Edit_S.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.Bates_Reservation_notes_128x128;
+            this.Bates_Reservation_Button_Edit_S.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Bates_Reservation_Button_Edit_S.FlatAppearance.BorderSize = 0;
+            this.Bates_Reservation_Button_Edit_S.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Bates_Reservation_Button_Edit_S.Location = new System.Drawing.Point(1003, 297);
+            this.Bates_Reservation_Button_Edit_S.Name = "Bates_Reservation_Button_Edit_S";
+            this.Bates_Reservation_Button_Edit_S.Size = new System.Drawing.Size(45, 43);
+            this.Bates_Reservation_Button_Edit_S.TabIndex = 38;
+            this.Bates_Reservation_Button_Edit_S.UseVisualStyleBackColor = false;
+            this.Bates_Reservation_Button_Edit_S.Click += new System.EventHandler(this.button12_Click);
             // 
-            // label6
+            // Bates_Reservation_Button_Undo_S
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(20, 99);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(51, 13);
-            this.label6.TabIndex = 45;
-            this.label6.Text = "Consulter";
+            this.Bates_Reservation_Button_Undo_S.BackColor = System.Drawing.Color.Transparent;
+            this.Bates_Reservation_Button_Undo_S.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.Bates_Reservation_Busy_S;
+            this.Bates_Reservation_Button_Undo_S.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Bates_Reservation_Button_Undo_S.FlatAppearance.BorderSize = 0;
+            this.Bates_Reservation_Button_Undo_S.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Bates_Reservation_Button_Undo_S.Location = new System.Drawing.Point(1003, 229);
+            this.Bates_Reservation_Button_Undo_S.Name = "Bates_Reservation_Button_Undo_S";
+            this.Bates_Reservation_Button_Undo_S.Size = new System.Drawing.Size(45, 43);
+            this.Bates_Reservation_Button_Undo_S.TabIndex = 37;
+            this.Bates_Reservation_Button_Undo_S.UseVisualStyleBackColor = false;
+            this.Bates_Reservation_Button_Undo_S.Click += new System.EventHandler(this.button11_Click);
             // 
-            // label7
+            // Bates_Reservation_Button_Save_S
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(25, 99);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(32, 13);
-            this.label7.TabIndex = 46;
-            this.label7.Text = "Lister";
+            this.Bates_Reservation_Button_Save_S.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.Bates_Reservation_document_save;
+            this.Bates_Reservation_Button_Save_S.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Bates_Reservation_Button_Save_S.FlatAppearance.BorderSize = 0;
+            this.Bates_Reservation_Button_Save_S.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Bates_Reservation_Button_Save_S.Location = new System.Drawing.Point(1003, 365);
+            this.Bates_Reservation_Button_Save_S.Name = "Bates_Reservation_Button_Save_S";
+            this.Bates_Reservation_Button_Save_S.Size = new System.Drawing.Size(45, 43);
+            this.Bates_Reservation_Button_Save_S.TabIndex = 35;
+            this.Bates_Reservation_Button_Save_S.UseVisualStyleBackColor = true;
+            this.Bates_Reservation_Button_Save_S.Click += new System.EventHandler(this.button10_Click);
             // 
-            // label8
+            // Bates_Reservation_RichTextBox_S
             // 
-            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(1235, 76);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(316, 39);
-            this.label8.TabIndex = 47;
-            this.label8.Text = "Mode Consultation";
+            this.Bates_Reservation_RichTextBox_S.BackColor = System.Drawing.SystemColors.Control;
+            this.Bates_Reservation_RichTextBox_S.Location = new System.Drawing.Point(1062, 25);
+            this.Bates_Reservation_RichTextBox_S.Name = "Bates_Reservation_RichTextBox_S";
+            this.Bates_Reservation_RichTextBox_S.Size = new System.Drawing.Size(474, 558);
+            this.Bates_Reservation_RichTextBox_S.TabIndex = 36;
+            this.Bates_Reservation_RichTextBox_S.Text = "";
             // 
-            // button_undo_G
+            // Bates_Reservation_Button_View_S
             // 
-            this.button_undo_G.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.document_revert;
-            this.button_undo_G.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button_undo_G.FlatAppearance.BorderSize = 0;
-            this.button_undo_G.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_undo_G.Location = new System.Drawing.Point(4, 3);
-            this.button_undo_G.Name = "button_undo_G";
-            this.button_undo_G.Size = new System.Drawing.Size(85, 93);
-            this.button_undo_G.TabIndex = 39;
-            this.button_undo_G.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button_undo_G.UseVisualStyleBackColor = true;
+            this.Bates_Reservation_Button_View_S.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.Bates_Reservation_layer_visible_on;
+            this.Bates_Reservation_Button_View_S.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Bates_Reservation_Button_View_S.FlatAppearance.BorderSize = 0;
+            this.Bates_Reservation_Button_View_S.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Bates_Reservation_Button_View_S.Location = new System.Drawing.Point(1003, 161);
+            this.Bates_Reservation_Button_View_S.Name = "Bates_Reservation_Button_View_S";
+            this.Bates_Reservation_Button_View_S.Size = new System.Drawing.Size(45, 43);
+            this.Bates_Reservation_Button_View_S.TabIndex = 34;
+            this.Bates_Reservation_Button_View_S.UseVisualStyleBackColor = true;
+            this.Bates_Reservation_Button_View_S.Click += new System.EventHandler(this.button9_Click);
             // 
-            // button_save_G
+            // Bates_Reservation_Button_Add_S
             // 
-            this.button_save_G.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.media_floppy;
-            this.button_save_G.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button_save_G.FlatAppearance.BorderSize = 0;
-            this.button_save_G.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_save_G.Location = new System.Drawing.Point(4, 3);
-            this.button_save_G.Name = "button_save_G";
-            this.button_save_G.Size = new System.Drawing.Size(85, 93);
-            this.button_save_G.TabIndex = 38;
-            this.button_save_G.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button_save_G.UseVisualStyleBackColor = true;
+            this.Bates_Reservation_Button_Add_S.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.Bates_Reservation_list_add;
+            this.Bates_Reservation_Button_Add_S.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Bates_Reservation_Button_Add_S.FlatAppearance.BorderSize = 0;
+            this.Bates_Reservation_Button_Add_S.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Bates_Reservation_Button_Add_S.Location = new System.Drawing.Point(1003, 25);
+            this.Bates_Reservation_Button_Add_S.Name = "Bates_Reservation_Button_Add_S";
+            this.Bates_Reservation_Button_Add_S.Size = new System.Drawing.Size(45, 43);
+            this.Bates_Reservation_Button_Add_S.TabIndex = 32;
+            this.Bates_Reservation_Button_Add_S.UseVisualStyleBackColor = true;
+            this.Bates_Reservation_Button_Add_S.Click += new System.EventHandler(this.button7_Click);
             // 
-            // button_list_G
+            // Bates_Reservation_Button_Del_S
             // 
-            this.button_list_G.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.view_calendar_journal;
-            this.button_list_G.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button_list_G.FlatAppearance.BorderSize = 0;
-            this.button_list_G.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_list_G.Location = new System.Drawing.Point(4, 3);
-            this.button_list_G.Name = "button_list_G";
-            this.button_list_G.Size = new System.Drawing.Size(85, 93);
-            this.button_list_G.TabIndex = 36;
-            this.button_list_G.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button_list_G.UseVisualStyleBackColor = true;
+            this.Bates_Reservation_Button_Del_S.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.Bates_Reservation_list_remove;
+            this.Bates_Reservation_Button_Del_S.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Bates_Reservation_Button_Del_S.FlatAppearance.BorderSize = 0;
+            this.Bates_Reservation_Button_Del_S.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Bates_Reservation_Button_Del_S.Location = new System.Drawing.Point(1003, 93);
+            this.Bates_Reservation_Button_Del_S.Name = "Bates_Reservation_Button_Del_S";
+            this.Bates_Reservation_Button_Del_S.Size = new System.Drawing.Size(45, 43);
+            this.Bates_Reservation_Button_Del_S.TabIndex = 33;
+            this.Bates_Reservation_Button_Del_S.UseVisualStyleBackColor = true;
+            this.Bates_Reservation_Button_Del_S.Click += new System.EventHandler(this.button8_Click);
             // 
-            // button_gotoend_G
+            // Bates_Reservation_TabControl_S
             // 
-            this.button_gotoend_G.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.button_gotoend_G.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.go_last_view_page;
-            this.button_gotoend_G.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button_gotoend_G.FlatAppearance.BorderSize = 0;
-            this.button_gotoend_G.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_gotoend_G.Location = new System.Drawing.Point(885, 779);
-            this.button_gotoend_G.Name = "button_gotoend_G";
-            this.button_gotoend_G.Size = new System.Drawing.Size(75, 63);
-            this.button_gotoend_G.TabIndex = 32;
-            this.button_gotoend_G.UseVisualStyleBackColor = true;
+            this.Bates_Reservation_TabControl_S.Controls.Add(this.tabPage1);
+            this.Bates_Reservation_TabControl_S.Controls.Add(this.tabPage2);
+            this.Bates_Reservation_TabControl_S.Controls.Add(this.tabPage3);
+            this.Bates_Reservation_TabControl_S.Controls.Add(this.tabPage4);
+            this.Bates_Reservation_TabControl_S.Controls.Add(this.tabPage5);
+            this.Bates_Reservation_TabControl_S.Controls.Add(this.tabPage6);
+            this.Bates_Reservation_TabControl_S.Location = new System.Drawing.Point(3, 3);
+            this.Bates_Reservation_TabControl_S.Name = "Bates_Reservation_TabControl_S";
+            this.Bates_Reservation_TabControl_S.SelectedIndex = 0;
+            this.Bates_Reservation_TabControl_S.Size = new System.Drawing.Size(982, 580);
+            this.Bates_Reservation_TabControl_S.TabIndex = 23;
             // 
-            // button_next_G
+            // tabPage1
             // 
-            this.button_next_G.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.button_next_G.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.go_next_view_page;
-            this.button_next_G.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button_next_G.FlatAppearance.BorderSize = 0;
-            this.button_next_G.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_next_G.Location = new System.Drawing.Point(794, 779);
-            this.button_next_G.Name = "button_next_G";
-            this.button_next_G.Size = new System.Drawing.Size(75, 63);
-            this.button_next_G.TabIndex = 33;
-            this.button_next_G.UseVisualStyleBackColor = true;
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(974, 554);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "Réservation";
+            this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // button_gotofirst_G
+            // tabPage2
             // 
-            this.button_gotofirst_G.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.button_gotofirst_G.BackColor = System.Drawing.Color.Transparent;
-            this.button_gotofirst_G.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.go_first_view_page;
-            this.button_gotofirst_G.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button_gotofirst_G.FlatAppearance.BorderColor = System.Drawing.SystemColors.ButtonShadow;
-            this.button_gotofirst_G.FlatAppearance.BorderSize = 0;
-            this.button_gotofirst_G.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_gotofirst_G.Location = new System.Drawing.Point(607, 779);
-            this.button_gotofirst_G.Name = "button_gotofirst_G";
-            this.button_gotofirst_G.Size = new System.Drawing.Size(75, 63);
-            this.button_gotofirst_G.TabIndex = 31;
-            this.button_gotofirst_G.UseVisualStyleBackColor = false;
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(974, 554);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Arrivée";
+            this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // button_previous_G
+            // tabPage3
             // 
-            this.button_previous_G.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.button_previous_G.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.go_previous_view_page;
-            this.button_previous_G.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button_previous_G.FlatAppearance.BorderColor = System.Drawing.SystemColors.ButtonShadow;
-            this.button_previous_G.FlatAppearance.BorderSize = 0;
-            this.button_previous_G.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_previous_G.Location = new System.Drawing.Point(701, 779);
-            this.button_previous_G.Name = "button_previous_G";
-            this.button_previous_G.Size = new System.Drawing.Size(75, 63);
-            this.button_previous_G.TabIndex = 34;
-            this.button_previous_G.UseVisualStyleBackColor = true;
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Size = new System.Drawing.Size(974, 554);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Départ";
+            this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // button_consult_G
+            // tabPage4
             // 
-            this.button_consult_G.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.document_preview;
-            this.button_consult_G.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button_consult_G.FlatAppearance.BorderSize = 0;
-            this.button_consult_G.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_consult_G.Location = new System.Drawing.Point(3, 3);
-            this.button_consult_G.Name = "button_consult_G";
-            this.button_consult_G.Size = new System.Drawing.Size(85, 93);
-            this.button_consult_G.TabIndex = 27;
-            this.button_consult_G.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button_consult_G.UseVisualStyleBackColor = true;
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Size = new System.Drawing.Size(974, 554);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Transaction";
+            this.tabPage4.UseVisualStyleBackColor = true;
             // 
-            // button_del_G
+            // tabPage5
             // 
-            this.button_del_G.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.document_close;
-            this.button_del_G.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button_del_G.FlatAppearance.BorderSize = 0;
-            this.button_del_G.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_del_G.Location = new System.Drawing.Point(3, 3);
-            this.button_del_G.Name = "button_del_G";
-            this.button_del_G.Size = new System.Drawing.Size(85, 93);
-            this.button_del_G.TabIndex = 29;
-            this.button_del_G.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button_del_G.UseVisualStyleBackColor = true;
+            this.tabPage5.Location = new System.Drawing.Point(4, 22);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Size = new System.Drawing.Size(974, 554);
+            this.tabPage5.TabIndex = 4;
+            this.tabPage5.Text = "Cloture";
+            this.tabPage5.UseVisualStyleBackColor = true;
             // 
-            // button_mod_G
+            // tabPage6
             // 
-            this.button_mod_G.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.document_edit;
-            this.button_mod_G.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button_mod_G.FlatAppearance.BorderSize = 0;
-            this.button_mod_G.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_mod_G.Location = new System.Drawing.Point(3, 3);
-            this.button_mod_G.Name = "button_mod_G";
-            this.button_mod_G.Size = new System.Drawing.Size(85, 93);
-            this.button_mod_G.TabIndex = 28;
-            this.button_mod_G.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button_mod_G.UseVisualStyleBackColor = true;
-            // 
-            // button_exit_G
-            // 
-            this.button_exit_G.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button_exit_G.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.dialog_close;
-            this.button_exit_G.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button_exit_G.FlatAppearance.BorderSize = 0;
-            this.button_exit_G.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_exit_G.Location = new System.Drawing.Point(0, 0);
-            this.button_exit_G.Name = "button_exit_G";
-            this.button_exit_G.Size = new System.Drawing.Size(75, 72);
-            this.button_exit_G.TabIndex = 26;
-            this.button_exit_G.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button_exit_G.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox_G
-            // 
-            this.pictureBox_G.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox_G.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox_G.ErrorImage = null;
-            this.pictureBox_G.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_G.Image")));
-            this.pictureBox_G.Location = new System.Drawing.Point(12, 12);
-            this.pictureBox_G.Name = "pictureBox_G";
-            this.pictureBox_G.Size = new System.Drawing.Size(400, 225);
-            this.pictureBox_G.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox_G.TabIndex = 35;
-            this.pictureBox_G.TabStop = false;
+            this.tabPage6.Location = new System.Drawing.Point(4, 22);
+            this.tabPage6.Name = "tabPage6";
+            this.tabPage6.Size = new System.Drawing.Size(974, 554);
+            this.tabPage6.TabIndex = 5;
+            this.tabPage6.Text = "Chambre";
+            this.tabPage6.UseVisualStyleBackColor = true;
             // 
             // Label_Quit_G
             // 
@@ -367,186 +363,404 @@
             this.Label_Quit_G.TabIndex = 48;
             this.Label_Quit_G.Text = "Quitter";
             // 
-            // Panel_Button_Add_G
-            // 
-            this.Panel_Button_Add_G.Controls.Add(this.button1);
-            this.Panel_Button_Add_G.Controls.Add(this.label10);
-            this.Panel_Button_Add_G.Location = new System.Drawing.Point(418, 45);
-            this.Panel_Button_Add_G.Name = "Panel_Button_Add_G";
-            this.Panel_Button_Add_G.Size = new System.Drawing.Size(92, 121);
-            this.Panel_Button_Add_G.TabIndex = 49;
-            // 
-            // button1
-            // 
-            this.button1.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.document_new;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(3, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(85, 93);
-            this.button1.TabIndex = 41;
-            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(25, 99);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(40, 13);
-            this.label10.TabIndex = 42;
-            this.label10.Text = "Ajouter";
-            // 
-            // Panel_Button_Save_G
-            // 
-            this.Panel_Button_Save_G.Controls.Add(this.button_save_G);
-            this.Panel_Button_Save_G.Controls.Add(this.label2);
-            this.Panel_Button_Save_G.Location = new System.Drawing.Point(512, 46);
-            this.Panel_Button_Save_G.Name = "Panel_Button_Save_G";
-            this.Panel_Button_Save_G.Size = new System.Drawing.Size(92, 121);
-            this.Panel_Button_Save_G.TabIndex = 50;
-            // 
-            // Panel_Button_Modify_G
-            // 
-            this.Panel_Button_Modify_G.Controls.Add(this.label3);
-            this.Panel_Button_Modify_G.Controls.Add(this.button_mod_G);
-            this.Panel_Button_Modify_G.Location = new System.Drawing.Point(607, 47);
-            this.Panel_Button_Modify_G.Name = "Panel_Button_Modify_G";
-            this.Panel_Button_Modify_G.Size = new System.Drawing.Size(92, 121);
-            this.Panel_Button_Modify_G.TabIndex = 50;
-            // 
-            // Panel_Button_Undo_G
-            // 
-            this.Panel_Button_Undo_G.Controls.Add(this.button_undo_G);
-            this.Panel_Button_Undo_G.Controls.Add(this.label4);
-            this.Panel_Button_Undo_G.Location = new System.Drawing.Point(701, 47);
-            this.Panel_Button_Undo_G.Name = "Panel_Button_Undo_G";
-            this.Panel_Button_Undo_G.Size = new System.Drawing.Size(92, 121);
-            this.Panel_Button_Undo_G.TabIndex = 51;
-            // 
-            // Panel_Button_Del_G
-            // 
-            this.Panel_Button_Del_G.Controls.Add(this.button_del_G);
-            this.Panel_Button_Del_G.Controls.Add(this.label5);
-            this.Panel_Button_Del_G.Location = new System.Drawing.Point(799, 47);
-            this.Panel_Button_Del_G.Name = "Panel_Button_Del_G";
-            this.Panel_Button_Del_G.Size = new System.Drawing.Size(92, 121);
-            this.Panel_Button_Del_G.TabIndex = 50;
-            // 
-            // Panel_Button_Consult_G
-            // 
-            this.Panel_Button_Consult_G.Controls.Add(this.button_consult_G);
-            this.Panel_Button_Consult_G.Controls.Add(this.label6);
-            this.Panel_Button_Consult_G.Location = new System.Drawing.Point(897, 47);
-            this.Panel_Button_Consult_G.Name = "Panel_Button_Consult_G";
-            this.Panel_Button_Consult_G.Size = new System.Drawing.Size(92, 121);
-            this.Panel_Button_Consult_G.TabIndex = 50;
-            // 
-            // Panel_Button_View_G
-            // 
-            this.Panel_Button_View_G.Controls.Add(this.button_list_G);
-            this.Panel_Button_View_G.Controls.Add(this.label7);
-            this.Panel_Button_View_G.Location = new System.Drawing.Point(995, 47);
-            this.Panel_Button_View_G.Name = "Panel_Button_View_G";
-            this.Panel_Button_View_G.Size = new System.Drawing.Size(92, 121);
-            this.Panel_Button_View_G.TabIndex = 50;
-            // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.button_exit_G);
+            this.panel1.Controls.Add(this.Bates_Reservation_Button_Exit_G);
             this.panel1.Controls.Add(this.Label_Quit_G);
             this.panel1.Location = new System.Drawing.Point(1391, 770);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(160, 72);
             this.panel1.TabIndex = 0;
             // 
+            // Bates_Reservation_Button_Exit_G
+            // 
+            this.Bates_Reservation_Button_Exit_G.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.Bates_Reservation_Button_Exit_G.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.Bates_Reservation_application_exit;
+            this.Bates_Reservation_Button_Exit_G.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Bates_Reservation_Button_Exit_G.FlatAppearance.BorderSize = 0;
+            this.Bates_Reservation_Button_Exit_G.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Bates_Reservation_Button_Exit_G.Location = new System.Drawing.Point(0, 0);
+            this.Bates_Reservation_Button_Exit_G.Name = "Bates_Reservation_Button_Exit_G";
+            this.Bates_Reservation_Button_Exit_G.Size = new System.Drawing.Size(75, 72);
+            this.Bates_Reservation_Button_Exit_G.TabIndex = 26;
+            this.Bates_Reservation_Button_Exit_G.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Bates_Reservation_Button_Exit_G.UseVisualStyleBackColor = true;
+            this.Bates_Reservation_Button_Exit_G.Click += new System.EventHandler(this.button_exit_G_Click);
+            // 
+            // Bates_Reservation_Button_Gotoend_G
+            // 
+            this.Bates_Reservation_Button_Gotoend_G.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.Bates_Reservation_Button_Gotoend_G.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.Bates_Reservation_go_last;
+            this.Bates_Reservation_Button_Gotoend_G.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Bates_Reservation_Button_Gotoend_G.FlatAppearance.BorderSize = 0;
+            this.Bates_Reservation_Button_Gotoend_G.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Bates_Reservation_Button_Gotoend_G.Location = new System.Drawing.Point(885, 779);
+            this.Bates_Reservation_Button_Gotoend_G.Name = "Bates_Reservation_Button_Gotoend_G";
+            this.Bates_Reservation_Button_Gotoend_G.Size = new System.Drawing.Size(75, 63);
+            this.Bates_Reservation_Button_Gotoend_G.TabIndex = 32;
+            this.Bates_Reservation_Button_Gotoend_G.UseVisualStyleBackColor = true;
+            this.Bates_Reservation_Button_Gotoend_G.Click += new System.EventHandler(this.button_gotoend_G_Click);
+            // 
+            // Bates_Reservation_Button_Next_G
+            // 
+            this.Bates_Reservation_Button_Next_G.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.Bates_Reservation_Button_Next_G.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.Bates_Reservation_go_next;
+            this.Bates_Reservation_Button_Next_G.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Bates_Reservation_Button_Next_G.FlatAppearance.BorderSize = 0;
+            this.Bates_Reservation_Button_Next_G.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Bates_Reservation_Button_Next_G.Location = new System.Drawing.Point(794, 779);
+            this.Bates_Reservation_Button_Next_G.Name = "Bates_Reservation_Button_Next_G";
+            this.Bates_Reservation_Button_Next_G.Size = new System.Drawing.Size(75, 63);
+            this.Bates_Reservation_Button_Next_G.TabIndex = 33;
+            this.Bates_Reservation_Button_Next_G.UseVisualStyleBackColor = true;
+            this.Bates_Reservation_Button_Next_G.Click += new System.EventHandler(this.button_next_G_Click);
+            // 
+            // Bates_Reservation_Button_Gotofirst_G
+            // 
+            this.Bates_Reservation_Button_Gotofirst_G.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.Bates_Reservation_Button_Gotofirst_G.BackColor = System.Drawing.Color.Transparent;
+            this.Bates_Reservation_Button_Gotofirst_G.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.Bates_Reservation_go_first;
+            this.Bates_Reservation_Button_Gotofirst_G.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Bates_Reservation_Button_Gotofirst_G.FlatAppearance.BorderColor = System.Drawing.SystemColors.ButtonShadow;
+            this.Bates_Reservation_Button_Gotofirst_G.FlatAppearance.BorderSize = 0;
+            this.Bates_Reservation_Button_Gotofirst_G.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Bates_Reservation_Button_Gotofirst_G.Location = new System.Drawing.Point(607, 779);
+            this.Bates_Reservation_Button_Gotofirst_G.Name = "Bates_Reservation_Button_Gotofirst_G";
+            this.Bates_Reservation_Button_Gotofirst_G.Size = new System.Drawing.Size(75, 63);
+            this.Bates_Reservation_Button_Gotofirst_G.TabIndex = 31;
+            this.Bates_Reservation_Button_Gotofirst_G.UseVisualStyleBackColor = false;
+            this.Bates_Reservation_Button_Gotofirst_G.Click += new System.EventHandler(this.button_gotofirst_G_Click);
+            // 
+            // Bates_Reservation_Button_Previous_G
+            // 
+            this.Bates_Reservation_Button_Previous_G.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.Bates_Reservation_Button_Previous_G.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.Bates_Reservation_go_previous;
+            this.Bates_Reservation_Button_Previous_G.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Bates_Reservation_Button_Previous_G.FlatAppearance.BorderColor = System.Drawing.SystemColors.ButtonShadow;
+            this.Bates_Reservation_Button_Previous_G.FlatAppearance.BorderSize = 0;
+            this.Bates_Reservation_Button_Previous_G.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Bates_Reservation_Button_Previous_G.Location = new System.Drawing.Point(701, 779);
+            this.Bates_Reservation_Button_Previous_G.Name = "Bates_Reservation_Button_Previous_G";
+            this.Bates_Reservation_Button_Previous_G.Size = new System.Drawing.Size(75, 63);
+            this.Bates_Reservation_Button_Previous_G.TabIndex = 34;
+            this.Bates_Reservation_Button_Previous_G.UseVisualStyleBackColor = true;
+            this.Bates_Reservation_Button_Previous_G.Click += new System.EventHandler(this.button_previous_G_Click);
+            // 
+            // Bates_Reservation_PictureBox_G
+            // 
+            this.Bates_Reservation_PictureBox_G.BackColor = System.Drawing.Color.Transparent;
+            this.Bates_Reservation_PictureBox_G.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.Bates_Reservation_PictureBox_G.ErrorImage = null;
+            this.Bates_Reservation_PictureBox_G.Image = ((System.Drawing.Image)(resources.GetObject("Bates_Reservation_PictureBox_G.Image")));
+            this.Bates_Reservation_PictureBox_G.Location = new System.Drawing.Point(12, 12);
+            this.Bates_Reservation_PictureBox_G.Name = "Bates_Reservation_PictureBox_G";
+            this.Bates_Reservation_PictureBox_G.Size = new System.Drawing.Size(400, 225);
+            this.Bates_Reservation_PictureBox_G.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.Bates_Reservation_PictureBox_G.TabIndex = 35;
+            this.Bates_Reservation_PictureBox_G.TabStop = false;
+            // 
+            // Bates_Reservation_Label_List_G
+            // 
+            this.Bates_Reservation_Label_List_G.AutoSize = true;
+            this.Bates_Reservation_Label_List_G.Location = new System.Drawing.Point(1004, 155);
+            this.Bates_Reservation_Label_List_G.Name = "Bates_Reservation_Label_List_G";
+            this.Bates_Reservation_Label_List_G.Size = new System.Drawing.Size(32, 13);
+            this.Bates_Reservation_Label_List_G.TabIndex = 66;
+            this.Bates_Reservation_Label_List_G.Text = "Lister";
+            // 
+            // Bates_Reservation_Label_View_G
+            // 
+            this.Bates_Reservation_Label_View_G.AutoSize = true;
+            this.Bates_Reservation_Label_View_G.Location = new System.Drawing.Point(901, 155);
+            this.Bates_Reservation_Label_View_G.Name = "Bates_Reservation_Label_View_G";
+            this.Bates_Reservation_Label_View_G.Size = new System.Drawing.Size(51, 13);
+            this.Bates_Reservation_Label_View_G.TabIndex = 65;
+            this.Bates_Reservation_Label_View_G.Text = "Consulter";
+            // 
+            // Bates_Reservation_Button_List_G
+            // 
+            this.Bates_Reservation_Button_List_G.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.Bates_Reservation_search_128x128;
+            this.Bates_Reservation_Button_List_G.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Bates_Reservation_Button_List_G.FlatAppearance.BorderSize = 0;
+            this.Bates_Reservation_Button_List_G.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Bates_Reservation_Button_List_G.Location = new System.Drawing.Point(981, 59);
+            this.Bates_Reservation_Button_List_G.Name = "Bates_Reservation_Button_List_G";
+            this.Bates_Reservation_Button_List_G.Size = new System.Drawing.Size(85, 93);
+            this.Bates_Reservation_Button_List_G.TabIndex = 56;
+            this.Bates_Reservation_Button_List_G.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Bates_Reservation_Button_List_G.UseVisualStyleBackColor = true;
+            this.Bates_Reservation_Button_List_G.Click += new System.EventHandler(this.button_list_G_Click);
+            // 
+            // Bates_Reservation_Button_Del_G
+            // 
+            this.Bates_Reservation_Button_Del_G.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.Bates_Reservation_edit_delete;
+            this.Bates_Reservation_Button_Del_G.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Bates_Reservation_Button_Del_G.FlatAppearance.BorderSize = 0;
+            this.Bates_Reservation_Button_Del_G.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Bates_Reservation_Button_Del_G.Location = new System.Drawing.Point(792, 59);
+            this.Bates_Reservation_Button_Del_G.Name = "Bates_Reservation_Button_Del_G";
+            this.Bates_Reservation_Button_Del_G.Size = new System.Drawing.Size(92, 93);
+            this.Bates_Reservation_Button_Del_G.TabIndex = 55;
+            this.Bates_Reservation_Button_Del_G.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Bates_Reservation_Button_Del_G.UseVisualStyleBackColor = true;
+            this.Bates_Reservation_Button_Del_G.Click += new System.EventHandler(this.button_del_G_Click);
+            // 
+            // Bates_Reservation_Button_View_G
+            // 
+            this.Bates_Reservation_Button_View_G.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Bates_Reservation_Button_View_G.BackgroundImage")));
+            this.Bates_Reservation_Button_View_G.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Bates_Reservation_Button_View_G.FlatAppearance.BorderSize = 0;
+            this.Bates_Reservation_Button_View_G.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Bates_Reservation_Button_View_G.Location = new System.Drawing.Point(890, 59);
+            this.Bates_Reservation_Button_View_G.Name = "Bates_Reservation_Button_View_G";
+            this.Bates_Reservation_Button_View_G.Size = new System.Drawing.Size(85, 93);
+            this.Bates_Reservation_Button_View_G.TabIndex = 53;
+            this.Bates_Reservation_Button_View_G.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Bates_Reservation_Button_View_G.UseVisualStyleBackColor = true;
+            this.Bates_Reservation_Button_View_G.Click += new System.EventHandler(this.button_consult_G_Click);
+            // 
+            // Bates_Reservation_Label_Del_G
+            // 
+            this.Bates_Reservation_Label_Del_G.AutoSize = true;
+            this.Bates_Reservation_Label_Del_G.Location = new System.Drawing.Point(816, 155);
+            this.Bates_Reservation_Label_Del_G.Name = "Bates_Reservation_Label_Del_G";
+            this.Bates_Reservation_Label_Del_G.Size = new System.Drawing.Size(54, 13);
+            this.Bates_Reservation_Label_Del_G.TabIndex = 63;
+            this.Bates_Reservation_Label_Del_G.Text = "Supprimer";
+            // 
+            // Bates_Reservation_Label_Save_G
+            // 
+            this.Bates_Reservation_Label_Save_G.AutoSize = true;
+            this.Bates_Reservation_Label_Save_G.Location = new System.Drawing.Point(713, 155);
+            this.Bates_Reservation_Label_Save_G.Name = "Bates_Reservation_Label_Save_G";
+            this.Bates_Reservation_Label_Save_G.Size = new System.Drawing.Size(65, 13);
+            this.Bates_Reservation_Label_Save_G.TabIndex = 58;
+            this.Bates_Reservation_Label_Save_G.Text = "Sauvegarde";
+            // 
+            // Bates_Reservation_Button_Save_G
+            // 
+            this.Bates_Reservation_Button_Save_G.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.Bates_Reservation_save_128x128;
+            this.Bates_Reservation_Button_Save_G.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Bates_Reservation_Button_Save_G.FlatAppearance.BorderSize = 0;
+            this.Bates_Reservation_Button_Save_G.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Bates_Reservation_Button_Save_G.Location = new System.Drawing.Point(702, 59);
+            this.Bates_Reservation_Button_Save_G.Name = "Bates_Reservation_Button_Save_G";
+            this.Bates_Reservation_Button_Save_G.Size = new System.Drawing.Size(85, 93);
+            this.Bates_Reservation_Button_Save_G.TabIndex = 57;
+            this.Bates_Reservation_Button_Save_G.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Bates_Reservation_Button_Save_G.UseVisualStyleBackColor = true;
+            this.Bates_Reservation_Button_Save_G.Click += new System.EventHandler(this.button_save_G_Click);
+            // 
+            // Bates_Reservation_Label_Undo_G
+            // 
+            this.Bates_Reservation_Label_Undo_G.AutoSize = true;
+            this.Bates_Reservation_Label_Undo_G.Location = new System.Drawing.Point(627, 155);
+            this.Bates_Reservation_Label_Undo_G.Name = "Bates_Reservation_Label_Undo_G";
+            this.Bates_Reservation_Label_Undo_G.Size = new System.Drawing.Size(43, 13);
+            this.Bates_Reservation_Label_Undo_G.TabIndex = 62;
+            this.Bates_Reservation_Label_Undo_G.Text = "Annuler";
+            // 
+            // Bates_Reservation_Button_Undo_G
+            // 
+            this.Bates_Reservation_Button_Undo_G.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.Bates_Reservation_edit_undo;
+            this.Bates_Reservation_Button_Undo_G.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Bates_Reservation_Button_Undo_G.FlatAppearance.BorderSize = 0;
+            this.Bates_Reservation_Button_Undo_G.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Bates_Reservation_Button_Undo_G.Location = new System.Drawing.Point(607, 59);
+            this.Bates_Reservation_Button_Undo_G.Name = "Bates_Reservation_Button_Undo_G";
+            this.Bates_Reservation_Button_Undo_G.Size = new System.Drawing.Size(89, 93);
+            this.Bates_Reservation_Button_Undo_G.TabIndex = 64;
+            this.Bates_Reservation_Button_Undo_G.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Bates_Reservation_Button_Undo_G.UseVisualStyleBackColor = true;
+            this.Bates_Reservation_Button_Undo_G.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // Bates_Reservation_Label_Edit_G
+            // 
+            this.Bates_Reservation_Label_Edit_G.AutoSize = true;
+            this.Bates_Reservation_Label_Edit_G.Location = new System.Drawing.Point(537, 155);
+            this.Bates_Reservation_Label_Edit_G.Name = "Bates_Reservation_Label_Edit_G";
+            this.Bates_Reservation_Label_Edit_G.Size = new System.Drawing.Size(44, 13);
+            this.Bates_Reservation_Label_Edit_G.TabIndex = 60;
+            this.Bates_Reservation_Label_Edit_G.Text = "Modifier";
+            // 
+            // Bates_Reservation_Label_Add_G
+            // 
+            this.Bates_Reservation_Label_Add_G.AutoSize = true;
+            this.Bates_Reservation_Label_Add_G.Location = new System.Drawing.Point(446, 154);
+            this.Bates_Reservation_Label_Add_G.Name = "Bates_Reservation_Label_Add_G";
+            this.Bates_Reservation_Label_Add_G.Size = new System.Drawing.Size(40, 13);
+            this.Bates_Reservation_Label_Add_G.TabIndex = 61;
+            this.Bates_Reservation_Label_Add_G.Text = "Ajouter";
+            // 
+            // Bates_Reservation_Button_Edit_G
+            // 
+            this.Bates_Reservation_Button_Edit_G.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.Bates_Reservation_edit_128x128;
+            this.Bates_Reservation_Button_Edit_G.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Bates_Reservation_Button_Edit_G.FlatAppearance.BorderSize = 0;
+            this.Bates_Reservation_Button_Edit_G.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Bates_Reservation_Button_Edit_G.Location = new System.Drawing.Point(516, 59);
+            this.Bates_Reservation_Button_Edit_G.Name = "Bates_Reservation_Button_Edit_G";
+            this.Bates_Reservation_Button_Edit_G.Size = new System.Drawing.Size(85, 93);
+            this.Bates_Reservation_Button_Edit_G.TabIndex = 54;
+            this.Bates_Reservation_Button_Edit_G.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Bates_Reservation_Button_Edit_G.UseVisualStyleBackColor = true;
+            this.Bates_Reservation_Button_Edit_G.Click += new System.EventHandler(this.button_mod_G_Click);
+            // 
+            // Bates_Reservation_Button_Add_G
+            // 
+            this.Bates_Reservation_Button_Add_G.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.Bates_Reservation_Button_Add_S;
+            this.Bates_Reservation_Button_Add_G.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Bates_Reservation_Button_Add_G.FlatAppearance.BorderSize = 0;
+            this.Bates_Reservation_Button_Add_G.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Bates_Reservation_Button_Add_G.Location = new System.Drawing.Point(418, 60);
+            this.Bates_Reservation_Button_Add_G.Name = "Bates_Reservation_Button_Add_G";
+            this.Bates_Reservation_Button_Add_G.Size = new System.Drawing.Size(92, 91);
+            this.Bates_Reservation_Button_Add_G.TabIndex = 59;
+            this.Bates_Reservation_Button_Add_G.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.Bates_Reservation_Button_Add_G.UseVisualStyleBackColor = true;
+            this.Bates_Reservation_Button_Add_G.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // Bates_Reservation_Label_Section_G
+            // 
+            this.Bates_Reservation_Label_Section_G.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Bates_Reservation_Label_Section_G.AutoSize = true;
+            this.Bates_Reservation_Label_Section_G.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Bates_Reservation_Label_Section_G.Location = new System.Drawing.Point(1235, 98);
+            this.Bates_Reservation_Label_Section_G.Name = "Bates_Reservation_Label_Section_G";
+            this.Bates_Reservation_Label_Section_G.Size = new System.Drawing.Size(316, 39);
+            this.Bates_Reservation_Label_Section_G.TabIndex = 67;
+            this.Bates_Reservation_Label_Section_G.Text = "Mode Consultation";
+            // 
+            // dateTimePicker_S1
+            // 
+            this.dateTimePicker_S1.CustomFormat = "dddd yyyy/mm/dd   hh:mm:ss";
+            this.dateTimePicker_S1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker_S1.Location = new System.Drawing.Point(1351, 60);
+            this.dateTimePicker_S1.Name = "dateTimePicker_S1";
+            this.dateTimePicker_S1.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker_S1.TabIndex = 48;
+            // 
+            // Bates_Reservation_Button_ToolStrip_G
+            // 
+            this.Bates_Reservation_Button_ToolStrip_G.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripLabel1,
+            this.toolStripLabel2});
+            this.Bates_Reservation_Button_ToolStrip_G.Location = new System.Drawing.Point(0, 0);
+            this.Bates_Reservation_Button_ToolStrip_G.Name = "Bates_Reservation_Button_ToolStrip_G";
+            this.Bates_Reservation_Button_ToolStrip_G.Size = new System.Drawing.Size(1574, 25);
+            this.Bates_Reservation_Button_ToolStrip_G.TabIndex = 68;
+            this.Bates_Reservation_Button_ToolStrip_G.Text = "toolStrip1";
+            // 
+            // toolStripLabel1
+            // 
+            this.toolStripLabel1.Name = "toolStripLabel1";
+            this.toolStripLabel1.Size = new System.Drawing.Size(42, 22);
+            this.toolStripLabel1.Text = "Fichier";
+            // 
+            // toolStripLabel2
+            // 
+            this.toolStripLabel2.Name = "toolStripLabel2";
+            this.toolStripLabel2.Size = new System.Drawing.Size(37, 22);
+            this.toolStripLabel2.Text = "Editer";
+            // 
             // Bates_Reservation_Bibilo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1574, 861);
+            this.Controls.Add(this.Bates_Reservation_Button_ToolStrip_G);
+            this.Controls.Add(this.dateTimePicker_S1);
+            this.Controls.Add(this.Bates_Reservation_Label_List_G);
+            this.Controls.Add(this.Bates_Reservation_Label_View_G);
+            this.Controls.Add(this.Bates_Reservation_Button_List_G);
+            this.Controls.Add(this.Bates_Reservation_Button_Del_G);
+            this.Controls.Add(this.Bates_Reservation_Button_View_G);
+            this.Controls.Add(this.Bates_Reservation_Label_Del_G);
+            this.Controls.Add(this.Bates_Reservation_Label_Save_G);
+            this.Controls.Add(this.Bates_Reservation_Button_Save_G);
+            this.Controls.Add(this.Bates_Reservation_Label_Undo_G);
+            this.Controls.Add(this.Bates_Reservation_Button_Undo_G);
+            this.Controls.Add(this.Bates_Reservation_Label_Edit_G);
+            this.Controls.Add(this.Bates_Reservation_Label_Add_G);
+            this.Controls.Add(this.Bates_Reservation_Button_Edit_G);
+            this.Controls.Add(this.Bates_Reservation_Button_Add_G);
+            this.Controls.Add(this.Bates_Reservation_Label_Section_G);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.Panel_Button_View_G);
-            this.Controls.Add(this.Panel_Button_Consult_G);
-            this.Controls.Add(this.Panel_Button_Del_G);
-            this.Controls.Add(this.Panel_Button_Undo_G);
-            this.Controls.Add(this.Panel_Button_Modify_G);
-            this.Controls.Add(this.Panel_Button_Save_G);
-            this.Controls.Add(this.Panel_Button_Add_G);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.dateTimePicker_G);
-            this.Controls.Add(this.button_gotoend_G);
-            this.Controls.Add(this.button_next_G);
-            this.Controls.Add(this.button_gotofirst_G);
-            this.Controls.Add(this.button_previous_G);
-            this.Controls.Add(this.panel1_G);
-            this.Controls.Add(this.pictureBox_G);
+            this.Controls.Add(this.Bates_Reservation_Button_Gotoend_G);
+            this.Controls.Add(this.Bates_Reservation_Button_Next_G);
+            this.Controls.Add(this.Bates_Reservation_Button_Gotofirst_G);
+            this.Controls.Add(this.Bates_Reservation_Button_Previous_G);
+            this.Controls.Add(this.Bates_Reservation_Button_Panel_G);
+            this.Controls.Add(this.Bates_Reservation_PictureBox_G);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(1590, 900);
             this.Name = "Bates_Reservation_Bibilo";
             this.Text = "Bate\'s Reservation_Base_Biblioteque";
-            this.panel1_G.ResumeLayout(false);
-            this.panel1_G.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_G)).EndInit();
-            this.Panel_Button_Add_G.ResumeLayout(false);
-            this.Panel_Button_Add_G.PerformLayout();
-            this.Panel_Button_Save_G.ResumeLayout(false);
-            this.Panel_Button_Save_G.PerformLayout();
-            this.Panel_Button_Modify_G.ResumeLayout(false);
-            this.Panel_Button_Modify_G.PerformLayout();
-            this.Panel_Button_Undo_G.ResumeLayout(false);
-            this.Panel_Button_Undo_G.PerformLayout();
-            this.Panel_Button_Del_G.ResumeLayout(false);
-            this.Panel_Button_Del_G.PerformLayout();
-            this.Panel_Button_Consult_G.ResumeLayout(false);
-            this.Panel_Button_Consult_G.PerformLayout();
-            this.Panel_Button_View_G.ResumeLayout(false);
-            this.Panel_Button_View_G.PerformLayout();
+            this.Bates_Reservation_Button_Panel_G.ResumeLayout(false);
+            this.Bates_Reservation_Button_Panel_G.PerformLayout();
+            this.Bates_Reservation_TabControl_S.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Bates_Reservation_PictureBox_G)).EndInit();
+            this.Bates_Reservation_Button_ToolStrip_G.ResumeLayout(false);
+            this.Bates_Reservation_Button_ToolStrip_G.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        protected System.Windows.Forms.Panel Panel_Button_Add_G;
-        protected System.Windows.Forms.Button button_undo_G;
-        protected System.Windows.Forms.Button button_save_G;
-        protected System.Windows.Forms.DateTimePicker dateTimePicker_G;
-        protected System.Windows.Forms.Button button_list_G;
-        protected System.Windows.Forms.Panel panel2_G;
-        protected System.Windows.Forms.Button button_gotoend_G;
-        protected System.Windows.Forms.Button button_next_G;
-        protected System.Windows.Forms.Button button_gotofirst_G;
-        protected System.Windows.Forms.Label label_numversion_G;
-        protected System.Windows.Forms.Label label_version_G;
-        protected System.Windows.Forms.Button button_previous_G;
-        protected System.Windows.Forms.Button button_consult_G;
-        protected System.Windows.Forms.Button button_del_G;
-        protected System.Windows.Forms.Panel panel1_G;
-        protected System.Windows.Forms.Button button_mod_G;
-        protected System.Windows.Forms.Button button_exit_G;
-        protected System.Windows.Forms.PictureBox pictureBox_G;
-        protected System.Windows.Forms.Label label2;
-        protected System.Windows.Forms.Label label3;
-        protected System.Windows.Forms.Label label4;
-        protected System.Windows.Forms.Label label5;
-        protected System.Windows.Forms.Label label6;
-        protected System.Windows.Forms.Label label7;
-        protected System.Windows.Forms.Label label8;
+        protected System.Windows.Forms.Button Bates_Reservation_Button_Gotoend_G;
+        protected System.Windows.Forms.Button Bates_Reservation_Button_Next_G;
+        protected System.Windows.Forms.Button Bates_Reservation_Button_Gotofirst_G;
+        protected System.Windows.Forms.Label Bates_Reservation_Label_numversion_G;
+        protected System.Windows.Forms.Label Bates_Reservation_Label_version_G;
+        protected System.Windows.Forms.Button Bates_Reservation_Button_Previous_G;
+        protected System.Windows.Forms.Panel Bates_Reservation_Button_Panel_G;
+        protected System.Windows.Forms.Button Bates_Reservation_Button_Exit_G;
+        protected System.Windows.Forms.PictureBox Bates_Reservation_PictureBox_G;
         protected System.Windows.Forms.Label Label_Quit_G;
-        protected System.Windows.Forms.Button button1;
-        protected System.Windows.Forms.Label label10;
-        protected System.Windows.Forms.Panel Panel_Button_Save_G;
-        protected System.Windows.Forms.Panel Panel_Button_Modify_G;
-        protected System.Windows.Forms.Panel Panel_Button_Undo_G;
-        protected System.Windows.Forms.Panel Panel_Button_Del_G;
-        protected System.Windows.Forms.Panel Panel_Button_Consult_G;
-        protected System.Windows.Forms.Panel Panel_Button_View_G;
         private System.Windows.Forms.Panel panel1;
+        protected System.Windows.Forms.Label Bates_Reservation_Label_List_G;
+        protected System.Windows.Forms.Label Bates_Reservation_Label_View_G;
+        protected System.Windows.Forms.Button Bates_Reservation_Button_List_G;
+        protected System.Windows.Forms.Button Bates_Reservation_Button_Del_G;
+        protected System.Windows.Forms.Button Bates_Reservation_Button_View_G;
+        protected System.Windows.Forms.Label Bates_Reservation_Label_Del_G;
+        protected System.Windows.Forms.Label Bates_Reservation_Label_Save_G;
+        protected System.Windows.Forms.Button Bates_Reservation_Button_Save_G;
+        protected System.Windows.Forms.Label Bates_Reservation_Label_Undo_G;
+        protected System.Windows.Forms.Button Bates_Reservation_Button_Undo_G;
+        protected System.Windows.Forms.Label Bates_Reservation_Label_Edit_G;
+        protected System.Windows.Forms.Label Bates_Reservation_Label_Add_G;
+        protected System.Windows.Forms.Button Bates_Reservation_Button_Edit_G;
+        protected System.Windows.Forms.Button Bates_Reservation_Button_Add_G;
+        protected System.Windows.Forms.Label Bates_Reservation_Label_Section_G;
+        private System.Windows.Forms.Label Bates_Reservation_Label_Save_S;
+        private System.Windows.Forms.Label Bates_Reservation_Label_Edit_S;
+        private System.Windows.Forms.Label Bates_Reservation_Label_Undo_S;
+        private System.Windows.Forms.Label Bates_Reservation_Label_View_S;
+        private System.Windows.Forms.Label Bates_Reservation_Label_Del_S;
+        private System.Windows.Forms.Label Bates_Reservation_Label_Add_S;
+        private System.Windows.Forms.Button Bates_Reservation_Button_Edit_S;
+        private System.Windows.Forms.Button Bates_Reservation_Button_Undo_S;
+        private System.Windows.Forms.Button Bates_Reservation_Button_Save_S;
+        private System.Windows.Forms.RichTextBox Bates_Reservation_RichTextBox_S;
+        private System.Windows.Forms.Button Bates_Reservation_Button_View_S;
+        private System.Windows.Forms.Button Bates_Reservation_Button_Add_S;
+        private System.Windows.Forms.Button Bates_Reservation_Button_Del_S;
+        private System.Windows.Forms.TabControl Bates_Reservation_TabControl_S;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.TabPage tabPage5;
+        private System.Windows.Forms.TabPage tabPage6;
+        private DateTimePicker_S dateTimePicker_S1;
+        private System.Windows.Forms.ToolStrip Bates_Reservation_Button_ToolStrip_G;
+        private System.Windows.Forms.ToolStripLabel toolStripLabel1;
+        private System.Windows.Forms.ToolStripLabel toolStripLabel2;
     }
 }
 

@@ -19,7 +19,7 @@ namespace Bate_s_Reservation_Base_Biblioteque.Properties {
     // à l'aide d'un outil, tel que ResGen ou Visual Studio.
     // Pour ajouter ou supprimer un membre, modifiez votre fichier .ResX, puis réexécutez ResGen
     // avec l'option /str ou régénérez votre projet VS.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -2516,6 +2516,1106 @@ namespace Bate_s_Reservation_Base_Biblioteque.Properties {
         internal static System.Drawing.Bitmap basket {
             get {
                 object obj = ResourceManager.GetObject("basket", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_american_express_128x128 {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_american_express_128x128", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_application_exit {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_application_exit", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_application_exit_block {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_application_exit_block", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_arrow_left {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_arrow_left", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_arrow_left_block {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_arrow_left_block", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_arrow_left_double {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_arrow_left_double", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_arrow_left_double_Block {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_arrow_left_double_Block", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_arrow_right {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_arrow_right", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_arrow_right_block {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_arrow_right_block", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_arrow_right_double {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_arrow_right_double", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_arrow_right_double_block {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_arrow_right_double_block", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_Attention_block_S {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_Attention_block_S", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_Busy_Block_S {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_Busy_Block_S", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_Busy_S {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_Busy_S", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_Button_Add_Block_S {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_Button_Add_Block_S", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_Button_Add_S {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_Button_Add_S", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_Button_Attention_S {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_Button_Attention_S", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_Button_Cancel_S {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_Button_Cancel_S", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_Button_Complete_S {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_Button_Complete_S", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_Button_Del_S {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_Button_Del_S", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_Button_Ongoing_S {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_Button_Ongoing_S", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_Button_Refresh_S {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_Button_Refresh_S", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_calendar_128x128 {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_calendar_128x128", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_call_128x128 {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_call_128x128", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_Cancel_Block_S {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_Cancel_Block_S", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_Complete_block_S {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_Complete_block_S", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_credit_card_128x128 {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_credit_card_128x128", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_Del_Block_S {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_Del_Block_S", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_dialog_error {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_dialog_error", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_dialog_error_block {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_dialog_error_block", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_dialog_information {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_dialog_information", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_dialog_information_block {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_dialog_information_block", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_document_decrypt {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_document_decrypt", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_document_edit_decrypt_verify {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_document_edit_decrypt_verify", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_document_edit_verify {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_document_edit_verify", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_document_encrypt {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_document_encrypt", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_document_preview {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_document_preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_document_revert {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_document_revert", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_document_save {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_document_save", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_edit_128x128 {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_edit_128x128", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_edit_delete {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_edit_delete", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_edit_delete_block {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_edit_delete_block", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_edit_find {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_edit_find", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_edit_redo {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_edit_redo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_edit_redo_block {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_edit_redo_block", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_edit_undo {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_edit_undo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_edit_undo_block {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_edit_undo_block", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_emblem_important {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_emblem_important", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_emblem_important_block {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_emblem_important_block", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_flag {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_flag", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_flag_black {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_flag_black", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_flag_blue {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_flag_blue", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_flag_green {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_flag_green", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_flag_red {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_flag_red", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_flag_yellow {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_flag_yellow", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_games_hint {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_games_hint", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_go_first {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_go_first", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_go_first_view_page {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_go_first_view_page", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_go_last {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_go_last", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_go_last_view_page {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_go_last_view_page", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_go_next {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_go_next", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_go_next_view_page {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_go_next_view_page", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_go_previous {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_go_previous", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_go_previous_view_page {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_go_previous_view_page", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_help_hint {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_help_hint", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_im_Add_user {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_im_Add_user", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_im_Add_user_block {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_im_Add_user_block", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_im_ban_kick_user {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_im_ban_kick_user", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_im_ban_user {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_im_ban_user", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_im_invisible_user {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_im_invisible_user", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_im_kick_user {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_im_kick_user", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_im_user {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_im_user", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_im_user_away {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_im_user_away", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_im_user_away_extend {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_im_user_away_extend", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_im_user_busy {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_im_user_busy", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_im_user_Del {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_im_user_Del", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_im_user_offline {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_im_user_offline", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_im_user_view {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_im_user_view", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_im_user_view_Block {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_im_user_view_Block", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_layer_visible_off {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_layer_visible_off", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_layer_visible_on {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_layer_visible_on", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_list_add {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_list_add", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_list_add_block {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_list_add_block", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_list_remove {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_list_remove", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_list_remove_block {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_list_remove_block", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_Logo {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_Logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_Logo1 {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_Logo1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_money_128x128 {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_money_128x128", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_notes_128x128 {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_notes_128x128", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_object_locked {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_object_locked", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_object_unlocked {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_object_unlocked", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_Ongoing_Block_S {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_Ongoing_Block_S", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_process_stop {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_process_stop", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_project_plan_128x128 {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_project_plan_128x128", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_research_128x128 {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_research_128x128", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_save_128x128 {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_save_128x128", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_search_128x128 {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_search_128x128", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_task_accepted {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_task_accepted", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_task_attempt {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_task_attempt", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_task_attention {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_task_attention", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_task_complete {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_task_complete", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_task_delegate {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_task_delegate", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_task_ongoing {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_task_ongoing", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_task_reject {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_task_reject", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_user_away_extended {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_user_away_extended", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_user_invisible {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_user_invisible", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_user_offline {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_user_offline", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_user_online {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_user_online", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_video_television {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_video_television", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bates_Reservation_visa_128x128 {
+            get {
+                object obj = ResourceManager.GetObject("Bates_Reservation_visa_128x128", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
