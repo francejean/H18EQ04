@@ -49,11 +49,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Bates_Reservation_Reservation.cs">
+    <Compile Include="BR_Reservation.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Bates_Reservation_Reservation.Designer.cs">
-      <DependentUpon>Bates_Reservation_Reservation.cs</DependentUpon>
+    <Compile Include="BR_Reservation.Designer.cs">
+      <DependentUpon>BR_Reservation.cs</DependentUpon>
     </Compile>
     <Compile Include="DS_Bates_Reservation_Reservation.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -68,6 +68,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BR_Reservation.resx">
+      <DependentUpon>BR_Reservation.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

@@ -8,10 +8,9 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>Bates_Reservation_Chambre</RootNamespace>
     <AssemblyName>Bates_Reservation_Chambre</AssemblyName>
-    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -24,8 +23,10 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -63,11 +64,32 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Bates_Reservation_Chambre.cs">
+    <Compile Include="Bates_Reservation_Chambres.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Bates_Reservation_Chambre.Designer.cs">
-      <DependentUpon>Bates_Reservation_Chambre.cs</DependentUpon>
+    <Compile Include="Bates_Reservation_Chambres.Designer.cs">
+      <DependentUpon>Bates_Reservation_Chambres.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BR_LS_Chambres_CodeLoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BR_LS_Chambres_CodeLoc.Designer.cs">
+      <DependentUpon>BR_LS_Chambres_CodeLoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BR_LS_Chambres_CodeType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BR_LS_Chambres_CodeType.Designer.cs">
+      <DependentUpon>BR_LS_Chambres_CodeType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BR_LS_Chambres_NoCham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BR_LS_Chambres_NoCham.Designer.cs">
+      <DependentUpon>BR_LS_Chambres_NoCham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DS_Bates_Reservation_Chambres.cs">
+      <DependentUpon>DS_Bates_Reservation_Chambres.xsd</DependentUpon>
     </Compile>
     <Compile Include="DS_Bates_Reservation_Chambres.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -76,8 +98,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Bates_Reservation_Chambre.resx">
-      <DependentUpon>Bates_Reservation_Chambre.cs</DependentUpon>
+    <EmbeddedResource Include="Bates_Reservation_Chambres.resx">
+      <DependentUpon>Bates_Reservation_Chambres.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BR_LS_Chambres_CodeLoc.resx">
+      <DependentUpon>BR_LS_Chambres_CodeLoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BR_LS_Chambres_CodeType.resx">
+      <DependentUpon>BR_LS_Chambres_CodeType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BR_LS_Chambres_NoCham.resx">
+      <DependentUpon>BR_LS_Chambres_NoCham.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -87,6 +118,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="DS_Bates_Reservation_Chambres.xsc">
       <DependentUpon>DS_Bates_Reservation_Chambres.xsd</DependentUpon>
@@ -123,6 +155,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_application-exit.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

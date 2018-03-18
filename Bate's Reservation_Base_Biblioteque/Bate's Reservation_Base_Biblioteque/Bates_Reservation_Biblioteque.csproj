@@ -55,17 +55,17 @@
     <Compile Include="Bates_Reservation_Bibilo.Designer.cs">
       <DependentUpon>Bates_Reservation_Bibilo.cs</DependentUpon>
     </Compile>
-    <Compile Include="Button_Add_S.cs">
+    <Compile Include="BR_CB_S.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Button_Add_S.Designer.cs">
-      <DependentUpon>Button_Add_S.cs</DependentUpon>
+    <Compile Include="BR_CB_S.Designer.cs">
+      <DependentUpon>BR_CB_S.cs</DependentUpon>
     </Compile>
-    <Compile Include="DateTimePicker_S.cs">
+    <Compile Include="BR_DTP_S.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="DateTimePicker_S.Designer.cs">
-      <DependentUpon>DateTimePicker_S.cs</DependentUpon>
+    <Compile Include="BR_DTP_S.Designer.cs">
+      <DependentUpon>BR_DTP_S.cs</DependentUpon>
     </Compile>
     <Compile Include="Form_Base_Template.cs">
       <SubType>Form</SubType>
@@ -73,19 +73,19 @@
     <Compile Include="Form_Base_Template.Designer.cs">
       <DependentUpon>Form_Base_Template.cs</DependentUpon>
     </Compile>
-    <Compile Include="Label_S.cs">
+    <Compile Include="BR_LA_S.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Label_S.Designer.cs">
-      <DependentUpon>Label_S.cs</DependentUpon>
+    <Compile Include="BR_LA_S.Designer.cs">
+      <DependentUpon>BR_LA_S.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TextBox_Info_S.cs">
+    <Compile Include="BR_TB_S.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="TextBox_Info_S.Designer.cs">
-      <DependentUpon>TextBox_Info_S.cs</DependentUpon>
+    <Compile Include="BR_TB_S.Designer.cs">
+      <DependentUpon>BR_TB_S.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Bates_Reservation_Bibilo.resx">
       <DependentUpon>Bates_Reservation_Bibilo.cs</DependentUpon>
@@ -4252,6 +4252,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Bates_Reservation_visa_128x128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_document-save_block.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_notes_128x128_Block.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

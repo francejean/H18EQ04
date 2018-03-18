@@ -16,10 +16,5 @@ namespace Bate_s_Reservation_Base_Biblioteque
         {
             InitializeComponent();
         }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
