@@ -4259,5 +4259,176 @@
   <ItemGroup>
     <None Include="Resources\BR_notes_128x128_Block.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_Cancel_Block_S.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_Cancel_S.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_Consulter_G.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_Del_G.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_document-save_S.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_document-save_S_Block.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_go-first_G.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_go-last_G.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_go-next_G.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_go-previous_G.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_im_Add_user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_im_Add_user_block.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_im_Add_user_block1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_im_Add_user1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_Image_edit_G.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_Images_Add_Block_G.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_Images_Add_G.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_im-ban-kick-user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_im-ban-user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_im-invisible-user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_im-kick-user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_im-user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_im-user_Del.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_im-user-away.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_im-user-away-extend.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_im-user-busy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_im-user-offline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_im-user-view.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_im-user-view_Block.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_layer-visible-off_S.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_layer-visible-on_S.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_list-add_block_S.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_list-add_S.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_Lister_G.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_list-remove_block_S.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_list-remove_S.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_Logo.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_Notes_S.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_Quit_G.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_save_G.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_search_G.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_Undo_G.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_user-away-extended.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_user-invisible.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_user-offline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_user-online.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_document-save_Block_S.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_edit_G.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_Add_Block_G.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_Add_G.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_add_S.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_add_block_S.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_go-first_block_G.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_go-last_block_G.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_go-next_block_G.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_go-previous_block_G.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -88,34 +88,50 @@ namespace Bate_s_Reservation_Base_Biblioteque
 
         private void EnabledButton()
         {
-            BR_Button_Add_S.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.BR_list_add;
-            BR_Button_Del_S.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.BR_list_remove;
-            BR_Button_View_S.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.BR_layer_visible;
-            BR_Button_Undo_S.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.BR_Busy_S;
-            BR_Button_Edit_S.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.BR_notes_128x128;
-            BR_Button_Save_S.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.BR_document_save;
+            BR_Button_Add_S.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.BR_add_S;
+            BR_Button_Del_S.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.BR_list_remove_S;
+            BR_Button_View_S.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.BR_layer_visible_on_S;
+            BR_Button_Undo_S.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.BR_Cancel_S;
+            BR_Button_Edit_S.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.BR_Notes_S;
+            BR_Button_Save_S.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.BR_document_save_S;
+            BR_Button_Gotoend_G.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.BR_go_last_block_G;
+            BR_Button_Gotofirst_G.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.BR_go_first_block_G;
+            BR_Button_Next_G.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.BR_go_next_block_G;
+            BR_Button_Previous_G.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.BR_go_previous_block_G;
             BR_Button_Add_S.Enabled = true;
             BR_Button_Del_S.Enabled = true;
             BR_Button_View_S.Enabled = true;
             BR_Button_Undo_S.Enabled = true;
             BR_Button_Edit_S.Enabled = true;
             BR_Button_Save_S.Enabled = true;
+            BR_Button_Gotoend_G.Enabled = false;
+            BR_Button_Gotofirst_G.Enabled = false;
+            BR_Button_Next_G.Enabled = false;
+            BR_Button_Previous_G.Enabled = false;
         }
 
         private void DisableButton()
         {
-            BR_Button_Add_S.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.BR_list_add_block;
-            BR_Button_Del_S.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.BR_list_remove_block;
-            BR_Button_View_S.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.BR_layer_visible_block;
-            BR_Button_Undo_S.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.BR_Busy_Block_S;
+            BR_Button_Add_S.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.BR_add_block_S;
+            BR_Button_Del_S.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.BR_list_remove_block_S;
+            BR_Button_View_S.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.BR_layer_visible_off_S;
+            BR_Button_Undo_S.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.BR_Cancel_Block_S;
             BR_Button_Edit_S.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.BR_notes_128x128_Block;
-            BR_Button_Save_S.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.BR_document_save_block;
+            BR_Button_Save_S.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.BR_document_save_Block_S;
+            BR_Button_Gotoend_G.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.BR_go_last_G;
+            BR_Button_Gotofirst_G.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.BR_go_first_G;
+            BR_Button_Next_G.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.BR_go_next_G;
+            BR_Button_Previous_G.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.BR_go_previous_G;
             BR_Button_Add_S.Enabled = false;
             BR_Button_Del_S.Enabled = false;
             BR_Button_View_S.Enabled = false;
             BR_Button_Undo_S.Enabled = false;
             BR_Button_Edit_S.Enabled = false;
             BR_Button_Save_S.Enabled = false;
+            BR_Button_Gotoend_G.Enabled = true;
+            BR_Button_Gotofirst_G.Enabled = true;
+            BR_Button_Next_G.Enabled = true;
+            BR_Button_Previous_G.Enabled = true;
         }
     }
 }

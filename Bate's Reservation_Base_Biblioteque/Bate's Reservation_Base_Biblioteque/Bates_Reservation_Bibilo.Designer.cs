@@ -216,7 +216,7 @@
             // 
             this.BR_Button_Undo_S.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.BR_Button_Undo_S.BackColor = System.Drawing.Color.Transparent;
-            this.BR_Button_Undo_S.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.BR_Busy_Block_S;
+            this.BR_Button_Undo_S.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.BR_Cancel_Block_S;
             this.BR_Button_Undo_S.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BR_Button_Undo_S.Enabled = false;
             this.BR_Button_Undo_S.FlatAppearance.BorderSize = 0;
@@ -231,7 +231,7 @@
             // BR_Button_Save_S
             // 
             this.BR_Button_Save_S.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.BR_Button_Save_S.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.BR_document_save_block;
+            this.BR_Button_Save_S.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.BR_document_save_Block_S;
             this.BR_Button_Save_S.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BR_Button_Save_S.Enabled = false;
             this.BR_Button_Save_S.FlatAppearance.BorderSize = 0;
@@ -246,7 +246,7 @@
             // BR_Button_View_S
             // 
             this.BR_Button_View_S.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.BR_Button_View_S.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.BR_layer_visible_block;
+            this.BR_Button_View_S.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.BR_layer_visible_off_S;
             this.BR_Button_View_S.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BR_Button_View_S.Enabled = false;
             this.BR_Button_View_S.FlatAppearance.BorderSize = 0;
@@ -261,7 +261,7 @@
             // BR_Button_Add_S
             // 
             this.BR_Button_Add_S.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.BR_Button_Add_S.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.BR_list_add_block;
+            this.BR_Button_Add_S.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.BR_add_block_S;
             this.BR_Button_Add_S.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BR_Button_Add_S.Enabled = false;
             this.BR_Button_Add_S.FlatAppearance.BorderSize = 0;
@@ -276,7 +276,7 @@
             // BR_Button_Del_S
             // 
             this.BR_Button_Del_S.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.BR_Button_Del_S.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.BR_list_remove_block;
+            this.BR_Button_Del_S.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.BR_list_remove_block_S;
             this.BR_Button_Del_S.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BR_Button_Del_S.Enabled = false;
             this.BR_Button_Del_S.FlatAppearance.BorderSize = 0;
@@ -337,8 +337,6 @@
             // 
             // BR_TP_Transaction
             // 
-            this.BR_TP_Transaction.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.Bates_Reservation_credit_card_128x128;
-            this.BR_TP_Transaction.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.BR_TP_Transaction.Location = new System.Drawing.Point(4, 22);
             this.BR_TP_Transaction.Name = "BR_TP_Transaction";
             this.BR_TP_Transaction.Size = new System.Drawing.Size(1182, 460);
@@ -370,7 +368,7 @@
             // 
             this.BR_Button_Gotoend_G.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.BR_Button_Gotoend_G.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.BR_Button_Gotoend_G.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.Bates_Reservation_go_last;
+            this.BR_Button_Gotoend_G.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.BR_go_last_G;
             this.BR_Button_Gotoend_G.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BR_Button_Gotoend_G.FlatAppearance.BorderSize = 0;
             this.BR_Button_Gotoend_G.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -384,7 +382,7 @@
             // 
             this.BR_Button_Next_G.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.BR_Button_Next_G.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.BR_Button_Next_G.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.Bates_Reservation_go_next;
+            this.BR_Button_Next_G.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.BR_go_next_G;
             this.BR_Button_Next_G.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BR_Button_Next_G.FlatAppearance.BorderSize = 0;
             this.BR_Button_Next_G.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -398,7 +396,7 @@
             // 
             this.BR_Button_Gotofirst_G.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.BR_Button_Gotofirst_G.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.BR_Button_Gotofirst_G.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.Bates_Reservation_go_first;
+            this.BR_Button_Gotofirst_G.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.BR_go_first_G;
             this.BR_Button_Gotofirst_G.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BR_Button_Gotofirst_G.FlatAppearance.BorderColor = System.Drawing.SystemColors.ButtonShadow;
             this.BR_Button_Gotofirst_G.FlatAppearance.BorderSize = 0;
@@ -413,7 +411,7 @@
             // 
             this.BR_Button_Previous_G.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.BR_Button_Previous_G.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.BR_Button_Previous_G.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.Bates_Reservation_go_previous;
+            this.BR_Button_Previous_G.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.BR_go_previous_G;
             this.BR_Button_Previous_G.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BR_Button_Previous_G.FlatAppearance.BorderColor = System.Drawing.SystemColors.ButtonShadow;
             this.BR_Button_Previous_G.FlatAppearance.BorderSize = 0;
@@ -501,7 +499,7 @@
             // BR_Button_Quit_G
             // 
             this.BR_Button_Quit_G.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.BR_Button_Quit_G.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.BR__application_exit;
+            this.BR_Button_Quit_G.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.BR_Quit_G;
             this.BR_Button_Quit_G.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BR_Button_Quit_G.FlatAppearance.BorderSize = 0;
             this.BR_Button_Quit_G.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -515,7 +513,7 @@
             // 
             // BR_Button_List_G
             // 
-            this.BR_Button_List_G.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.Bates_Reservation_search_128x128;
+            this.BR_Button_List_G.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.BR_search_G;
             this.BR_Button_List_G.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BR_Button_List_G.FlatAppearance.BorderSize = 0;
             this.BR_Button_List_G.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -529,7 +527,7 @@
             // 
             // BR_Button_Del_G
             // 
-            this.BR_Button_Del_G.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.Bates_Reservation_edit_delete;
+            this.BR_Button_Del_G.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.BR_Del_G;
             this.BR_Button_Del_G.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BR_Button_Del_G.FlatAppearance.BorderSize = 0;
             this.BR_Button_Del_G.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -557,7 +555,7 @@
             // 
             // BR_Button_Save_G
             // 
-            this.BR_Button_Save_G.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.Bates_Reservation_save_128x128;
+            this.BR_Button_Save_G.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.BR_save_G;
             this.BR_Button_Save_G.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BR_Button_Save_G.FlatAppearance.BorderSize = 0;
             this.BR_Button_Save_G.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -571,7 +569,7 @@
             // 
             // BR_Button_Undo_G
             // 
-            this.BR_Button_Undo_G.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.Bates_Reservation_edit_undo;
+            this.BR_Button_Undo_G.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.BR_Undo_G;
             this.BR_Button_Undo_G.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BR_Button_Undo_G.FlatAppearance.BorderSize = 0;
             this.BR_Button_Undo_G.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -585,7 +583,7 @@
             // 
             // BR_Button_Edit_G
             // 
-            this.BR_Button_Edit_G.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.Bates_Reservation_edit_128x128;
+            this.BR_Button_Edit_G.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.BR_edit_G;
             this.BR_Button_Edit_G.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BR_Button_Edit_G.FlatAppearance.BorderSize = 0;
             this.BR_Button_Edit_G.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -599,7 +597,7 @@
             // 
             // BR_Button_Add_G
             // 
-            this.BR_Button_Add_G.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.Bates_Reservation_Button_Add_S;
+            this.BR_Button_Add_G.BackgroundImage = global::Bate_s_Reservation_Base_Biblioteque.Properties.Resources.BR_Add_G;
             this.BR_Button_Add_G.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BR_Button_Add_G.FlatAppearance.BorderSize = 0;
             this.BR_Button_Add_G.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
