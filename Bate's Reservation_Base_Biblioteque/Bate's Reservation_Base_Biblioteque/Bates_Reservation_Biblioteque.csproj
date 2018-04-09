@@ -55,11 +55,17 @@
     <Compile Include="Bates_Reservation_Bibilo.Designer.cs">
       <DependentUpon>Bates_Reservation_Bibilo.cs</DependentUpon>
     </Compile>
-    <Compile Include="Button_Add_S.cs">
+    <Compile Include="BR_CB_S.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Button_Add_S.Designer.cs">
-      <DependentUpon>Button_Add_S.cs</DependentUpon>
+    <Compile Include="BR_CB_S.Designer.cs">
+      <DependentUpon>BR_CB_S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BR_DTP_S.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BR_DTP_S.Designer.cs">
+      <DependentUpon>BR_DTP_S.cs</DependentUpon>
     </Compile>
     <Compile Include="Form_Base_Template.cs">
       <SubType>Form</SubType>
@@ -67,19 +73,19 @@
     <Compile Include="Form_Base_Template.Designer.cs">
       <DependentUpon>Form_Base_Template.cs</DependentUpon>
     </Compile>
-    <Compile Include="Label_S.cs">
+    <Compile Include="BR_LA_S.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Label_S.Designer.cs">
-      <DependentUpon>Label_S.cs</DependentUpon>
+    <Compile Include="BR_LA_S.Designer.cs">
+      <DependentUpon>BR_LA_S.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TextBox_Info_S.cs">
+    <Compile Include="BR_TB_S.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="TextBox_Info_S.Designer.cs">
-      <DependentUpon>TextBox_Info_S.cs</DependentUpon>
+    <Compile Include="BR_TB_S.Designer.cs">
+      <DependentUpon>BR_TB_S.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Bates_Reservation_Bibilo.resx">
       <DependentUpon>Bates_Reservation_Bibilo.cs</DependentUpon>
@@ -3916,6 +3922,513 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_american-express_128x128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_application-exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_application-exit_block.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_arrow-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_arrow-left_block.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_arrow-left-double.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_arrow-left-double_Block.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_arrow-right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_arrow-right_block.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_arrow-right-double.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_arrow-right-double_block.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_Attention_block_S.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_Busy_Block_S.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_Busy_S.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_Button_Add_Block_S.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_Button_Add_S.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_Button_Attention_S.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_Button_Cancel_S.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_Button_Complete_S.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_Button_Del_S.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_Button_Ongoing_S.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_Button_Refresh_S.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_calendar_128x128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_call_128x128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_Cancel_Block_S.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_Complete_block_S.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_credit-card_128x128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_Del_Block_S.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_dialog-error.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_dialog-error_block.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_dialog-information.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_dialog-information_block.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_document-decrypt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_document-edit-decrypt-verify.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_document-edit-verify.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_document-encrypt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_document-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_document-revert.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_document-save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_edit_128x128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_edit-delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_edit-delete_block.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_edit-find.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_edit-redo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_edit-redo_block.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_edit-undo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_edit-undo_block.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_emblem-important.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_emblem-important_block.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_flag-black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_flag-blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_flag-green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_flag-red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_flag-yellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_games-hint.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_go-first.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_go-first-view-page.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_go-last.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_go-last-view-page.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_go-next.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_go-next-view-page.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_go-previous.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_go-previous-view-page.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_help-hint.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_im_Add_user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_im_Add_user_block.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_im-ban-kick-user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_im-ban-user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_im-invisible-user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_im-kick-user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_im-user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_im-user_Del.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_im-user-away.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_im-user-away-extend.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_im-user-busy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_im-user-offline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_im-user-view.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_im-user-view_Block.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_layer-visible-off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_layer-visible-on.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_list-add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_list-add_block.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_list-remove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_list-remove_block.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_Logo.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_money_128x128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_notes_128x128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_object-locked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_object-unlocked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_Ongoing_Block_S.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_process-stop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_project-plan_128x128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_research_128x128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_save_128x128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_search_128x128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_task-accepted.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_task-attempt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_task-attention.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_task-complete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_task-delegate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_task-ongoing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_task-reject.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_user-away-extended.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_user-invisible.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_user-offline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_user-online.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_video-television.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_visa_128x128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bates_Reservation_document-save_block.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_notes_128x128_Block.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_Cancel_Block_S.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_Cancel_S.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_Consulter_G.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_Del_G.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_document-save_S.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_document-save_S_Block.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_go-first_G.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_go-last_G.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_go-next_G.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_go-previous_G.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_im_Add_user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_im_Add_user_block.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_im_Add_user_block1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_im_Add_user1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_Image_edit_G.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_Images_Add_Block_G.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_Images_Add_G.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_im-ban-kick-user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_im-ban-user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_im-invisible-user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_im-kick-user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_im-user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_im-user_Del.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_im-user-away.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_im-user-away-extend.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_im-user-busy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_im-user-offline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_im-user-view.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_im-user-view_Block.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_layer-visible-off_S.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_layer-visible-on_S.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_list-add_block_S.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_list-add_S.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_Lister_G.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_list-remove_block_S.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_list-remove_S.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_Logo.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_Notes_S.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_Quit_G.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_save_G.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_search_G.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_Undo_G.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_user-away-extended.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_user-invisible.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_user-offline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_user-online.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_document-save_Block_S.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_edit_G.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_Add_Block_G.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_Add_G.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_add_S.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_add_block_S.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_go-first_block_G.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_go-last_block_G.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_go-next_block_G.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_go-previous_block_G.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

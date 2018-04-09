@@ -16,7 +16,7 @@ namespace Bate_s_Reservation_Base_Biblioteque
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Bates_Reservation_Bibilo());
+            Application.Run(new BR_Biblio());
         }
     }
 }

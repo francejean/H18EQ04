@@ -16,7 +16,7 @@ namespace Bates_Reservation_Reservation
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new BR_Reservation_Reservation());
         }
     }
 }
