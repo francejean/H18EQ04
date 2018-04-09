@@ -32,25 +32,10 @@ namespace Bates_Reservation_Chambres
         {
             this.BR_BS_Chambres.DataMember = "chambre";
             this.BR_BS_Chambres.DataSource = this.BR_DS_Chambres;
-            //this.BR_BS_Chambres_Ayant.DataMember = "FK__ayant__Nocham__73A521EA";
             this.BR_BS_Chambres_Ayant.DataSource = this.BR_DS_Chambres;
-           // this.BR_BS_Chambres_Ayant.DataMember = "FK__ayant__Nocham__41D8BC2C";
+            //this.BR_BS_Chambres_Ayant.DataMember = "FK__ayant__Nocham__1837881B";
 
-            try
-            {
-                BR_TB_Chambres_NoCham.DataBindings.Add("Text", BR_BS_Chambres, "NoCham");
-                BR_TB_Chambres_Etage.DataBindings.Add("Text", BR_BS_Chambres, "Etage");
-                BR_TB_Chambres_Etat.DataBindings.Add("Text", BR_BS_Chambres, "Etat");
-                BR_TB_Chambre_CodeType.DataBindings.Add("Text", BR_BS_Chambres, "CodTypCham");
-                BR_TB_Chambre_CodeLoc.DataBindings.Add("Text", BR_BS_Chambres, "CodLoc");
-                BR_TB_Chambres_Prix.DataBindings.Add("Text", BR_BS_Chambres, "Prix");
-                BR_TB_Chambres_Desc1.DataBindings.Add("Text", BR_BS_Chambres, "DescLoc");
-                BR_TB_Chambres_Desc2.DataBindings.Add("Text", BR_BS_Chambres, "DescTyp");
-            }
-            catch
-            {
-                throw;
-            }
+            Rebind();
         }
         private void enabled()
         {
@@ -146,10 +131,13 @@ namespace Bates_Reservation_Chambres
 
         private void BR_Button_Add_S_Click(object sender, EventArgs e)
         {
-            AjoutChambre();
+            Unbind();
+            BR_TB_Chambres_NoCham.Enabled = true;
+            this.ActiveControl = BR_TB_Chambres_NoCham;
+            BR_DGV_Chambres = null;
         }
 
-        private void AjoutChambre()
+        private void Unbind()
         {
             BR_TB_Chambres_NoCham.Clear();
             BR_TB_Chambres_Etage.Clear();
@@ -159,23 +147,41 @@ namespace Bates_Reservation_Chambres
             BR_TB_Chambres_Prix.Clear();
             BR_TB_Chambres_Desc1.Clear();
             BR_TB_Chambres_Desc2.Clear();
-            BR_TB_Chambres_Etage.Enabled = false;
-            BR_TB_Chambres_Etat.Enabled = false;
-            BR_TB_Chambre_CodeType.Enabled = false;
-            BR_TB_Chambre_CodeLoc.Enabled = false;
-            BR_TB_Chambres_Prix.Enabled = false;
-            BR_TB_Chambres_Desc1.Enabled = false;
-            BR_TB_Chambres_Desc2.Enabled = false;
+            
+            BR_TB_Chambres_NoCham.DataBindings.Clear();
+            BR_TB_Chambres_Etage.DataBindings.Clear();
+            BR_TB_Chambres_Etat.DataBindings.Clear();
+            BR_TB_Chambre_CodeType.DataBindings.Clear();
+            BR_TB_Chambre_CodeLoc.DataBindings.Clear();
+            BR_TB_Chambres_Prix.DataBindings.Clear();
+            BR_TB_Chambres_Desc1.DataBindings.Clear();
+            BR_TB_Chambres_Desc2.DataBindings.Clear();
+            disabled();
         }
 
-        private void AnnulerAjoutChambre()
+        private void Rebind()
         {
-            
+
+            try
+            {
+                BR_TB_Chambres_NoCham.DataBindings.Add("Text", BR_BS_Chambres, "NoCham");
+                BR_TB_Chambres_Etage.DataBindings.Add("Text", BR_BS_Chambres, "Etage");
+                BR_TB_Chambres_Etat.DataBindings.Add("Text", BR_BS_Chambres, "Etat");
+                BR_TB_Chambre_CodeType.DataBindings.Add("Text", BR_BS_Chambres, "CodTypCham");
+                BR_TB_Chambre_CodeLoc.DataBindings.Add("Text", BR_BS_Chambres, "CodLoc");
+                BR_TB_Chambres_Prix.DataBindings.Add("Text", BR_BS_Chambres, "Prix");
+                BR_TB_Chambres_Desc1.DataBindings.Add("Text", BR_BS_Chambres, "DescLoc");
+                BR_TB_Chambres_Desc2.DataBindings.Add("Text", BR_BS_Chambres, "DescTyp");
+            }
+            catch
+            {
+                throw;
+            }
         }
 
         private void BR_Button_Undo_S_Click(object sender, EventArgs e)
         {
-            AnnulerAjoutChambre();
+            Rebind();
         }
     }
 }

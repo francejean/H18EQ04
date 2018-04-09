@@ -54,7 +54,7 @@ namespace Bate_s_Reservation_Base_Biblioteque
 
         private void BR_Button_Add_S_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Bouton ADD_s en construction...", "Information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+           // MessageBox.Show("Bouton ADD_s en construction...", "Information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
 
         private void BR_Button_Del_S_Click(object sender, EventArgs e)
