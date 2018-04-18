@@ -1,0 +1,8 @@
+Select chambre
+
+SELECT        chambre.NoCham, chambre.Etage, chambre.Prix, chambre.Etat, chambre.Memo, chambre.CodLoc, chambre.CodTypCham, localisation.DescLoc, typecham.DescTyp
+FROM            chambre INNER JOIN
+                         localisation ON chambre.CodLoc = localisation.CodLoc INNER JOIN
+                         typecham ON chambre.CodTypCham = typecham.CodTypCham
+
+Select ayant
