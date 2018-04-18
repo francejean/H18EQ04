@@ -1,1 +1,0 @@
-Data Source=mssql.local.shawinigan.info;Initial Catalog=h18equipe4;Persist Security Info=True;User ID=h18equipe4etd2;Password=1401429862

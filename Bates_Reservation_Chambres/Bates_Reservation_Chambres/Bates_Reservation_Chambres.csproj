@@ -71,18 +71,6 @@
     <Compile Include="BR_LS_Chambres_CodeType.Designer.cs">
       <DependentUpon>BR_LS_Chambres_CodeType.cs</DependentUpon>
     </Compile>
-    <Compile Include="BR_LS_Chambres_Desc1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="BR_LS_Chambres_Desc1.Designer.cs">
-      <DependentUpon>BR_LS_Chambres_Desc1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="BR_LS_Chambres_Desc2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="BR_LS_Chambres_Desc2.Designer.cs">
-      <DependentUpon>BR_LS_Chambres_Desc2.cs</DependentUpon>
-    </Compile>
     <Compile Include="BR_LS_Chambres_NoCham.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,12 +88,6 @@
     <EmbeddedResource Include="BR_LS_Chambres_CodeType.resx">
       <DependentUpon>BR_LS_Chambres_CodeType.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="BR_LS_Chambres_Desc1.resx">
-      <DependentUpon>BR_LS_Chambres_Desc1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="BR_LS_Chambres_Desc2.resx">
-      <DependentUpon>BR_LS_Chambres_Desc2.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="BR_LS_Chambres_NoCham.resx">
       <DependentUpon>BR_LS_Chambres_NoCham.cs</DependentUpon>
     </EmbeddedResource>
@@ -117,7 +99,6 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="BR_DS_Chambres.xsc">
       <DependentUpon>BR_DS_Chambres.xsd</DependentUpon>
@@ -142,12 +123,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\BR_Ico_Add_S.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\BR_Ico_Supp_S.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

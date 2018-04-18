@@ -58,9 +58,6 @@
             // 
             this.BR_LS_DGV_Chambre.AllowUserToAddRows = false;
             this.BR_LS_DGV_Chambre.AllowUserToDeleteRows = false;
-            this.BR_LS_DGV_Chambre.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.BR_LS_DGV_Chambre.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.BR_LS_DGV_Chambre.Location = new System.Drawing.Point(13, 13);
             this.BR_LS_DGV_Chambre.Name = "BR_LS_DGV_Chambre";
