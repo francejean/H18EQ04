@@ -792,6 +792,8 @@
             this.BR_Button_LS_CodeType_S.Size = new System.Drawing.Size(41, 39);
             this.BR_Button_LS_CodeType_S.TabIndex = 107;
             this.BR_Button_LS_CodeType_S.UseVisualStyleBackColor = true;
+            this.BR_Button_LS_CodeType_S.MouseLeave += new System.EventHandler(this.BR_Button_LS_CodeType_S_MouseLeave);
+            this.BR_Button_LS_CodeType_S.MouseHover += new System.EventHandler(this.BR_Button_LS_CodeType_S_MouseHover);
             // 
             // BR_Button_LS_CodeLoc_S
             // 
@@ -804,6 +806,8 @@
             this.BR_Button_LS_CodeLoc_S.Size = new System.Drawing.Size(41, 39);
             this.BR_Button_LS_CodeLoc_S.TabIndex = 108;
             this.BR_Button_LS_CodeLoc_S.UseVisualStyleBackColor = true;
+            this.BR_Button_LS_CodeLoc_S.MouseLeave += new System.EventHandler(this.BR_Button_LS_CodeLoc_S_MouseLeave);
+            this.BR_Button_LS_CodeLoc_S.MouseHover += new System.EventHandler(this.BR_Button_LS_CodeLoc_S_MouseHover);
             // 
             // BR_LA_ListeSelection_S
             // 
@@ -811,9 +815,11 @@
             this.BR_LA_ListeSelection_S.Font = new System.Drawing.Font("Microsoft Sans Serif", 38F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BR_LA_ListeSelection_S.Location = new System.Drawing.Point(391, 65);
             this.BR_LA_ListeSelection_S.Name = "BR_LA_ListeSelection_S";
-            this.BR_LA_ListeSelection_S.Size = new System.Drawing.Size(424, 59);
+            this.BR_LA_ListeSelection_S.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.BR_LA_ListeSelection_S.Size = new System.Drawing.Size(424, 118);
             this.BR_LA_ListeSelection_S.TabIndex = 109;
-            this.BR_LA_ListeSelection_S.Text = "Liste de Selection";
+            this.BR_LA_ListeSelection_S.Text = "Liste de Selection\r\n    Chambres";
+            this.BR_LA_ListeSelection_S.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // BR_LA_ListeSelection2_S
             // 
@@ -821,9 +827,11 @@
             this.BR_LA_ListeSelection2_S.Font = new System.Drawing.Font("Microsoft Sans Serif", 38F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BR_LA_ListeSelection2_S.Location = new System.Drawing.Point(14, 64);
             this.BR_LA_ListeSelection2_S.Name = "BR_LA_ListeSelection2_S";
-            this.BR_LA_ListeSelection2_S.Size = new System.Drawing.Size(424, 59);
+            this.BR_LA_ListeSelection2_S.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.BR_LA_ListeSelection2_S.Size = new System.Drawing.Size(424, 118);
             this.BR_LA_ListeSelection2_S.TabIndex = 110;
-            this.BR_LA_ListeSelection2_S.Text = "Liste de Selection";
+            this.BR_LA_ListeSelection2_S.Text = "Liste de Selection\r\n     Code Type";
+            this.BR_LA_ListeSelection2_S.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // BR_Chambres
             // 

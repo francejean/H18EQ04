@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BR_Biblio));
-            this.BR_LA_numversion_G = new System.Windows.Forms.Label();
             this.BR_LA_version_G = new System.Windows.Forms.Label();
             this.BR_PA_G = new System.Windows.Forms.Panel();
             this.BR_LA_Save_S = new System.Windows.Forms.Label();
@@ -75,33 +74,25 @@
             this.BR_LA_Mode1_G = new System.Windows.Forms.Label();
             this.BR_LA_Mode3_G = new System.Windows.Forms.Label();
             this.BR_LA_Mode2_G = new System.Windows.Forms.Label();
+            this.BR_LA_Heure_G = new System.Windows.Forms.Label();
             this.dateTimePicker_S1 = new Bate_s_Reservation_Base_Biblioteque.BR_DTP_S();
             this.BR_PA_G.SuspendLayout();
             this.BR_TP_S.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BR_PictureBox_G)).BeginInit();
             this.SuspendLayout();
             // 
-            // BR_LA_numversion_G
-            // 
-            this.BR_LA_numversion_G.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.BR_LA_numversion_G.AutoSize = true;
-            this.BR_LA_numversion_G.Location = new System.Drawing.Point(1246, 3);
-            this.BR_LA_numversion_G.Name = "BR_LA_numversion_G";
-            this.BR_LA_numversion_G.Size = new System.Drawing.Size(35, 13);
-            this.BR_LA_numversion_G.TabIndex = 22;
-            this.BR_LA_numversion_G.Text = "label2";
-            // 
             // BR_LA_version_G
             // 
             this.BR_LA_version_G.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.BR_LA_version_G.AutoSize = true;
             this.BR_LA_version_G.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.BR_LA_version_G.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BR_LA_version_G.ForeColor = System.Drawing.SystemColors.Info;
-            this.BR_LA_version_G.Location = new System.Drawing.Point(1198, 3);
+            this.BR_LA_version_G.Location = new System.Drawing.Point(1131, 542);
             this.BR_LA_version_G.Name = "BR_LA_version_G";
-            this.BR_LA_version_G.Size = new System.Drawing.Size(42, 13);
+            this.BR_LA_version_G.Size = new System.Drawing.Size(34, 13);
             this.BR_LA_version_G.TabIndex = 21;
-            this.BR_LA_version_G.Text = "Version";
+            this.BR_LA_version_G.Text = "Date";
             // 
             // BR_PA_G
             // 
@@ -109,22 +100,22 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.BR_PA_G.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.BR_PA_G.Controls.Add(this.BR_LA_Heure_G);
+            this.BR_PA_G.Controls.Add(this.BR_Button_Del_S);
+            this.BR_PA_G.Controls.Add(this.BR_Button_Add_S);
+            this.BR_PA_G.Controls.Add(this.BR_Button_View_S);
             this.BR_PA_G.Controls.Add(this.BR_LA_Save_S);
+            this.BR_PA_G.Controls.Add(this.BR_Button_Undo_S);
             this.BR_PA_G.Controls.Add(this.BR_LA_Edit_S);
+            this.BR_PA_G.Controls.Add(this.BR_Button_Edit_S);
             this.BR_PA_G.Controls.Add(this.BR_LA_Undo_S);
+            this.BR_PA_G.Controls.Add(this.BR_Button_Save_S);
             this.BR_PA_G.Controls.Add(this.BR_LA_View_S);
             this.BR_PA_G.Controls.Add(this.BR_LA_Del_S);
             this.BR_PA_G.Controls.Add(this.BR_LA_Add_S);
-            this.BR_PA_G.Controls.Add(this.BR_Button_Edit_S);
-            this.BR_PA_G.Controls.Add(this.BR_Button_Undo_S);
-            this.BR_PA_G.Controls.Add(this.BR_Button_Save_S);
-            this.BR_PA_G.Controls.Add(this.BR_Button_View_S);
-            this.BR_PA_G.Controls.Add(this.BR_Button_Add_S);
-            this.BR_PA_G.Controls.Add(this.BR_Button_Del_S);
             this.BR_PA_G.Controls.Add(this.BR_TP_S);
             this.BR_PA_G.Controls.Add(this.BR_LA_version_G);
             this.BR_PA_G.Controls.Add(this.BR_Button_Gotoend_G);
-            this.BR_PA_G.Controls.Add(this.BR_LA_numversion_G);
             this.BR_PA_G.Controls.Add(this.BR_Button_Next_G);
             this.BR_PA_G.Controls.Add(this.BR_Button_Gotofirst_G);
             this.BR_PA_G.Controls.Add(this.BR_Button_Previous_G);
@@ -138,7 +129,7 @@
             this.BR_LA_Save_S.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.BR_LA_Save_S.AutoSize = true;
             this.BR_LA_Save_S.ForeColor = System.Drawing.SystemColors.Window;
-            this.BR_LA_Save_S.Location = new System.Drawing.Point(1207, 547);
+            this.BR_LA_Save_S.Location = new System.Drawing.Point(1204, 476);
             this.BR_LA_Save_S.Name = "BR_LA_Save_S";
             this.BR_LA_Save_S.Size = new System.Drawing.Size(68, 13);
             this.BR_LA_Save_S.TabIndex = 43;
@@ -149,7 +140,7 @@
             this.BR_LA_Edit_S.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.BR_LA_Edit_S.AutoSize = true;
             this.BR_LA_Edit_S.ForeColor = System.Drawing.SystemColors.Window;
-            this.BR_LA_Edit_S.Location = new System.Drawing.Point(1220, 451);
+            this.BR_LA_Edit_S.Location = new System.Drawing.Point(1217, 399);
             this.BR_LA_Edit_S.Name = "BR_LA_Edit_S";
             this.BR_LA_Edit_S.Size = new System.Drawing.Size(42, 13);
             this.BR_LA_Edit_S.TabIndex = 42;
@@ -160,7 +151,7 @@
             this.BR_LA_Undo_S.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.BR_LA_Undo_S.AutoSize = true;
             this.BR_LA_Undo_S.ForeColor = System.Drawing.SystemColors.Window;
-            this.BR_LA_Undo_S.Location = new System.Drawing.Point(1220, 355);
+            this.BR_LA_Undo_S.Location = new System.Drawing.Point(1217, 322);
             this.BR_LA_Undo_S.Name = "BR_LA_Undo_S";
             this.BR_LA_Undo_S.Size = new System.Drawing.Size(43, 13);
             this.BR_LA_Undo_S.TabIndex = 41;
@@ -171,7 +162,7 @@
             this.BR_LA_View_S.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.BR_LA_View_S.AutoSize = true;
             this.BR_LA_View_S.ForeColor = System.Drawing.SystemColors.Window;
-            this.BR_LA_View_S.Location = new System.Drawing.Point(1216, 259);
+            this.BR_LA_View_S.Location = new System.Drawing.Point(1213, 231);
             this.BR_LA_View_S.Name = "BR_LA_View_S";
             this.BR_LA_View_S.Size = new System.Drawing.Size(51, 13);
             this.BR_LA_View_S.TabIndex = 40;
@@ -182,7 +173,7 @@
             this.BR_LA_Del_S.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.BR_LA_Del_S.AutoSize = true;
             this.BR_LA_Del_S.ForeColor = System.Drawing.SystemColors.Window;
-            this.BR_LA_Del_S.Location = new System.Drawing.Point(1214, 163);
+            this.BR_LA_Del_S.Location = new System.Drawing.Point(1211, 151);
             this.BR_LA_Del_S.Name = "BR_LA_Del_S";
             this.BR_LA_Del_S.Size = new System.Drawing.Size(54, 13);
             this.BR_LA_Del_S.TabIndex = 39;
@@ -193,7 +184,7 @@
             this.BR_LA_Add_S.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.BR_LA_Add_S.AutoSize = true;
             this.BR_LA_Add_S.ForeColor = System.Drawing.SystemColors.Window;
-            this.BR_LA_Add_S.Location = new System.Drawing.Point(1226, 67);
+            this.BR_LA_Add_S.Location = new System.Drawing.Point(1223, 89);
             this.BR_LA_Add_S.Name = "BR_LA_Add_S";
             this.BR_LA_Add_S.Size = new System.Drawing.Size(31, 13);
             this.BR_LA_Add_S.TabIndex = 31;
@@ -208,12 +199,14 @@
             this.BR_Button_Edit_S.Enabled = false;
             this.BR_Button_Edit_S.FlatAppearance.BorderSize = 0;
             this.BR_Button_Edit_S.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BR_Button_Edit_S.Location = new System.Drawing.Point(1219, 388);
+            this.BR_Button_Edit_S.Location = new System.Drawing.Point(1216, 345);
             this.BR_Button_Edit_S.Name = "BR_Button_Edit_S";
             this.BR_Button_Edit_S.Size = new System.Drawing.Size(45, 43);
             this.BR_Button_Edit_S.TabIndex = 38;
             this.BR_Button_Edit_S.UseVisualStyleBackColor = false;
             this.BR_Button_Edit_S.Click += new System.EventHandler(this.BR_Button_Edit_S_Click);
+            this.BR_Button_Edit_S.MouseLeave += new System.EventHandler(this.BR_Button_Edit_S_MouseLeave);
+            this.BR_Button_Edit_S.MouseHover += new System.EventHandler(this.BR_Button_Edit_S_MouseHover);
             // 
             // BR_Button_Undo_S
             // 
@@ -224,12 +217,14 @@
             this.BR_Button_Undo_S.Enabled = false;
             this.BR_Button_Undo_S.FlatAppearance.BorderSize = 0;
             this.BR_Button_Undo_S.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BR_Button_Undo_S.Location = new System.Drawing.Point(1219, 292);
+            this.BR_Button_Undo_S.Location = new System.Drawing.Point(1216, 265);
             this.BR_Button_Undo_S.Name = "BR_Button_Undo_S";
             this.BR_Button_Undo_S.Size = new System.Drawing.Size(45, 43);
             this.BR_Button_Undo_S.TabIndex = 37;
             this.BR_Button_Undo_S.UseVisualStyleBackColor = false;
             this.BR_Button_Undo_S.Click += new System.EventHandler(this.BR_Button_Undo_S_Click);
+            this.BR_Button_Undo_S.MouseLeave += new System.EventHandler(this.BR_Button_Undo_S_MouseLeave);
+            this.BR_Button_Undo_S.MouseHover += new System.EventHandler(this.BR_Button_Undo_S_MouseHover);
             // 
             // BR_Button_Save_S
             // 
@@ -239,12 +234,14 @@
             this.BR_Button_Save_S.Enabled = false;
             this.BR_Button_Save_S.FlatAppearance.BorderSize = 0;
             this.BR_Button_Save_S.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BR_Button_Save_S.Location = new System.Drawing.Point(1219, 484);
+            this.BR_Button_Save_S.Location = new System.Drawing.Point(1216, 425);
             this.BR_Button_Save_S.Name = "BR_Button_Save_S";
             this.BR_Button_Save_S.Size = new System.Drawing.Size(45, 43);
             this.BR_Button_Save_S.TabIndex = 35;
             this.BR_Button_Save_S.UseVisualStyleBackColor = true;
             this.BR_Button_Save_S.Click += new System.EventHandler(this.BR_Button_Save_S_Click);
+            this.BR_Button_Save_S.MouseLeave += new System.EventHandler(this.BR_Button_Save_S_MouseLeave);
+            this.BR_Button_Save_S.MouseHover += new System.EventHandler(this.BR_Button_Save_S_MouseHover);
             // 
             // BR_Button_View_S
             // 
@@ -254,12 +251,14 @@
             this.BR_Button_View_S.Enabled = false;
             this.BR_Button_View_S.FlatAppearance.BorderSize = 0;
             this.BR_Button_View_S.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BR_Button_View_S.Location = new System.Drawing.Point(1219, 196);
+            this.BR_Button_View_S.Location = new System.Drawing.Point(1216, 185);
             this.BR_Button_View_S.Name = "BR_Button_View_S";
             this.BR_Button_View_S.Size = new System.Drawing.Size(45, 43);
             this.BR_Button_View_S.TabIndex = 34;
             this.BR_Button_View_S.UseVisualStyleBackColor = true;
             this.BR_Button_View_S.Click += new System.EventHandler(this.BR_Button_View_S_Click);
+            this.BR_Button_View_S.MouseLeave += new System.EventHandler(this.BR_Button_View_S_MouseLeave);
+            this.BR_Button_View_S.MouseHover += new System.EventHandler(this.BR_Button_View_S_MouseHover);
             // 
             // BR_Button_Add_S
             // 
@@ -269,12 +268,14 @@
             this.BR_Button_Add_S.Enabled = false;
             this.BR_Button_Add_S.FlatAppearance.BorderSize = 0;
             this.BR_Button_Add_S.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BR_Button_Add_S.Location = new System.Drawing.Point(1219, 18);
+            this.BR_Button_Add_S.Location = new System.Drawing.Point(1216, 25);
             this.BR_Button_Add_S.Name = "BR_Button_Add_S";
             this.BR_Button_Add_S.Size = new System.Drawing.Size(45, 43);
             this.BR_Button_Add_S.TabIndex = 32;
             this.BR_Button_Add_S.UseVisualStyleBackColor = true;
             this.BR_Button_Add_S.Click += new System.EventHandler(this.BR_Button_Add_S_Click);
+            this.BR_Button_Add_S.MouseLeave += new System.EventHandler(this.BR_Button_Add_S_MouseLeave);
+            this.BR_Button_Add_S.MouseHover += new System.EventHandler(this.BR_Button_Add_S_MouseHover);
             // 
             // BR_Button_Del_S
             // 
@@ -284,12 +285,14 @@
             this.BR_Button_Del_S.Enabled = false;
             this.BR_Button_Del_S.FlatAppearance.BorderSize = 0;
             this.BR_Button_Del_S.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BR_Button_Del_S.Location = new System.Drawing.Point(1219, 100);
+            this.BR_Button_Del_S.Location = new System.Drawing.Point(1216, 105);
             this.BR_Button_Del_S.Name = "BR_Button_Del_S";
             this.BR_Button_Del_S.Size = new System.Drawing.Size(45, 43);
             this.BR_Button_Del_S.TabIndex = 33;
             this.BR_Button_Del_S.UseVisualStyleBackColor = true;
             this.BR_Button_Del_S.Click += new System.EventHandler(this.BR_Button_Del_S_Click);
+            this.BR_Button_Del_S.MouseLeave += new System.EventHandler(this.BR_Button_Del_S_MouseLeave);
+            this.BR_Button_Del_S.MouseHover += new System.EventHandler(this.BR_Button_Del_S_MouseHover);
             // 
             // BR_TP_S
             // 
@@ -513,7 +516,7 @@
             this.BR_Button_Quit_G.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BR_Button_Quit_G.FlatAppearance.BorderSize = 0;
             this.BR_Button_Quit_G.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BR_Button_Quit_G.Location = new System.Drawing.Point(1202, 12);
+            this.BR_Button_Quit_G.Location = new System.Drawing.Point(1206, 18);
             this.BR_Button_Quit_G.Name = "BR_Button_Quit_G";
             this.BR_Button_Quit_G.Size = new System.Drawing.Size(75, 72);
             this.BR_Button_Quit_G.TabIndex = 26;
@@ -678,6 +681,16 @@
             this.BR_LA_Mode2_G.TabIndex = 68;
             this.BR_LA_Mode2_G.Text = "Mode Consultation";
             // 
+            // BR_LA_Heure_G
+            // 
+            this.BR_LA_Heure_G.AutoSize = true;
+            this.BR_LA_Heure_G.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BR_LA_Heure_G.Location = new System.Drawing.Point(1171, 542);
+            this.BR_LA_Heure_G.Name = "BR_LA_Heure_G";
+            this.BR_LA_Heure_G.Size = new System.Drawing.Size(41, 13);
+            this.BR_LA_Heure_G.TabIndex = 44;
+            this.BR_LA_Heure_G.Text = "label1";
+            // 
             // dateTimePicker_S1
             // 
             this.dateTimePicker_S1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -732,7 +745,6 @@
         protected System.Windows.Forms.Button BR_Button_Gotoend_G;
         protected System.Windows.Forms.Button BR_Button_Next_G;
         protected System.Windows.Forms.Button BR_Button_Gotofirst_G;
-        protected System.Windows.Forms.Label BR_LA_numversion_G;
         protected System.Windows.Forms.Label BR_LA_version_G;
         protected System.Windows.Forms.Button BR_Button_Previous_G;
         protected System.Windows.Forms.Panel BR_PA_G;
@@ -776,6 +788,7 @@
         private System.Windows.Forms.Label BR_LA_Mode1_G;
         private System.Windows.Forms.Label BR_LA_Mode3_G;
         private System.Windows.Forms.Label BR_LA_Mode2_G;
+        private System.Windows.Forms.Label BR_LA_Heure_G;
     }
 }
 

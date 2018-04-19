@@ -30,6 +30,7 @@ namespace Bates_Reservation_Chambres
         {
             InitializeComponent();
             BR_LA_ListeSelection_S.Visible = false;
+            BR_LA_ListeSelection2_S.Visible = false;
         }
         private void BR_Chambres_Load(object sender, EventArgs e)
         {
@@ -78,20 +79,6 @@ namespace Bates_Reservation_Chambres
         private void BR_Button_Add_G_Click(object sender, EventArgs e)
         {
             Active();
-            BR_Button_Add_G.Visible = false;
-            BR_LA_Add_G.Visible = false;
-            BR_Button_Del_G.Visible = false;
-            BR_LA_Del_G.Visible = false;
-            BR_Button_View_G.Visible = false;
-            BR_LA_View_G.Visible = false;
-            BR_Button_Undo_G.Visible = false;
-            BR_LA_Undo_G.Visible = false;
-            BR_Button_Edit_G.Visible = false;
-            BR_LA_Edit_G.Visible = false;
-            BR_Button_Save_G.Visible = false;
-            BR_LA_Save_G.Visible = false;
-            BR_Button_List_G.Visible = false;
-            BR_LA_List_G.Visible = false;
         }    
         private void BR_Button_Gotofirst_G_Click(object sender, EventArgs e)
         {
@@ -183,20 +170,6 @@ namespace Bates_Reservation_Chambres
        }
         private void BR_Button_Undo_S_Click(object sender, EventArgs e)
         {
-            BR_Button_Add_G.Visible = true;
-            BR_LA_Add_G.Visible = true;
-            BR_Button_Del_G.Visible = true;
-            BR_LA_Del_G.Visible = true;
-            BR_Button_View_G.Visible = true;
-            BR_LA_View_G.Visible = true;
-            BR_Button_Undo_G.Visible = true;
-            BR_LA_Undo_G.Visible = true;
-            BR_Button_Edit_G.Visible = true;
-            BR_LA_Edit_G.Visible = true;
-            BR_Button_Save_G.Visible = true;
-            BR_LA_Save_G.Visible = true;
-            BR_Button_List_G.Visible = true;
-            BR_LA_List_G.Visible = true;
         }
         private void BR_Button_Save_S_Click(object sender, EventArgs e)
         {
@@ -642,9 +615,11 @@ namespace Bates_Reservation_Chambres
             }
         }
 
-        private void BR_Button_LS_S_MouseHover(object sender, EventArgs e)
+       
+        private void BR_Button_LS_Chambre_S_MouseHover(object sender, EventArgs e)
         {
             BR_LA_ListeSelection_S.Visible = true;
+
             BR_LA_Chambre_CodeType.Visible = false;
             BR_TB_Chambre_CodeType.Visible = false;
 
@@ -656,39 +631,109 @@ namespace Bates_Reservation_Chambres
             BR_TB_Chambre_Desc1.Visible = false;
             BR_Button_LS_CodeType_S.Visible = false;
             BR_Button_LS_CodeLoc_S.Visible = false;
+            BR_LA_Chambre_Prix.Visible = false;
+            BR_TB_Chambres_Prix.Visible = false;
+
         }
-
-        private void BR_Button_LS_S_MouseLeave(object sender, EventArgs e)
-        {
-            BR_LA_ListeSelection_S.Visible = false;
-        }
-        
-
-        private void button1_MouseLeave(object sender, EventArgs e)
-        {
-            BR_LA_ListeSelection_S.Visible = false;
-        }
-
-        private void button2_MouseHover(object sender, EventArgs e)
-        {
-            BR_LA_ListeSelection_S.Visible = true;
-        }
-
-        private void button2_MouseLeave(object sender, EventArgs e)
-        {
-            BR_LA_ListeSelection_S.Visible = true;
-        }
-
-        private void BR_Button_LS_Chambre_S_MouseHover(object sender, EventArgs e)
-        {
-            BR_LA_ListeSelection_S.Visible = true;
-
-            BR_Button_LS_CodeLoc_S.Visible = false;
-        }
-
         private void BR_Button_LS_Chambre_S_MouseLeave(object sender, EventArgs e)
         {
             BR_LA_ListeSelection_S.Visible = false;
+
+            BR_LA_Chambre_NoCham.Visible = true;
+            BR_TB_Chambres_NoCham.Visible = true;
+            BR_Button_LS_CodeType_S.Visible = true;
+            BR_Button_LS_CodeLoc_S.Visible = true;
+            BR_LA_Chambre_CodeType.Visible = true;
+            BR_TB_Chambre_CodeType.Visible = true;
+            BR_LA_Chambre_Etage.Visible = true;
+            BR_TB_Chambres_Etage.Visible = true;
+            BR_LA_Chambre_Etat.Visible = true;
+            BR_TB_Chambres_Etat.Visible = true;
+            BR_LA_Chambre_CodeLoc.Visible = true;
+            BR_TB_Chambre_CodeLoc.Visible = true;
+            BR_LA_Chambre_Prix.Visible = true;
+            BR_TB_Chambres_Prix.Visible = true;
+            BR_LA_Chambre_Desc1.Visible = true;
+            BR_TB_Chambre_Desc1.Visible = true;
+            BR_LA_Chambre_Desc2.Visible = true;
+            BR_TB_Chambre_Desc2.Visible = true;
+        }
+        private void BR_Button_LS_CodeType_S_MouseHover(object sender, EventArgs e)
+        {
+            BR_LA_ListeSelection2_S.Text = " Liste de Selection\n     Code Type";
+            BR_LA_ListeSelection2_S.Visible = true;
+
+            BR_LA_Chambre_NoCham.Visible = false;
+            BR_TB_Chambres_NoCham.Visible = false;
+            BR_Button_LS_Chambre_S.Visible = false;
+            BR_LA_Chambre_CodeType.Visible = false;
+            BR_TB_Chambre_CodeType.Visible = false;
+            BR_LA_Chambre_Etage.Visible = false;
+            BR_TB_Chambres_Etage.Visible = false;
+            BR_LA_Chambre_Etat.Visible = false;
+            BR_TB_Chambres_Etat.Visible = false;
+            BR_LA_Chambre_CodeLoc.Visible = false;
+            BR_TB_Chambre_CodeLoc.Visible = false;
+            BR_LA_Chambre_Prix.Visible = false;
+            BR_TB_Chambres_Prix.Visible = false;
+        }
+
+        private void BR_Button_LS_CodeType_S_MouseLeave(object sender, EventArgs e)
+        {
+            BR_LA_ListeSelection2_S.Visible = false;
+
+            BR_LA_Chambre_NoCham.Visible = true;
+            BR_TB_Chambres_NoCham.Visible = true;
+            BR_Button_LS_Chambre_S.Visible = true;
+            BR_LA_Chambre_CodeType.Visible = true;
+            BR_TB_Chambre_CodeType.Visible = true;
+            BR_LA_Chambre_Etage.Visible = true;
+            BR_TB_Chambres_Etage.Visible = true;
+            BR_LA_Chambre_Etat.Visible = true;
+            BR_TB_Chambres_Etat.Visible = true;
+            BR_LA_Chambre_CodeLoc.Visible = true;
+            BR_TB_Chambre_CodeLoc.Visible = true;
+            BR_LA_Chambre_Prix.Visible = true;
+            BR_TB_Chambres_Prix.Visible = true;
+        }
+
+        private void BR_Button_LS_CodeLoc_S_MouseHover(object sender, EventArgs e)
+        {
+            BR_LA_ListeSelection2_S.Text = " Liste de Selection\n Code Localisation";
+            BR_LA_ListeSelection2_S.Visible = true;
+
+            BR_LA_Chambre_NoCham.Visible = false;
+            BR_TB_Chambres_NoCham.Visible = false;
+            BR_Button_LS_Chambre_S.Visible = false;
+            BR_LA_Chambre_CodeType.Visible = false;
+            BR_TB_Chambre_CodeType.Visible = false;
+            BR_LA_Chambre_Etage.Visible = false;
+            BR_TB_Chambres_Etage.Visible = false;
+            BR_LA_Chambre_Etat.Visible = false;
+            BR_TB_Chambres_Etat.Visible = false;
+            BR_LA_Chambre_CodeLoc.Visible = false;
+            BR_TB_Chambre_CodeLoc.Visible = false;
+            BR_LA_Chambre_Prix.Visible = false;
+            BR_TB_Chambres_Prix.Visible = false;
+        }
+
+        private void BR_Button_LS_CodeLoc_S_MouseLeave(object sender, EventArgs e)
+        {
+            BR_LA_ListeSelection2_S.Visible = false;
+
+            BR_LA_Chambre_NoCham.Visible = true;
+            BR_TB_Chambres_NoCham.Visible = true;
+            BR_Button_LS_Chambre_S.Visible = true;
+            BR_LA_Chambre_CodeType.Visible = true;
+            BR_TB_Chambre_CodeType.Visible = true;
+            BR_LA_Chambre_Etage.Visible = true;
+            BR_TB_Chambres_Etage.Visible = true;
+            BR_LA_Chambre_Etat.Visible = true;
+            BR_TB_Chambres_Etat.Visible = true;
+            BR_LA_Chambre_CodeLoc.Visible = true;
+            BR_TB_Chambre_CodeLoc.Visible = true;
+            BR_LA_Chambre_Prix.Visible = true;
+            BR_TB_Chambres_Prix.Visible = true;
         }
     }
 
