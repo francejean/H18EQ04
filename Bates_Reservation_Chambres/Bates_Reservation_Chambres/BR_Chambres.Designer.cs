@@ -33,8 +33,8 @@
             this.BR_TB_Chambre_CodeLoc = new Bate_s_Reservation_Base_Biblioteque.BR_TB_S();
             this.BR_LA_Chambre_Mémo = new Bate_s_Reservation_Base_Biblioteque.BR_LA_S();
             this.BR_RTB_Chambres = new System.Windows.Forms.RichTextBox();
-            this.BR_TB_Chambres_Desc2 = new Bate_s_Reservation_Base_Biblioteque.BR_TB_S();
-            this.BR_TB_Chambres_Desc1 = new Bate_s_Reservation_Base_Biblioteque.BR_TB_S();
+            this.BR_TB_Chambre_Desc2 = new Bate_s_Reservation_Base_Biblioteque.BR_TB_S();
+            this.BR_TB_Chambre_Desc1 = new Bate_s_Reservation_Base_Biblioteque.BR_TB_S();
             this.BR_TB_Chambres_Prix = new Bate_s_Reservation_Base_Biblioteque.BR_TB_S();
             this.BR_TB_Chambres_Etat = new Bate_s_Reservation_Base_Biblioteque.BR_TB_S();
             this.BR_TB_Chambres_Etage = new Bate_s_Reservation_Base_Biblioteque.BR_TB_S();
@@ -53,7 +53,6 @@
             this.BR_DS_Chambres = new Bates_Reservation_Chambres.BR_DS_Chambres();
             this.BR_LA_Chambre_Prix = new Bate_s_Reservation_Base_Biblioteque.BR_LA_S();
             this.BR_EP = new System.Windows.Forms.ErrorProvider(this.components);
-            this.BR_Chambre_Add = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.bR_LA_S9 = new Bate_s_Reservation_Base_Biblioteque.BR_LA_S();
             this.bR_LA_S1 = new Bate_s_Reservation_Base_Biblioteque.BR_LA_S();
@@ -85,9 +84,13 @@
             this.BR_TA_Chambres = new Bates_Reservation_Chambres.BR_DS_ChambresTableAdapters.chambreTableAdapter();
             this.BR_TA_Chambres_Ayant = new Bates_Reservation_Chambres.BR_DS_ChambresTableAdapters.ayantTableAdapter();
             this.BR_BS_Chambres = new System.Windows.Forms.BindingSource(this.components);
-            this.BR_Chambre_Cancel = new System.Windows.Forms.Button();
             this.chambreBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.BR_TB_Chambre_CodeType = new Bate_s_Reservation_Base_Biblioteque.BR_TB_S();
+            this.BR_Button_LS_Chambre_S = new System.Windows.Forms.Button();
+            this.BR_Button_LS_CodeType_S = new System.Windows.Forms.Button();
+            this.BR_Button_LS_CodeLoc_S = new System.Windows.Forms.Button();
+            this.BR_LA_ListeSelection_S = new System.Windows.Forms.Label();
+            this.BR_LA_ListeSelection2_S = new System.Windows.Forms.Label();
             this.BR_PA_G.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BR_PictureBox_G)).BeginInit();
             this.BR_TP_S.SuspendLayout();
@@ -192,16 +195,17 @@
             // 
             // BR_TP_Chambre
             // 
+            this.BR_TP_Chambre.Controls.Add(this.BR_Button_LS_CodeLoc_S);
+            this.BR_TP_Chambre.Controls.Add(this.BR_Button_LS_CodeType_S);
+            this.BR_TP_Chambre.Controls.Add(this.BR_Button_LS_Chambre_S);
             this.BR_TP_Chambre.Controls.Add(this.BR_TB_Chambre_CodeType);
-            this.BR_TP_Chambre.Controls.Add(this.BR_Chambre_Cancel);
-            this.BR_TP_Chambre.Controls.Add(this.BR_Chambre_Add);
             this.BR_TP_Chambre.Controls.Add(this.BR_LA_Chambre_Prix);
             this.BR_TP_Chambre.Controls.Add(this.BR_TB_Chambres_NoCham);
             this.BR_TP_Chambre.Controls.Add(this.BR_TB_Chambre_CodeLoc);
             this.BR_TP_Chambre.Controls.Add(this.BR_LA_Chambre_Mémo);
             this.BR_TP_Chambre.Controls.Add(this.BR_RTB_Chambres);
-            this.BR_TP_Chambre.Controls.Add(this.BR_TB_Chambres_Desc2);
-            this.BR_TP_Chambre.Controls.Add(this.BR_TB_Chambres_Desc1);
+            this.BR_TP_Chambre.Controls.Add(this.BR_TB_Chambre_Desc2);
+            this.BR_TP_Chambre.Controls.Add(this.BR_TB_Chambre_Desc1);
             this.BR_TP_Chambre.Controls.Add(this.BR_TB_Chambres_Prix);
             this.BR_TP_Chambre.Controls.Add(this.BR_TB_Chambres_Etat);
             this.BR_TP_Chambre.Controls.Add(this.BR_TB_Chambres_Etage);
@@ -213,6 +217,8 @@
             this.BR_TP_Chambre.Controls.Add(this.BR_LA_Chambre_Etage);
             this.BR_TP_Chambre.Controls.Add(this.BR_LA_Chambre_NoCham);
             this.BR_TP_Chambre.Controls.Add(this.BR_DGV_Chambres);
+            this.BR_TP_Chambre.Controls.Add(this.BR_LA_ListeSelection_S);
+            this.BR_TP_Chambre.Controls.Add(this.BR_LA_ListeSelection2_S);
             // 
             // BR_Button_Quit_G
             // 
@@ -221,18 +227,17 @@
             // BR_TB_Chambres_NoCham
             // 
             this.BR_TB_Chambres_NoCham.Enabled = false;
-            this.BR_TB_Chambres_NoCham.Location = new System.Drawing.Point(147, 17);
+            this.BR_TB_Chambres_NoCham.Location = new System.Drawing.Point(112, 22);
             this.BR_TB_Chambres_NoCham.Name = "BR_TB_Chambres_NoCham";
             this.BR_TB_Chambres_NoCham.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.BR_TB_Chambres_NoCham.Size = new System.Drawing.Size(100, 20);
             this.BR_TB_Chambres_NoCham.TabIndex = 83;
-            this.BR_TB_Chambres_NoCham.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.BR_TB_Chambre_NoCham_MouseDoubleClick);
             this.BR_TB_Chambres_NoCham.Validating += new System.ComponentModel.CancelEventHandler(this.BR_TB_Chambres_NoCham_Validating);
             // 
             // BR_TB_Chambre_CodeLoc
             // 
             this.BR_TB_Chambre_CodeLoc.Enabled = false;
-            this.BR_TB_Chambre_CodeLoc.Location = new System.Drawing.Point(440, 74);
+            this.BR_TB_Chambre_CodeLoc.Location = new System.Drawing.Point(408, 88);
             this.BR_TB_Chambre_CodeLoc.Name = "BR_TB_Chambre_CodeLoc";
             this.BR_TB_Chambre_CodeLoc.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.BR_TB_Chambre_CodeLoc.Size = new System.Drawing.Size(100, 20);
@@ -264,43 +269,43 @@
             this.BR_RTB_Chambres.TabIndex = 99;
             this.BR_RTB_Chambres.Text = "";
             // 
-            // BR_TB_Chambres_Desc2
+            // BR_TB_Chambre_Desc2
             // 
-            this.BR_TB_Chambres_Desc2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.BR_TB_Chambre_Desc2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.BR_TB_Chambres_Desc2.Enabled = false;
-            this.BR_TB_Chambres_Desc2.Location = new System.Drawing.Point(734, 72);
-            this.BR_TB_Chambres_Desc2.Name = "BR_TB_Chambres_Desc2";
-            this.BR_TB_Chambres_Desc2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.BR_TB_Chambres_Desc2.Size = new System.Drawing.Size(100, 20);
-            this.BR_TB_Chambres_Desc2.TabIndex = 98;
-            this.BR_TB_Chambres_Desc2.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.BR_TB_Chambres_Desc2_MouseDoubleClick);
-            this.BR_TB_Chambres_Desc2.Validating += new System.ComponentModel.CancelEventHandler(this.BR_TB_Chambres_Desc2_Validating);
-            this.BR_TB_Chambres_Desc2.Validated += new System.EventHandler(this.BR_TB_Chambres_Desc2_Validated);
+            this.BR_TB_Chambre_Desc2.Enabled = false;
+            this.BR_TB_Chambre_Desc2.Location = new System.Drawing.Point(705, 88);
+            this.BR_TB_Chambre_Desc2.Name = "BR_TB_Chambre_Desc2";
+            this.BR_TB_Chambre_Desc2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.BR_TB_Chambre_Desc2.Size = new System.Drawing.Size(100, 20);
+            this.BR_TB_Chambre_Desc2.TabIndex = 98;
+            this.BR_TB_Chambre_Desc2.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.BR_TB_Chambre_Desc2_MouseDoubleClick);
+            this.BR_TB_Chambre_Desc2.Validating += new System.ComponentModel.CancelEventHandler(this.BR_TB_Chambre_Desc2_Validating);
+            this.BR_TB_Chambre_Desc2.Validated += new System.EventHandler(this.BR_TB_Chambre_Desc2_Validated);
             // 
-            // BR_TB_Chambres_Desc1
+            // BR_TB_Chambre_Desc1
             // 
-            this.BR_TB_Chambres_Desc1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.BR_TB_Chambre_Desc1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.BR_TB_Chambres_Desc1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.BR_TB_Chambres_Desc1.BackColor = System.Drawing.SystemColors.Window;
-            this.BR_TB_Chambres_Desc1.Enabled = false;
-            this.BR_TB_Chambres_Desc1.Location = new System.Drawing.Point(734, 17);
-            this.BR_TB_Chambres_Desc1.Name = "BR_TB_Chambres_Desc1";
-            this.BR_TB_Chambres_Desc1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.BR_TB_Chambres_Desc1.Size = new System.Drawing.Size(100, 20);
-            this.BR_TB_Chambres_Desc1.TabIndex = 97;
-            this.BR_TB_Chambres_Desc1.TabStop = false;
-            this.BR_TB_Chambres_Desc1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.BR_TB_Chambres_Desc1_MouseDoubleClick);
-            this.BR_TB_Chambres_Desc1.Validating += new System.ComponentModel.CancelEventHandler(this.BR_TB_Chambres_Desc1_Validating);
-            this.BR_TB_Chambres_Desc1.Validated += new System.EventHandler(this.BR_TB_Chambres_Desc1_Validated);
+            this.BR_TB_Chambre_Desc1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.BR_TB_Chambre_Desc1.BackColor = System.Drawing.SystemColors.Window;
+            this.BR_TB_Chambre_Desc1.Enabled = false;
+            this.BR_TB_Chambre_Desc1.Location = new System.Drawing.Point(705, 23);
+            this.BR_TB_Chambre_Desc1.Name = "BR_TB_Chambre_Desc1";
+            this.BR_TB_Chambre_Desc1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.BR_TB_Chambre_Desc1.Size = new System.Drawing.Size(100, 20);
+            this.BR_TB_Chambre_Desc1.TabIndex = 97;
+            this.BR_TB_Chambre_Desc1.TabStop = false;
+            this.BR_TB_Chambre_Desc1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.BR_TB_Chambre_Desc1_MouseDoubleClick);
+            this.BR_TB_Chambre_Desc1.Validating += new System.ComponentModel.CancelEventHandler(this.BR_TB_Chambre_Desc1_Validating);
+            this.BR_TB_Chambre_Desc1.Validated += new System.EventHandler(this.BR_TB_Chambre_Desc1_Validated);
             // 
             // BR_TB_Chambres_Prix
             // 
             this.BR_TB_Chambres_Prix.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.BR_TB_Chambres_Prix.Enabled = false;
-            this.BR_TB_Chambres_Prix.Location = new System.Drawing.Point(440, 126);
+            this.BR_TB_Chambres_Prix.Location = new System.Drawing.Point(408, 158);
             this.BR_TB_Chambres_Prix.Name = "BR_TB_Chambres_Prix";
             this.BR_TB_Chambres_Prix.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.BR_TB_Chambres_Prix.Size = new System.Drawing.Size(100, 20);
@@ -313,7 +318,7 @@
             this.BR_TB_Chambres_Etat.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.BR_TB_Chambres_Etat.Enabled = false;
-            this.BR_TB_Chambres_Etat.Location = new System.Drawing.Point(147, 126);
+            this.BR_TB_Chambres_Etat.Location = new System.Drawing.Point(112, 154);
             this.BR_TB_Chambres_Etat.Name = "BR_TB_Chambres_Etat";
             this.BR_TB_Chambres_Etat.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.BR_TB_Chambres_Etat.Size = new System.Drawing.Size(100, 20);
@@ -326,7 +331,7 @@
             this.BR_TB_Chambres_Etage.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.BR_TB_Chambres_Etage.Enabled = false;
-            this.BR_TB_Chambres_Etage.Location = new System.Drawing.Point(147, 74);
+            this.BR_TB_Chambres_Etage.Location = new System.Drawing.Point(112, 93);
             this.BR_TB_Chambres_Etage.Name = "BR_TB_Chambres_Etage";
             this.BR_TB_Chambres_Etage.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.BR_TB_Chambres_Etage.Size = new System.Drawing.Size(100, 20);
@@ -337,7 +342,7 @@
             this.BR_LA_Chambre_Desc2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.BR_LA_Chambre_Desc2.AutoSize = true;
-            this.BR_LA_Chambre_Desc2.Location = new System.Drawing.Point(607, 77);
+            this.BR_LA_Chambre_Desc2.Location = new System.Drawing.Point(614, 91);
             this.BR_LA_Chambre_Desc2.Name = "BR_LA_Chambre_Desc2";
             this.BR_LA_Chambre_Desc2.Size = new System.Drawing.Size(60, 13);
             this.BR_LA_Chambre_Desc2.TabIndex = 93;
@@ -348,7 +353,7 @@
             this.BR_LA_Chambre_Desc1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.BR_LA_Chambre_Desc1.AutoSize = true;
-            this.BR_LA_Chambre_Desc1.Location = new System.Drawing.Point(607, 17);
+            this.BR_LA_Chambre_Desc1.Location = new System.Drawing.Point(613, 23);
             this.BR_LA_Chambre_Desc1.Name = "BR_LA_Chambre_Desc1";
             this.BR_LA_Chambre_Desc1.Size = new System.Drawing.Size(60, 13);
             this.BR_LA_Chambre_Desc1.TabIndex = 92;
@@ -359,7 +364,7 @@
             this.BR_LA_Chambre_CodeLoc.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.BR_LA_Chambre_CodeLoc.AutoSize = true;
-            this.BR_LA_Chambre_CodeLoc.Location = new System.Drawing.Point(314, 77);
+            this.BR_LA_Chambre_CodeLoc.Location = new System.Drawing.Point(314, 93);
             this.BR_LA_Chambre_CodeLoc.Name = "BR_LA_Chambre_CodeLoc";
             this.BR_LA_Chambre_CodeLoc.Size = new System.Drawing.Size(97, 13);
             this.BR_LA_Chambre_CodeLoc.TabIndex = 91;
@@ -370,7 +375,7 @@
             this.BR_LA_Chambre_CodeType.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.BR_LA_Chambre_CodeType.AutoSize = true;
-            this.BR_LA_Chambre_CodeType.Location = new System.Drawing.Point(314, 17);
+            this.BR_LA_Chambre_CodeType.Location = new System.Drawing.Point(317, 23);
             this.BR_LA_Chambre_CodeType.Name = "BR_LA_Chambre_CodeType";
             this.BR_LA_Chambre_CodeType.Size = new System.Drawing.Size(59, 13);
             this.BR_LA_Chambre_CodeType.TabIndex = 90;
@@ -381,7 +386,7 @@
             this.BR_LA_Chambre_Etat.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.BR_LA_Chambre_Etat.AutoSize = true;
-            this.BR_LA_Chambre_Etat.Location = new System.Drawing.Point(14, 129);
+            this.BR_LA_Chambre_Etat.Location = new System.Drawing.Point(14, 161);
             this.BR_LA_Chambre_Etat.Name = "BR_LA_Chambre_Etat";
             this.BR_LA_Chambre_Etat.Size = new System.Drawing.Size(26, 13);
             this.BR_LA_Chambre_Etat.TabIndex = 89;
@@ -392,7 +397,7 @@
             this.BR_LA_Chambre_Etage.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.BR_LA_Chambre_Etage.AutoSize = true;
-            this.BR_LA_Chambre_Etage.Location = new System.Drawing.Point(14, 75);
+            this.BR_LA_Chambre_Etage.Location = new System.Drawing.Point(14, 91);
             this.BR_LA_Chambre_Etage.Name = "BR_LA_Chambre_Etage";
             this.BR_LA_Chambre_Etage.Size = new System.Drawing.Size(35, 13);
             this.BR_LA_Chambre_Etage.TabIndex = 88;
@@ -403,7 +408,7 @@
             this.BR_LA_Chambre_NoCham.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.BR_LA_Chambre_NoCham.AutoSize = true;
-            this.BR_LA_Chambre_NoCham.Location = new System.Drawing.Point(14, 17);
+            this.BR_LA_Chambre_NoCham.Location = new System.Drawing.Point(14, 23);
             this.BR_LA_Chambre_NoCham.Name = "BR_LA_Chambre_NoCham";
             this.BR_LA_Chambre_NoCham.Size = new System.Drawing.Size(66, 13);
             this.BR_LA_Chambre_NoCham.TabIndex = 87;
@@ -465,7 +470,7 @@
             this.BR_LA_Chambre_Prix.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.BR_LA_Chambre_Prix.AutoSize = true;
-            this.BR_LA_Chambre_Prix.Location = new System.Drawing.Point(314, 129);
+            this.BR_LA_Chambre_Prix.Location = new System.Drawing.Point(314, 161);
             this.BR_LA_Chambre_Prix.Name = "BR_LA_Chambre_Prix";
             this.BR_LA_Chambre_Prix.Size = new System.Drawing.Size(24, 13);
             this.BR_LA_Chambre_Prix.TabIndex = 101;
@@ -474,18 +479,6 @@
             // BR_EP
             // 
             this.BR_EP.ContainerControl = this;
-            // 
-            // BR_Chambre_Add
-            // 
-            this.BR_Chambre_Add.BackgroundImage = global::Bates_Reservation_Chambres.Properties.Resources.BR_Ico_Add_S;
-            this.BR_Chambre_Add.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BR_Chambre_Add.FlatAppearance.BorderSize = 0;
-            this.BR_Chambre_Add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BR_Chambre_Add.Location = new System.Drawing.Point(530, 213);
-            this.BR_Chambre_Add.Name = "BR_Chambre_Add";
-            this.BR_Chambre_Add.Size = new System.Drawing.Size(64, 48);
-            this.BR_Chambre_Add.TabIndex = 102;
-            this.BR_Chambre_Add.UseVisualStyleBackColor = true;
             // 
             // panel1
             // 
@@ -749,18 +742,6 @@
             // 
             this.BR_TA_Chambres_Ayant.ClearBeforeFill = true;
             // 
-            // BR_Chambre_Cancel
-            // 
-            this.BR_Chambre_Cancel.BackgroundImage = global::Bates_Reservation_Chambres.Properties.Resources.BR_Ico_Supp_S;
-            this.BR_Chambre_Cancel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BR_Chambre_Cancel.FlatAppearance.BorderSize = 0;
-            this.BR_Chambre_Cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BR_Chambre_Cancel.Location = new System.Drawing.Point(681, 213);
-            this.BR_Chambre_Cancel.Name = "BR_Chambre_Cancel";
-            this.BR_Chambre_Cancel.Size = new System.Drawing.Size(64, 48);
-            this.BR_Chambre_Cancel.TabIndex = 104;
-            this.BR_Chambre_Cancel.UseVisualStyleBackColor = true;
-            // 
             // chambreBindingSource
             // 
             this.chambreBindingSource.DataMember = "chambre";
@@ -773,7 +754,7 @@
             this.BR_TB_Chambre_CodeType.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.BR_TB_Chambre_CodeType.BackColor = System.Drawing.SystemColors.Window;
             this.BR_TB_Chambre_CodeType.Enabled = false;
-            this.BR_TB_Chambre_CodeType.Location = new System.Drawing.Point(440, 16);
+            this.BR_TB_Chambre_CodeType.Location = new System.Drawing.Point(408, 22);
             this.BR_TB_Chambre_CodeType.Name = "BR_TB_Chambre_CodeType";
             this.BR_TB_Chambre_CodeType.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.BR_TB_Chambre_CodeType.Size = new System.Drawing.Size(100, 20);
@@ -781,6 +762,68 @@
             this.BR_TB_Chambre_CodeType.TabStop = false;
             this.BR_TB_Chambre_CodeType.Validating += new System.ComponentModel.CancelEventHandler(this.BR_TB_Chambre_CodeType_Validating);
             this.BR_TB_Chambre_CodeType.Validated += new System.EventHandler(this.BR_TB_Chambre_CodeType_Validated);
+            // 
+            // BR_Button_LS_Chambre_S
+            // 
+            this.BR_Button_LS_Chambre_S.AccessibleDescription = "";
+            this.BR_Button_LS_Chambre_S.AccessibleName = "";
+            this.BR_Button_LS_Chambre_S.BackgroundImage = global::Bates_Reservation_Chambres.Properties.Resources.BR_Ico_LS_S;
+            this.BR_Button_LS_Chambre_S.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BR_Button_LS_Chambre_S.FlatAppearance.BorderSize = 0;
+            this.BR_Button_LS_Chambre_S.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BR_Button_LS_Chambre_S.Location = new System.Drawing.Point(248, 22);
+            this.BR_Button_LS_Chambre_S.Name = "BR_Button_LS_Chambre_S";
+            this.BR_Button_LS_Chambre_S.Size = new System.Drawing.Size(41, 39);
+            this.BR_Button_LS_Chambre_S.TabIndex = 106;
+            this.BR_Button_LS_Chambre_S.Tag = "";
+            this.BR_Button_LS_Chambre_S.UseVisualStyleBackColor = true;
+            this.BR_Button_LS_Chambre_S.Click += new System.EventHandler(this.BR_Button_LS_S_Click);
+            this.BR_Button_LS_Chambre_S.MouseLeave += new System.EventHandler(this.BR_Button_LS_Chambre_S_MouseLeave);
+            this.BR_Button_LS_Chambre_S.MouseHover += new System.EventHandler(this.BR_Button_LS_Chambre_S_MouseHover);
+            // 
+            // BR_Button_LS_CodeType_S
+            // 
+            this.BR_Button_LS_CodeType_S.BackgroundImage = global::Bates_Reservation_Chambres.Properties.Resources.BR_Ico_LS_S;
+            this.BR_Button_LS_CodeType_S.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BR_Button_LS_CodeType_S.FlatAppearance.BorderSize = 0;
+            this.BR_Button_LS_CodeType_S.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BR_Button_LS_CodeType_S.Location = new System.Drawing.Point(540, 23);
+            this.BR_Button_LS_CodeType_S.Name = "BR_Button_LS_CodeType_S";
+            this.BR_Button_LS_CodeType_S.Size = new System.Drawing.Size(41, 39);
+            this.BR_Button_LS_CodeType_S.TabIndex = 107;
+            this.BR_Button_LS_CodeType_S.UseVisualStyleBackColor = true;
+            // 
+            // BR_Button_LS_CodeLoc_S
+            // 
+            this.BR_Button_LS_CodeLoc_S.BackgroundImage = global::Bates_Reservation_Chambres.Properties.Resources.BR_Ico_LS_S;
+            this.BR_Button_LS_CodeLoc_S.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BR_Button_LS_CodeLoc_S.FlatAppearance.BorderSize = 0;
+            this.BR_Button_LS_CodeLoc_S.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BR_Button_LS_CodeLoc_S.Location = new System.Drawing.Point(540, 88);
+            this.BR_Button_LS_CodeLoc_S.Name = "BR_Button_LS_CodeLoc_S";
+            this.BR_Button_LS_CodeLoc_S.Size = new System.Drawing.Size(41, 39);
+            this.BR_Button_LS_CodeLoc_S.TabIndex = 108;
+            this.BR_Button_LS_CodeLoc_S.UseVisualStyleBackColor = true;
+            // 
+            // BR_LA_ListeSelection_S
+            // 
+            this.BR_LA_ListeSelection_S.AutoSize = true;
+            this.BR_LA_ListeSelection_S.Font = new System.Drawing.Font("Microsoft Sans Serif", 38F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BR_LA_ListeSelection_S.Location = new System.Drawing.Point(391, 65);
+            this.BR_LA_ListeSelection_S.Name = "BR_LA_ListeSelection_S";
+            this.BR_LA_ListeSelection_S.Size = new System.Drawing.Size(424, 59);
+            this.BR_LA_ListeSelection_S.TabIndex = 109;
+            this.BR_LA_ListeSelection_S.Text = "Liste de Selection";
+            // 
+            // BR_LA_ListeSelection2_S
+            // 
+            this.BR_LA_ListeSelection2_S.AutoSize = true;
+            this.BR_LA_ListeSelection2_S.Font = new System.Drawing.Font("Microsoft Sans Serif", 38F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BR_LA_ListeSelection2_S.Location = new System.Drawing.Point(14, 64);
+            this.BR_LA_ListeSelection2_S.Name = "BR_LA_ListeSelection2_S";
+            this.BR_LA_ListeSelection2_S.Size = new System.Drawing.Size(424, 59);
+            this.BR_LA_ListeSelection2_S.TabIndex = 110;
+            this.BR_LA_ListeSelection2_S.Text = "Liste de Selection";
             // 
             // BR_Chambres
             // 
@@ -817,8 +860,8 @@
         private Bate_s_Reservation_Base_Biblioteque.BR_TB_S BR_TB_Chambre_CodeLoc;
         private Bate_s_Reservation_Base_Biblioteque.BR_LA_S BR_LA_Chambre_Mémo;
         private System.Windows.Forms.RichTextBox BR_RTB_Chambres;
-        private Bate_s_Reservation_Base_Biblioteque.BR_TB_S BR_TB_Chambres_Desc2;
-        private Bate_s_Reservation_Base_Biblioteque.BR_TB_S BR_TB_Chambres_Desc1;
+        private Bate_s_Reservation_Base_Biblioteque.BR_TB_S BR_TB_Chambre_Desc2;
+        private Bate_s_Reservation_Base_Biblioteque.BR_TB_S BR_TB_Chambre_Desc1;
         private Bate_s_Reservation_Base_Biblioteque.BR_TB_S BR_TB_Chambres_Prix;
         private Bate_s_Reservation_Base_Biblioteque.BR_TB_S BR_TB_Chambres_Etat;
         private Bate_s_Reservation_Base_Biblioteque.BR_TB_S BR_TB_Chambres_Etage;
@@ -840,7 +883,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn nochamDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn codcomDataGridViewTextBoxColumn;
         private System.Windows.Forms.ErrorProvider BR_EP;
-        private System.Windows.Forms.Button BR_Chambre_Add;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.TextBox date;
@@ -869,8 +911,12 @@
         private Bate_s_Reservation_Base_Biblioteque.BR_TB_S BR_TB_Reservation_Carte;
         private Bate_s_Reservation_Base_Biblioteque.BR_LA_S bR_LA_S4;
         private Bate_s_Reservation_Base_Biblioteque.BR_LA_S bR_LA_S5;
-        private System.Windows.Forms.Button BR_Chambre_Cancel;
         private System.Windows.Forms.BindingSource chambreBindingSource;
         private Bate_s_Reservation_Base_Biblioteque.BR_TB_S BR_TB_Chambre_CodeType;
+        private System.Windows.Forms.Button BR_Button_LS_CodeLoc_S;
+        private System.Windows.Forms.Button BR_Button_LS_CodeType_S;
+        private System.Windows.Forms.Button BR_Button_LS_Chambre_S;
+        private System.Windows.Forms.Label BR_LA_ListeSelection_S;
+        private System.Windows.Forms.Label BR_LA_ListeSelection2_S;
     }
 }

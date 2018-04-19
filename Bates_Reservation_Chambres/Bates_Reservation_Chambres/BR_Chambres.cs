@@ -13,12 +13,6 @@ namespace Bates_Reservation_Chambres
         private bool abandon = false;
         private DataRow BR_dataRow_Chambre;
 
-        /*Window messageBox = WindowFactory.Desktop
-                                 .DesktopWindows()
-                                 .Find(w => w.Title.Contains("MessageBoxTitle"));
-        Button ok = messageBox.Get<Button>(SearchCriteria.ByText("OK"));
-        ok.Click();*/
-
         public bool IsNumeric(string Nombre)
         {
             try
@@ -35,23 +29,18 @@ namespace Bates_Reservation_Chambres
         public BR_Chambres()
         {
             InitializeComponent();
-            BR_Chambre_Add.Visible = false;
-            BR_Chambre_Cancel.Visible = false;
-          
+            BR_LA_ListeSelection_S.Visible = false;
         }
-
         private void BR_Chambres_Load(object sender, EventArgs e)
         {
             Fill();
             LienChambre();
         }
-
         private void Fill()
         {
-            this.BR_TA_Chambres.Fill(this.BR_DS_Chambres.chambre);
-            this.BR_TA_Chambres_Ayant.Fill(this.BR_DS_Chambres.ayant);
+            //this.BR_TA_Chambres.Fill(this.BR_DS_Chambres.chambre);
+            //this.BR_TA_Chambres_Ayant.Fill(this.BR_DS_Chambres.ayant);
         }
-
         private void LienChambre()
         {
             this.BR_BS_Chambres.DataMember = "chambre";
@@ -59,11 +48,10 @@ namespace Bates_Reservation_Chambres
             this.BR_BS_Chambres_Ayant.DataSource = this.BR_BS_Chambres;
             this.BR_BS_Chambres_Ayant.DataMember = "FK__ayant__Nocham__1837881B";
 
-            Rebind();
+            Lier();
         }
         
-
-        private void enabled()
+        private void Active()
         {
             BR_TB_Chambres_NoCham.Enabled = true;
             BR_TB_Chambres_Etage.Enabled = true;
@@ -71,11 +59,11 @@ namespace Bates_Reservation_Chambres
             BR_TB_Chambre_CodeType.Enabled = true;
             BR_TB_Chambre_CodeLoc.Enabled = true;
             BR_TB_Chambres_Prix.Enabled = true;
-            BR_TB_Chambres_Desc1.Enabled = true;
-            BR_TB_Chambres_Desc2.Enabled = true;
+            BR_TB_Chambre_Desc1.Enabled = true;
+            BR_TB_Chambre_Desc2.Enabled = true;
+            
         }
-
-        private void disabled()
+        private void Desactive()
         {
             BR_TB_Chambres_NoCham.Enabled = false;
             BR_TB_Chambres_Etage.Enabled = false;
@@ -83,47 +71,54 @@ namespace Bates_Reservation_Chambres
             BR_TB_Chambre_CodeType.Enabled = false;
             BR_TB_Chambre_CodeLoc.Enabled = false;
             BR_TB_Chambres_Prix.Enabled = false;
-            BR_TB_Chambres_Desc1.Enabled = false;
-            BR_TB_Chambres_Desc2.Enabled = false;
+            BR_TB_Chambre_Desc1.Enabled = false;
+            BR_TB_Chambre_Desc2.Enabled = false;
         }
 
         private void BR_Button_Add_G_Click(object sender, EventArgs e)
         {
-            enabled();
-        }
-        
+            Active();
+            BR_Button_Add_G.Visible = false;
+            BR_LA_Add_G.Visible = false;
+            BR_Button_Del_G.Visible = false;
+            BR_LA_Del_G.Visible = false;
+            BR_Button_View_G.Visible = false;
+            BR_LA_View_G.Visible = false;
+            BR_Button_Undo_G.Visible = false;
+            BR_LA_Undo_G.Visible = false;
+            BR_Button_Edit_G.Visible = false;
+            BR_LA_Edit_G.Visible = false;
+            BR_Button_Save_G.Visible = false;
+            BR_LA_Save_G.Visible = false;
+            BR_Button_List_G.Visible = false;
+            BR_LA_List_G.Visible = false;
+        }    
         private void BR_Button_Gotofirst_G_Click(object sender, EventArgs e)
         {
             BR_BS_Chambres.MoveFirst();
         }
-
         private void BR_Button_Previous_G_Click(object sender, EventArgs e)
         {
             BR_BS_Chambres.MovePrevious();
         }
-
         private void BR_Button_Next_G_Click(object sender, EventArgs e)
         {
             BR_BS_Chambres.MoveNext();
         }
-
         private void BR_Button_Gotoend_G_Click(object sender, EventArgs e)
         {
             BR_BS_Chambres.MoveLast();
         }
-
-        private void BR_TB_Chambre_NoCham_MouseDoubleClick(object sender, MouseEventArgs e)
+        private void BR_Button_Undo_G_Click(object sender, EventArgs e)
         {
-            int temp = BR_BS_Chambres.Position;
-            BR_LS_Chambres_NoCham BR_LS_NoCham = new BR_LS_Chambres_NoCham();
-            BR_LS_NoCham.DBR_LS_DGW_Chambre.DataSource = BR_BS_Chambres;
-            if (BR_LS_NoCham.ShowDialog() == DialogResult.Cancel)
-            {
-                BR_BS_Chambres.Position = temp;
-            }
+            Desactive();
+        }
+        private void BR_Button_Save_G_Click(object sender, EventArgs e)
+        {
+            Desactive();
         }
 
-         private void BR_TB_Chambre_CodeType_MouseDoubleClick(object sender, MouseEventArgs e)
+        private void BR_TB_Chambre_CodeType_MouseDoubleClick(object sender, MouseEventArgs e)
          {
              int temp = BR_BS_Chambres.Position;
              BR_LS_Chambres_CodeType BR_LS_CodeType = new BR_LS_Chambres_CodeType();
@@ -133,56 +128,95 @@ namespace Bates_Reservation_Chambres
                  BR_BS_Chambres.Position = temp;
              }
          }
-
-         private void BR_TB_Chambre_CodeLoc_MouseDoubleClick(object sender, MouseEventArgs e)
-         {
-             int temp = BR_BS_Chambres.Position;
-             BR_LS_Chambres_CodeLoc BR_LS_CodeLoc = new BR_LS_Chambres_CodeLoc();
-             BR_LS_CodeLoc.DBR_LS_DGW_Chambre.DataSource = BR_BS_Chambres;
-             if (BR_LS_CodeLoc.ShowDialog() == DialogResult.Cancel)
-             {
-                 BR_BS_Chambres.Position = temp;
-             }
-         }
-
-        private void BR_Button_Undo_G_Click(object sender, EventArgs e)
+        private void BR_TB_Chambre_CodeLoc_MouseDoubleClick(object sender, MouseEventArgs e)
         {
-            disabled();
+            int temp = BR_BS_Chambres.Position;
+            BR_LS_Chambres_CodeLoc BR_LS_CodeLoc = new BR_LS_Chambres_CodeLoc();
+            BR_LS_CodeLoc.DBR_LS_DGW_Chambre.DataSource = BR_BS_Chambres;
+            if (BR_LS_CodeLoc.ShowDialog() == DialogResult.Cancel)
+            {
+                BR_BS_Chambres.Position = temp;
+            }
         }
-
-        private void BR_Button_Save_G_Click(object sender, EventArgs e)
+        private void BR_TB_Chambre_Desc1_MouseDoubleClick(object sender, MouseEventArgs e)
         {
-            disabled();
+            int temp = BR_BS_Chambres.Position;
+            BR_LS_Chambres_Desc1 BR_LS_Desc1 = new BR_LS_Chambres_Desc1();
+            BR_LS_Desc1.DBR_LS_DGW_Chambre.DataSource = BR_BS_Chambres;
+            if (BR_LS_Desc1.ShowDialog() == DialogResult.Cancel)
+            {
+                BR_BS_Chambres.Position = temp;
+            }
+        }
+        private void BR_TB_Chambre_Desc2_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            int temp = BR_BS_Chambres.Position;
+            BR_LS_Chambres_Desc2 BR_LS_Desc2 = new BR_LS_Chambres_Desc2();
+            BR_LS_Desc2.DBR_LS_DGW_Chambre.DataSource = BR_BS_Chambres;
+            if (BR_LS_Desc2.ShowDialog() == DialogResult.Cancel)
+            {
+                BR_BS_Chambres.Position = temp;
+            }
         }
 
         private void BR_Button_Add_S_Click(object sender, EventArgs e)
-        {
-            BR_Chambre_Add.Visible = true;
-            BR_Chambre_Cancel.Visible = true;
-
-            BR_Button_Add_S.Visible = false;
-            BR_LA_Add_S.Visible = false;
+       {
+        //  BR_Button_Add_S.Visible = false;
+        //  BR_LA_Add_S.Visible = false;
             BR_Button_Del_S.Visible = false;
             BR_LA_Del_S.Visible = false;
             BR_Button_View_S.Visible = false;
             BR_LA_View_S.Visible = false;
-            BR_Button_Undo_S.Visible = false;
-            BR_LA_Undo_S.Visible = false;
+        //  BR_Button_Undo_S.Visible = false;
+        //  BR_LA_Undo_S.Visible = false;
             BR_Button_Edit_S.Visible = false;
             BR_LA_Edit_S.Visible = false;
-            BR_Button_Save_S.Visible = false;
-            BR_LA_Save_S.Visible = false;
+        //  BR_Button_Save_S.Visible = false;
+        //  BR_LA_Save_S.Visible = false;
             
-            disabled();
+            Desactive();
 
             BR_TB_Chambres_NoCham.Enabled = true;
             BR_TB_Chambres_NoCham.Focus();
 
-            Unbind();
+            Delier();
+       }
+        private void BR_Button_Undo_S_Click(object sender, EventArgs e)
+        {
+            BR_Button_Add_G.Visible = true;
+            BR_LA_Add_G.Visible = true;
+            BR_Button_Del_G.Visible = true;
+            BR_LA_Del_G.Visible = true;
+            BR_Button_View_G.Visible = true;
+            BR_LA_View_G.Visible = true;
+            BR_Button_Undo_G.Visible = true;
+            BR_LA_Undo_G.Visible = true;
+            BR_Button_Edit_G.Visible = true;
+            BR_LA_Edit_G.Visible = true;
+            BR_Button_Save_G.Visible = true;
+            BR_LA_Save_G.Visible = true;
+            BR_Button_List_G.Visible = true;
+            BR_LA_List_G.Visible = true;
+        }
+        private void BR_Button_Save_S_Click(object sender, EventArgs e)
+        {
+            BR_Button_Add_S.Visible = true;
+            BR_LA_Add_S.Visible = true;
+            BR_Button_Del_S.Visible = true;
+            BR_LA_Del_S.Visible = true;
+            BR_Button_View_S.Visible = true;
+            BR_LA_View_S.Visible = true;
+            BR_Button_Undo_S.Visible = true;
+            BR_LA_Undo_S.Visible = true;
+            BR_Button_Edit_S.Visible = true;
+            BR_LA_Edit_S.Visible = true;
+            BR_Button_Save_S.Visible = true;
+            BR_LA_Save_S.Visible = true;
 
+            Active();
         }
 
-        private void Unbind()
+        private void Delier()
         {
             BR_DGV_Chambres.DataSource = null;
             BR_TB_Chambres_NoCham.Clear();
@@ -191,8 +225,8 @@ namespace Bates_Reservation_Chambres
             BR_TB_Chambre_CodeType.Clear();
             BR_TB_Chambre_CodeLoc.Clear();
             BR_TB_Chambres_Prix.Clear();
-            BR_TB_Chambres_Desc1.Clear();
-            BR_TB_Chambres_Desc2.Clear();
+            BR_TB_Chambre_Desc1.Clear();
+            BR_TB_Chambre_Desc2.Clear();
             
             BR_TB_Chambres_NoCham.DataBindings.Clear();
             BR_TB_Chambres_Etage.DataBindings.Clear();
@@ -200,11 +234,10 @@ namespace Bates_Reservation_Chambres
             BR_TB_Chambre_CodeType.DataBindings.Clear();
             BR_TB_Chambre_CodeLoc.DataBindings.Clear();
             BR_TB_Chambres_Prix.DataBindings.Clear();
-            BR_TB_Chambres_Desc1.DataBindings.Clear();
-            BR_TB_Chambres_Desc2.DataBindings.Clear();
+            BR_TB_Chambre_Desc1.DataBindings.Clear();
+            BR_TB_Chambre_Desc2.DataBindings.Clear();
         }
-
-        private void Rebind()
+        private void Lier()
         {
             BR_DGV_Chambres.DataSource = BR_BS_Chambres_Ayant;
             try
@@ -215,18 +248,13 @@ namespace Bates_Reservation_Chambres
                 BR_TB_Chambre_CodeType.DataBindings.Add("Text", BR_BS_Chambres, "CodTypCham");
                 BR_TB_Chambre_CodeLoc.DataBindings.Add("Text", BR_BS_Chambres, "CodLoc");
                 BR_TB_Chambres_Prix.DataBindings.Add("Text", BR_BS_Chambres, "Prix");
-                BR_TB_Chambres_Desc1.DataBindings.Add("Text", BR_BS_Chambres, "DescLoc");
-                BR_TB_Chambres_Desc2.DataBindings.Add("Text", BR_BS_Chambres, "DescTyp");
+                BR_TB_Chambre_Desc1.DataBindings.Add("Text", BR_BS_Chambres, "DescLoc");
+                BR_TB_Chambre_Desc2.DataBindings.Add("Text", BR_BS_Chambres, "DescTyp");
             }
             catch
             {
                 throw;
             }
-        }
-
-        private void BR_Button_Undo_S_Click(object sender, EventArgs e)
-        {
-            Rebind();
         }
 
         private void BR_CreationChambre()
@@ -235,7 +263,7 @@ namespace Bates_Reservation_Chambres
             BR_dataRow_Chambre["NoCham"] = BR_TB_Chambres_NoCham.Text;
             BR_DS_Chambres.Tables["chambre"].Rows.Add(BR_dataRow_Chambre);  
             BR_BS_Chambres.Position = BR_BS_Chambres.Count - 1;
-            Rebind();
+            Lier();
 
             BR_TB_Chambres_NoCham.BackColor = Color.GreenYellow;
             BR_TB_Chambres_NoCham.Enabled = false;
@@ -243,12 +271,6 @@ namespace Bates_Reservation_Chambres
             BR_TB_Chambre_CodeType.Enabled = true;
             BR_TB_Chambre_CodeType.Focus();
         }
-
-        private bool BR_ValdiationNewChambre()
-        {
-            return true;
-        }
-
         private void BR_TB_Chambres_NoCham_Validating(object sender, CancelEventArgs e)
         {
             if (abandon == false)
@@ -293,48 +315,6 @@ namespace Bates_Reservation_Chambres
             }
         }
 
-        private void BR_TB_Chambres_Desc1_MouseDoubleClick(object sender, MouseEventArgs e)
-        {
-            int temp = BR_BS_Chambres.Position;
-            BR_LS_Chambres_Desc1 BR_LS_Desc1 = new BR_LS_Chambres_Desc1();
-            BR_LS_Desc1.DBR_LS_DGW_Chambre.DataSource = BR_BS_Chambres;
-            if (BR_LS_Desc1.ShowDialog() == DialogResult.Cancel)
-            {
-                BR_BS_Chambres.Position = temp;
-            }
-        }
-
-        private void BR_TB_Chambres_Desc2_MouseDoubleClick(object sender, MouseEventArgs e)
-        {
-            int temp = BR_BS_Chambres.Position;
-            BR_LS_Chambres_Desc2 BR_LS_Desc2 = new BR_LS_Chambres_Desc2();
-            BR_LS_Desc2.DBR_LS_DGW_Chambre.DataSource = BR_BS_Chambres;
-            if (BR_LS_Desc2.ShowDialog() == DialogResult.Cancel)
-            {
-                BR_BS_Chambres.Position = temp;
-            }
-        }
-        private void BR_Button_Save_S_Click(object sender, EventArgs e)
-        {
-            BR_Chambre_Add.Visible = false;
-            BR_Chambre_Cancel.Visible = false;
-
-            BR_Button_Add_S.Visible = true;
-            BR_LA_Add_S.Visible = true;
-            BR_Button_Del_S.Visible = true;
-            BR_LA_Del_S.Visible = true;
-            BR_Button_View_S.Visible = true;
-            BR_LA_View_S.Visible = true;
-            BR_Button_Undo_S.Visible = true;
-            BR_LA_Undo_S.Visible = true;
-            BR_Button_Edit_S.Visible = true;
-            BR_LA_Edit_S.Visible = true;
-            BR_Button_Save_S.Visible = true;
-            BR_LA_Save_S.Visible = true;
-
-            enabled();
-        }
-
         private void BR_TB_Chambre_CodeType_Validating(object sender, CancelEventArgs e)
         {
             string errorMsg;
@@ -343,7 +323,12 @@ namespace Bates_Reservation_Chambres
                 e.Cancel = true;
                 BR_TB_Chambre_CodeType.Select(0, BR_TB_Chambre_CodeType.Text.Length);
                 this.BR_EP.SetError(BR_TB_Chambre_CodeType, errorMsg);
-            }            
+            }
+            else
+            {
+                e.Cancel = false;
+                MessageBox.Show("Goodbye.");
+            }
         }
         private void BR_TB_Chambre_CodeType_Validated(object sender, System.EventArgs e)
         {
@@ -367,8 +352,8 @@ namespace Bates_Reservation_Chambres
                 DialogResult result = MessageBox.Show("Souhaitez-vous continuer?", "information", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
                 if(result == DialogResult.OK)
                 {
-                    BR_TB_Chambres_Desc1.Enabled = true;
-                    BR_TB_Chambres_Desc1.Focus();
+                    BR_TB_Chambre_Desc1.Enabled = true;
+                    BR_TB_Chambre_Desc1.Focus();
                     return true;
                 }
                 else if(result == DialogResult.Cancel)
@@ -376,8 +361,8 @@ namespace Bates_Reservation_Chambres
                     MessageBox.Show("Vous avez annuler l'ajout de la nouvelles chambres et toutes les modifications ont été annulées!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     //Affaire pour sortir du mode saisie
                     
-                    BR_TB_Chambres_Desc1.Enabled = true;
-                    BR_TB_Chambres_Desc1.Focus();
+                    BR_TB_Chambre_Desc1.Enabled = true;
+                    BR_TB_Chambre_Desc1.Focus();
                     return true;
                 }
                 MessageBox.Show("Aucun des deux!");
@@ -389,19 +374,19 @@ namespace Bates_Reservation_Chambres
             return false;
         }
 
-        private void BR_TB_Chambres_Desc1_Validating(object sender, CancelEventArgs e)
+        private void BR_TB_Chambre_Desc1_Validating(object sender, CancelEventArgs e)
         {
             string errorMsg;
-            if (!ValidDesc1(BR_TB_Chambres_Desc1.Text, out errorMsg))
+            if (!ValidDesc1(BR_TB_Chambre_Desc1.Text, out errorMsg))
             {
                 e.Cancel = true;
-                BR_TB_Chambres_Desc1.Select(0, BR_TB_Chambres_Desc1.Text.Length);
-                this.BR_EP.SetError(BR_TB_Chambres_Desc1, errorMsg);
+                BR_TB_Chambre_Desc1.Select(0, BR_TB_Chambre_Desc1.Text.Length);
+                this.BR_EP.SetError(BR_TB_Chambre_Desc1, errorMsg);
             }
         }
-        private void BR_TB_Chambres_Desc1_Validated(object sender, EventArgs e)
+        private void BR_TB_Chambre_Desc1_Validated(object sender, EventArgs e)
         {
-            BR_EP.SetError(BR_TB_Chambres_Desc1, "");
+            BR_EP.SetError(BR_TB_Chambre_Desc1, "");
         }
         public bool ValidDesc1(string Desc1, out string errorMessage)
         {
@@ -412,12 +397,12 @@ namespace Bates_Reservation_Chambres
                 return false;
             }
 
-            if (BR_TB_Chambres_Desc1.Text.ToLower() == "standars" || BR_TB_Chambres_Desc1.Text.Trim().ToLower() == "avec balcon" || BR_TB_Chambres_Desc1.Text.Trim().ToLower() == "bain tourbillon" || BR_TB_Chambres_Desc1.Text.ToLower() == "handicape"
-                || BR_TB_Chambres_Desc1.Text.ToLower() == "internet")
+            if (BR_TB_Chambre_Desc1.Text.ToLower() == "standars" || BR_TB_Chambre_Desc1.Text.Trim().ToLower() == "avec balcon" || BR_TB_Chambre_Desc1.Text.Trim().ToLower() == "bain tourbillon" || BR_TB_Chambre_Desc1.Text.ToLower() == "handicape"
+                || BR_TB_Chambre_Desc1.Text.ToLower() == "internet")
             {
                 errorMessage = "";
-                BR_TB_Chambres_Desc1.BackColor = Color.GreenYellow;
-                BR_TB_Chambres_Desc1.Enabled = false;
+                BR_TB_Chambre_Desc1.BackColor = Color.GreenYellow;
+                BR_TB_Chambre_Desc1.Enabled = false;
 
                 DialogResult result = MessageBox.Show("Souhaitez-vous continuer?", "information", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
                 if (result == DialogResult.OK)
@@ -438,7 +423,7 @@ namespace Bates_Reservation_Chambres
             }
 
             errorMessage = "Entrez une bonne commodité svp.\n" +  "Par examples 'standars, avec balcon, bain tourbillon , handicape ou internet svp' ";
-            BR_TB_Chambres_Desc1.BackColor = Color.Red;
+            BR_TB_Chambre_Desc1.BackColor = Color.Red;
             return false;
         }
         
@@ -474,16 +459,16 @@ namespace Bates_Reservation_Chambres
                 DialogResult result = MessageBox.Show("Souhaitez-vous continuer?", "information", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
                 if (result == DialogResult.OK)
                 {
-                    BR_TB_Chambre_CodeLoc.Enabled = true;
-                    BR_TB_Chambre_CodeLoc.Focus();
+                    BR_TB_Chambre_Desc2.Enabled = true;
+                    BR_TB_Chambre_Desc2.Focus();
                     return true;
                 }
                 else if (result == DialogResult.Cancel)
                 {
                     MessageBox.Show("Vous avez annuler l'ajout de la nouvelles chambres et toutes les modifications ont été annulées!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     //Affaire pour sortir du mode saisie
-                    BR_TB_Chambres_Desc2.Enabled = true;
-                    BR_TB_Chambres_Desc2.Focus();
+                    BR_TB_Chambre_Desc2.Enabled = true;
+                    BR_TB_Chambre_Desc2.Focus();
                     return true;
                 }
                 MessageBox.Show("Aucun des deux!");
@@ -494,21 +479,20 @@ namespace Bates_Reservation_Chambres
             return false;
         }
 
-        private void BR_TB_Chambres_Desc2_Validating(object sender, CancelEventArgs e)
+        private void BR_TB_Chambre_Desc2_Validating(object sender, CancelEventArgs e)
         {
             string errorMsg;
-            if (!ValidDesc2(BR_TB_Chambres_Desc2.Text, out errorMsg))
+            if (!ValidDesc2(BR_TB_Chambre_Desc2.Text, out errorMsg))
             {
                 e.Cancel = true;
-                BR_TB_Chambres_Desc2.Select(0, BR_TB_Chambres_Desc2.Text.Length);
-                this.BR_EP.SetError(BR_TB_Chambres_Desc2, errorMsg);
+                BR_TB_Chambre_Desc2.Select(0, BR_TB_Chambre_Desc2.Text.Length);
+                this.BR_EP.SetError(BR_TB_Chambre_Desc2, errorMsg);
             }
         }
-        private void BR_TB_Chambres_Desc2_Validated(object sender, EventArgs e)
+        private void BR_TB_Chambre_Desc2_Validated(object sender, EventArgs e)
         {
-            BR_EP.SetError(BR_TB_Chambres_Desc2, "");
+            BR_EP.SetError(BR_TB_Chambre_Desc2, "");
         }
-
         public bool ValidDesc2(string Desc2, out string errorMessage)
         {
 
@@ -518,17 +502,17 @@ namespace Bates_Reservation_Chambres
                 return false;
             }
 
-            if (BR_TB_Chambres_Desc2.Text.ToLower() == "arriere" || BR_TB_Chambres_Desc2.Text.ToLower() == "avant" || BR_TB_Chambres_Desc2.Text.ToLower() == "vu sur cimetiere")
+            if (BR_TB_Chambre_Desc2.Text.ToLower() == "arriere" || BR_TB_Chambre_Desc2.Text.ToLower() == "avant" || BR_TB_Chambre_Desc2.Text.ToLower() == "vu sur cimetiere")
             {
                 errorMessage = "";
-                BR_TB_Chambres_Desc2.BackColor = Color.GreenYellow;
-                BR_TB_Chambres_Desc2.Enabled = false;
+                BR_TB_Chambre_Desc2.BackColor = Color.GreenYellow;
+                BR_TB_Chambre_Desc2.Enabled = false;
 
                 DialogResult result = MessageBox.Show("Souhaitez-vous continuer?", "information", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
                 if (result == DialogResult.OK)
                 {
-                    BR_TB_Chambre_CodeLoc.Enabled = true;
-                    BR_TB_Chambre_CodeLoc.Focus();
+                    BR_TB_Chambres_Etat.Enabled = true;
+                    BR_TB_Chambres_Etat.Focus();
                     return true;
                 }
                 else if (result == DialogResult.Cancel)
@@ -549,20 +533,162 @@ namespace Bates_Reservation_Chambres
 
         private void BR_TB_Chambres_Etat_Validating(object sender, CancelEventArgs e)
         {
-
+            string errorMsg;
+            if (!ValidEtat(BR_TB_Chambres_Etat.Text, out errorMsg))
+            {
+                e.Cancel = true;
+                BR_TB_Chambres_Etat.Select(0, BR_TB_Chambres_Etat.Text.Length);
+                this.BR_EP.SetError(BR_TB_Chambres_Etat, errorMsg);
+            }
         }
         private void BR_TB_Chambres_Etat_Validated(object sender, EventArgs e)
         {
+            BR_EP.SetError(BR_TB_Chambres_Etat, "");
+        }
+        public bool ValidEtat(string Etat, out string errorMessage)
+        {
+            if (Etat.Length == 0)
+            {
+                errorMessage = "Entrer un etat de chambre valide : disponible ou non disponible svp.";
+                return false;
+            }
 
+            if (BR_TB_Chambres_Etat.Text.ToLower() == "disponible" || BR_TB_Chambres_Etat.Text.ToLower() == "non disponible")
+            {
+                errorMessage = "";
+                BR_TB_Chambres_Etat.BackColor = Color.GreenYellow;
+                BR_TB_Chambres_Etat.Enabled = false;
+
+                DialogResult result = MessageBox.Show("Souhaitez-vous continuer?", "information", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+                if (result == DialogResult.OK)
+                {
+                    BR_TB_Chambres_Prix.Enabled = true;
+                    BR_TB_Chambres_Prix.Focus();
+                    return true;
+                }
+                else if (result == DialogResult.Cancel)
+                {
+                    MessageBox.Show("Vous avez annuler l'ajout de la nouvelles chambres et toutes les modifications ont été annulées!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    //Affaire pour sortir du mode saisie
+                    BR_TB_Chambres_Prix.Enabled = true;
+                    BR_TB_Chambres_Prix.Focus();
+                    return true;
+                }
+                MessageBox.Show("Aucun des deux!");
+            }
+
+            errorMessage = "Entrez une bonne commodité svp.\n" + "Par exemple 'disponible ou non disponible svp' ";
+            BR_TB_Chambres_Etat.BackColor = Color.Red;
+            return false;
         }
 
         private void BR_TB_Chambres_Prix_Validating(object sender, CancelEventArgs e)
         {
-
+            string errorMsg;
+            if (!ValidPrix(BR_TB_Chambres_Prix.Text, out errorMsg))
+            {
+                e.Cancel = true;
+                BR_TB_Chambres_Prix.Select(0, BR_TB_Chambres_Prix.Text.Length);
+                this.BR_EP.SetError(BR_TB_Chambres_Prix, errorMsg);
+            }
         }
         private void BR_TB_Chambres_Prix_Validated(object sender, EventArgs e)
         {
+            BR_EP.SetError(BR_TB_Chambres_Prix, "");
+        }
+        public bool ValidPrix(string Etat, out string errorMessage)
+        {
 
+            if (Etat.Length == 0)
+            {
+                errorMessage = "Entrer un prix de chambre valide : 150 ou 200 svp.";
+                return false;
+            }
+
+            if (BR_TB_Chambres_Prix.Text.ToLower() == "disponible" || BR_TB_Chambres_Prix.Text.ToLower() == "non disponible")
+            {
+                errorMessage = "";
+                BR_TB_Chambres_Prix.BackColor = Color.GreenYellow;
+                BR_TB_Chambres_Prix.Enabled = false;
+
+                DialogResult result = MessageBox.Show("Souhaitez-vous continuer?", "information", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+                if (result == DialogResult.OK)
+                {
+                    return true;
+                }
+                else if (result == DialogResult.Cancel)
+                {
+                    MessageBox.Show("Vous avez annuler l'ajout de la nouvelles chambres et toutes les modifications ont été annulées!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    //Affaire pour sortir du mode saisie
+                    
+                    return true;
+                }
+                MessageBox.Show("Aucun des deux!");
+            }
+
+            errorMessage = "Entrez une bonne commodité svp.\n" + "Par exemple 'disponible ou non disponible svp' ";
+            BR_TB_Chambres_Prix.BackColor = Color.Red;
+            return false;
+        }
+
+        private void BR_Button_LS_S_Click(object sender, EventArgs e)
+        {
+            int temp = BR_BS_Chambres.Position;
+            BR_LS_Chambres_NoCham BR_LS_NoCham = new BR_LS_Chambres_NoCham();
+            BR_LS_NoCham.DBR_LS_DGW_Chambre.DataSource = BR_BS_Chambres;
+            if (BR_LS_NoCham.ShowDialog() == DialogResult.Cancel)
+            {
+                BR_BS_Chambres.Position = temp;
+            }
+        }
+
+        private void BR_Button_LS_S_MouseHover(object sender, EventArgs e)
+        {
+            BR_LA_ListeSelection_S.Visible = true;
+            BR_LA_Chambre_CodeType.Visible = false;
+            BR_TB_Chambre_CodeType.Visible = false;
+
+            BR_LA_Chambre_Desc2.Visible = false;
+            BR_TB_Chambre_Desc2.Visible = false;
+            BR_LA_Chambre_CodeLoc.Visible = false;
+            BR_TB_Chambre_CodeLoc.Visible = false;
+            BR_LA_Chambre_Desc1.Visible = false;
+            BR_TB_Chambre_Desc1.Visible = false;
+            BR_Button_LS_CodeType_S.Visible = false;
+            BR_Button_LS_CodeLoc_S.Visible = false;
+        }
+
+        private void BR_Button_LS_S_MouseLeave(object sender, EventArgs e)
+        {
+            BR_LA_ListeSelection_S.Visible = false;
+        }
+        
+
+        private void button1_MouseLeave(object sender, EventArgs e)
+        {
+            BR_LA_ListeSelection_S.Visible = false;
+        }
+
+        private void button2_MouseHover(object sender, EventArgs e)
+        {
+            BR_LA_ListeSelection_S.Visible = true;
+        }
+
+        private void button2_MouseLeave(object sender, EventArgs e)
+        {
+            BR_LA_ListeSelection_S.Visible = true;
+        }
+
+        private void BR_Button_LS_Chambre_S_MouseHover(object sender, EventArgs e)
+        {
+            BR_LA_ListeSelection_S.Visible = true;
+
+            BR_Button_LS_CodeLoc_S.Visible = false;
+        }
+
+        private void BR_Button_LS_Chambre_S_MouseLeave(object sender, EventArgs e)
+        {
+            BR_LA_ListeSelection_S.Visible = false;
         }
     }
 
@@ -583,8 +709,8 @@ namespace Bates_Reservation_Chambres
                     errorMessage = "";
                     BR_TB_Chambre_CodeType.BackColor = Color.GreenYellow;
                     BR_TB_Chambre_CodeType.Enabled = false;
-                    BR_TB_Chambres_Desc1.Enabled = true;
-                    BR_TB_Chambres_Desc1.Focus();
+                    BR_TB_Chambre_Desc1.Enabled = true;
+                    BR_TB_Chambre_Desc1.Focus();
                     return true;
                 }
             }
