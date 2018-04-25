@@ -39,9 +39,9 @@ namespace Bates_Reservation_Chambres.Properties {
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
         [global::System.Configuration.DefaultSettingValueAttribute("Data Source=mssql.local.shawinigan.info;Initial Catalog=h18equipe4;Persist Securi" +
             "ty Info=True;User ID=h18equipe4etd2;Password=1401429862")]
-        public string h18equipe4ConnectionString1 {
+        public string h18equipe4 {
             get {
-                return ((string)(this["h18equipe4ConnectionString1"]));
+                return ((string)(this["h18equipe4"]));
             }
         }
     }

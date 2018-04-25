@@ -6,3 +6,7 @@ FROM            chambre INNER JOIN
                          typecham ON chambre.CodTypCham = typecham.CodTypCham
 
 Select ayant
+
+SELECT        ayant.Nocham, ayant.Codcom, commodite.DescCom
+FROM            ayant INNER JOIN
+                         commodite ON ayant.Codcom = commodite.Codcom

@@ -2,15 +2,14 @@
 <xs:schema id="BR_DS_Chambres" targetNamespace="http://tempuri.org/BR_DS_Chambres.xsd" xmlns:mstns="http://tempuri.org/BR_DS_Chambres.xsd" xmlns="http://tempuri.org/BR_DS_Chambres.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
   <xs:annotation>
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
-      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
         <Connections>
-          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="h18equipe4ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="h18equipe4ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Bates_Reservation_Chambres.Properties.Settings.GlobalReference.Default.h18equipe4ConnectionString" Provider="System.Data.SqlClient" />
-          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="h18equipe4ConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="h18equipe4ConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Bates_Reservation_Chambres.Properties.Settings.GlobalReference.Default.h18equipe4ConnectionString1" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="h18equipe4" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="h18equipe4 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Bates_Reservation_Chambres.Properties.Settings.GlobalReference.Default.h18equipe4" Provider="System.Data.SqlClient" />
         </Connections>
         <Tables>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="arriveTableAdapter" GeneratorDataComponentClassName="arriveTableAdapter" Name="arrive" UserDataComponentName="arriveTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="h18equipe4ConnectionString1 (Settings)" DbObjectName="h18equipe4.dbo.arrive" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="h18equipe4 (Settings)" DbObjectName="h18equipe4.dbo.arrive" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>DELETE FROM [dbo].[arrive] WHERE (([IdArrive] = @Original_IdArrive) AND ((@IsNull_DateArrive = 1 AND [DateArrive] IS NULL) OR ([DateArrive] = @Original_DateArrive)) AND ((@IsNull_IdCli = 1 AND [IdCli] IS NULL) OR ([IdCli] = @Original_IdCli)) AND ((@IsNull_IdReser = 1 AND [IdReser] IS NULL) OR ([IdReser] = @Original_IdReser)) AND ((@IsNull_NoCham = 1 AND [NoCham] IS NULL) OR ([NoCham] = @Original_NoCham)))</CommandText>
@@ -79,66 +78,9 @@ SELECT IdArrive, DateArrive, IdCli, IdReser, NoCham FROM arrive WHERE (IdArrive 
             </Mappings>
             <Sources />
           </TableAdapter>
-          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="typetrxTableAdapter" GeneratorDataComponentClassName="typetrxTableAdapter" Name="typetrx" UserDataComponentName="typetrxTableAdapter">
-            <MainSource>
-              <DbSource ConnectionRef="h18equipe4ConnectionString1 (Settings)" DbObjectName="h18equipe4.dbo.typetrx" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
-                <DeleteCommand>
-                  <DbCommand CommandType="Text" ModifiedByUser="false">
-                    <CommandText>DELETE FROM [dbo].[typetrx] WHERE (([CodeTypeTrx] = @Original_CodeTypeTrx) AND ((@IsNull_DescTrx = 1 AND [DescTrx] IS NULL) OR ([DescTrx] = @Original_DescTrx)) AND ((@IsNull_Nature = 1 AND [Nature] IS NULL) OR ([Nature] = @Original_Nature)))</CommandText>
-                    <Parameters>
-                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_CodeTypeTrx" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="CodeTypeTrx" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_DescTrx" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DescTrx" SourceColumnNullMapping="true" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_DescTrx" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="DescTrx" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Nature" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Nature" SourceColumnNullMapping="true" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Nature" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Nature" SourceColumnNullMapping="false" SourceVersion="Original" />
-                    </Parameters>
-                  </DbCommand>
-                </DeleteCommand>
-                <InsertCommand>
-                  <DbCommand CommandType="Text" ModifiedByUser="false">
-                    <CommandText>INSERT INTO [dbo].[typetrx] ([CodeTypeTrx], [DescTrx], [Nature]) VALUES (@CodeTypeTrx, @DescTrx, @Nature);
-SELECT CodeTypeTrx, DescTrx, Nature FROM typetrx WHERE (CodeTypeTrx = @CodeTypeTrx)</CommandText>
-                    <Parameters>
-                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@CodeTypeTrx" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="CodeTypeTrx" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@DescTrx" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="DescTrx" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Nature" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Nature" SourceColumnNullMapping="false" SourceVersion="Current" />
-                    </Parameters>
-                  </DbCommand>
-                </InsertCommand>
-                <SelectCommand>
-                  <DbCommand CommandType="Text" ModifiedByUser="false">
-                    <CommandText>SELECT CodeTypeTrx, DescTrx, Nature FROM dbo.typetrx</CommandText>
-                    <Parameters />
-                  </DbCommand>
-                </SelectCommand>
-                <UpdateCommand>
-                  <DbCommand CommandType="Text" ModifiedByUser="false">
-                    <CommandText>UPDATE [dbo].[typetrx] SET [CodeTypeTrx] = @CodeTypeTrx, [DescTrx] = @DescTrx, [Nature] = @Nature WHERE (([CodeTypeTrx] = @Original_CodeTypeTrx) AND ((@IsNull_DescTrx = 1 AND [DescTrx] IS NULL) OR ([DescTrx] = @Original_DescTrx)) AND ((@IsNull_Nature = 1 AND [Nature] IS NULL) OR ([Nature] = @Original_Nature)));
-SELECT CodeTypeTrx, DescTrx, Nature FROM typetrx WHERE (CodeTypeTrx = @CodeTypeTrx)</CommandText>
-                    <Parameters>
-                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@CodeTypeTrx" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="CodeTypeTrx" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@DescTrx" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="DescTrx" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Nature" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Nature" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_CodeTypeTrx" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="CodeTypeTrx" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_DescTrx" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DescTrx" SourceColumnNullMapping="true" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_DescTrx" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="DescTrx" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Nature" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Nature" SourceColumnNullMapping="true" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Nature" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Nature" SourceColumnNullMapping="false" SourceVersion="Original" />
-                    </Parameters>
-                  </DbCommand>
-                </UpdateCommand>
-              </DbSource>
-            </MainSource>
-            <Mappings>
-              <Mapping SourceColumn="CodeTypeTrx" DataSetColumn="CodeTypeTrx" />
-              <Mapping SourceColumn="DescTrx" DataSetColumn="DescTrx" />
-              <Mapping SourceColumn="Nature" DataSetColumn="Nature" />
-            </Mappings>
-            <Sources />
-          </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ayantTableAdapter" GeneratorDataComponentClassName="ayantTableAdapter" Name="ayant" UserDataComponentName="ayantTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="h18equipe4ConnectionString1 (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="h18equipe4 (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT        ayant.Nocham, ayant.Codcom, commodite.DescCom
@@ -158,7 +100,7 @@ FROM            ayant INNER JOIN
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="chambreTableAdapter" GeneratorDataComponentClassName="chambreTableAdapter" Name="chambre" UserDataComponentName="chambreTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="h18equipe4ConnectionString1 (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="h18equipe4 (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT        chambre.NoCham, chambre.Etage, chambre.Prix, chambre.Etat, chambre.Memo, chambre.CodLoc, chambre.CodTypCham, localisation.DescLoc, typecham.DescTyp
@@ -185,7 +127,7 @@ FROM            chambre INNER JOIN
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="clientTableAdapter" GeneratorDataComponentClassName="clientTableAdapter" Name="client" UserDataComponentName="clientTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="h18equipe4ConnectionString1 (Settings)" DbObjectName="h18equipe4.dbo.client" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="h18equipe4 (Settings)" DbObjectName="h18equipe4.dbo.client" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>DELETE FROM [dbo].[client] WHERE (([IdCli] = @Original_IdCli) AND ((@IsNull_Nom = 1 AND [Nom] IS NULL) OR ([Nom] = @Original_Nom)) AND ((@IsNull_Adresse = 1 AND [Adresse] IS NULL) OR ([Adresse] = @Original_Adresse)) AND ((@IsNull_Telephone = 1 AND [Telephone] IS NULL) OR ([Telephone] = @Original_Telephone)) AND ((@IsNull_NoCarte = 1 AND [NoCarte] IS NULL) OR ([NoCarte] = @Original_NoCarte)) AND ((@IsNull_TypeCarte = 1 AND [TypeCarte] IS NULL) OR ([TypeCarte] = @Original_TypeCarte)) AND ((@IsNull_DateExp = 1 AND [DateExp] IS NULL) OR ([DateExp] = @Original_DateExp)) AND ((@IsNull_SoldDu = 1 AND [SoldDu] IS NULL) OR ([SoldDu] = @Original_SoldDu)))</CommandText>
@@ -256,7 +198,7 @@ SELECT IdCli, Nom, Adresse, Telephone, NoCarte, TypeCarte, DateExp, SoldDu FROM 
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Original_DateExp" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="DateExp" SourceColumnNullMapping="false" SourceVersion="Original" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_SoldDu" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="SoldDu" SourceColumnNullMapping="true" SourceVersion="Original" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_SoldDu" Precision="12" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="SoldDu" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="false" AutogeneratedName="IdCli" ColumnName="IdCli" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@IdCli" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="IdCli" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="IdCli" ColumnName="IdCli" DataSourceName="h18equipe4.dbo.client" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@IdCli" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="IdCli" SourceColumnNullMapping="false" SourceVersion="Current" />
                     </Parameters>
                   </DbCommand>
                 </UpdateCommand>
@@ -276,7 +218,7 @@ SELECT IdCli, Nom, Adresse, Telephone, NoCarte, TypeCarte, DateExp, SoldDu FROM 
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="commoditeTableAdapter" GeneratorDataComponentClassName="commoditeTableAdapter" Name="commodite" UserDataComponentName="commoditeTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="h18equipe4ConnectionString1 (Settings)" DbObjectName="h18equipe4.dbo.commodite" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="h18equipe4 (Settings)" DbObjectName="h18equipe4.dbo.commodite" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>DELETE FROM [dbo].[commodite] WHERE (([Codcom] = @Original_Codcom) AND ((@IsNull_DescCom = 1 AND [DescCom] IS NULL) OR ([DescCom] = @Original_DescCom)))</CommandText>
@@ -326,14 +268,26 @@ SELECT Codcom, DescCom FROM commodite WHERE (Codcom = @Codcom)</CommandText>
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="deTableAdapter" GeneratorDataComponentClassName="deTableAdapter" Name="de" UserDataComponentName="deTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="h18equipe4ConnectionString1 (Settings)" DbObjectName="h18equipe4.dbo.de" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="h18equipe4 (Settings)" DbObjectName="h18equipe4.dbo.de" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [dbo].[de] WHERE (((@IsNull_Attribuee = 1 AND [Attribuee] IS NULL) OR ([Attribuee] = @Original_Attribuee)) AND ([IdReser] = @Original_IdReser) AND ([NoCham] = @Original_NoCham))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Attribuee" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Attribuee" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_Attribuee" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Attribuee" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_IdReser" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="IdReser" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_NoCham" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="NoCham" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
                 <InsertCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
-                    <CommandText>INSERT INTO [dbo].[de] ([Attribuee], [IdReser], [NoCham]) VALUES (@Attribuee, @IdReser, @NoCham)</CommandText>
+                    <CommandText>INSERT INTO [dbo].[de] ([Attribuee], [IdReser], [NoCham]) VALUES (@Attribuee, @IdReser, @NoCham);
+SELECT Attribuee, IdReser, NoCham FROM de WHERE (IdReser = @IdReser) AND (NoCham = @NoCham)</CommandText>
                     <Parameters>
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Attribuee" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Attribuee" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IdReser" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="IdReser" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@NoCham" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="NoCham" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IdReser" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="IdReser" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@NoCham" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="NoCham" SourceColumnNullMapping="false" SourceVersion="Current" />
                     </Parameters>
                   </DbCommand>
                 </InsertCommand>
@@ -343,6 +297,21 @@ SELECT Codcom, DescCom FROM commodite WHERE (Codcom = @Codcom)</CommandText>
                     <Parameters />
                   </DbCommand>
                 </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [dbo].[de] SET [Attribuee] = @Attribuee, [IdReser] = @IdReser, [NoCham] = @NoCham WHERE (((@IsNull_Attribuee = 1 AND [Attribuee] IS NULL) OR ([Attribuee] = @Original_Attribuee)) AND ([IdReser] = @Original_IdReser) AND ([NoCham] = @Original_NoCham));
+SELECT Attribuee, IdReser, NoCham FROM de WHERE (IdReser = @IdReser) AND (NoCham = @NoCham)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Attribuee" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Attribuee" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IdReser" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="IdReser" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@NoCham" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="NoCham" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Attribuee" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Attribuee" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_Attribuee" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Attribuee" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_IdReser" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="IdReser" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_NoCham" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="NoCham" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
               </DbSource>
             </MainSource>
             <Mappings>
@@ -354,7 +323,7 @@ SELECT Codcom, DescCom FROM commodite WHERE (Codcom = @Codcom)</CommandText>
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="departTableAdapter" GeneratorDataComponentClassName="departTableAdapter" Name="depart" UserDataComponentName="departTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="h18equipe4ConnectionString1 (Settings)" DbObjectName="h18equipe4.dbo.depart" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="h18equipe4 (Settings)" DbObjectName="h18equipe4.dbo.depart" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>DELETE FROM [dbo].[depart] WHERE (([IdDepart] = @Original_IdDepart) AND ((@IsNull_DateDepart = 1 AND [DateDepart] IS NULL) OR ([DateDepart] = @Original_DateDepart)) AND ((@IsNull_ConfirmerPar = 1 AND [ConfirmerPar] IS NULL) OR ([ConfirmerPar] = @Original_ConfirmerPar)) AND ((@IsNull_IdReser = 1 AND [IdReser] IS NULL) OR ([IdReser] = @Original_IdReser)) AND ((@IsNull_NoCham = 1 AND [NoCham] IS NULL) OR ([NoCham] = @Original_NoCham)) AND ((@IsNull_IdCli = 1 AND [IdCli] IS NULL) OR ([IdCli] = @Original_IdCli)))</CommandText>
@@ -432,7 +401,7 @@ SELECT IdDepart, DateDepart, ConfirmerPar, IdReser, NoCham, IdCli FROM depart WH
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="localisationTableAdapter" GeneratorDataComponentClassName="localisationTableAdapter" Name="localisation" UserDataComponentName="localisationTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="h18equipe4ConnectionString1 (Settings)" DbObjectName="h18equipe4.dbo.localisation" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="h18equipe4 (Settings)" DbObjectName="h18equipe4.dbo.localisation" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>DELETE FROM [dbo].[localisation] WHERE (([CodLoc] = @Original_CodLoc) AND ((@IsNull_DescLoc = 1 AND [DescLoc] IS NULL) OR ([DescLoc] = @Original_DescLoc)))</CommandText>
@@ -482,7 +451,7 @@ SELECT CodLoc, DescLoc FROM localisation WHERE (CodLoc = @CodLoc)</CommandText>
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="reservationTableAdapter" GeneratorDataComponentClassName="reservationTableAdapter" Name="reservation" UserDataComponentName="reservationTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="h18equipe4ConnectionString1 (Settings)" DbObjectName="h18equipe4.dbo.reservation" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="h18equipe4 (Settings)" DbObjectName="h18equipe4.dbo.reservation" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>DELETE FROM [dbo].[reservation] WHERE (([IdReser] = @Original_IdReser) AND ((@IsNull_DateReser = 1 AND [DateReser] IS NULL) OR ([DateReser] = @Original_DateReser)) AND ((@IsNull_DateDebut = 1 AND [DateDebut] IS NULL) OR ([DateDebut] = @Original_DateDebut)) AND ((@IsNull_DateFin = 1 AND [DateFin] IS NULL) OR ([DateFin] = @Original_DateFin)) AND ((@IsNull_IdCli = 1 AND [IdCli] IS NULL) OR ([IdCli] = @Original_IdCli)))</CommandText>
@@ -553,7 +522,7 @@ SELECT IdReser, DateReser, DateDebut, DateFin, IdCli FROM reservation WHERE (IdR
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="trxTableAdapter" GeneratorDataComponentClassName="trxTableAdapter" Name="trx" UserDataComponentName="trxTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="h18equipe4ConnectionString1 (Settings)" DbObjectName="h18equipe4.dbo.trx" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="h18equipe4 (Settings)" DbObjectName="h18equipe4.dbo.trx" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>DELETE FROM [dbo].[trx] WHERE (([IdTrx] = @Original_IdTrx) AND ((@IsNull_DateTrx = 1 AND [DateTrx] IS NULL) OR ([DateTrx] = @Original_DateTrx)) AND ((@IsNull_MonantTrx = 1 AND [MonantTrx] IS NULL) OR ([MonantTrx] = @Original_MonantTrx)) AND ((@IsNull_Reportee = 1 AND [Reportee] IS NULL) OR ([Reportee] = @Original_Reportee)) AND ((@IsNull_CodeTypeTrx = 1 AND [CodeTypeTrx] IS NULL) OR ([CodeTypeTrx] = @Original_CodeTypeTrx)) AND ((@IsNull_IdReser = 1 AND [IdReser] IS NULL) OR ([IdReser] = @Original_IdReser)) AND ((@IsNull_NoCham = 1 AND [NoCham] IS NULL) OR ([NoCham] = @Original_NoCham)) AND ((@IsNull_IdCli = 1 AND [IdCli] IS NULL) OR ([IdCli] = @Original_IdCli)) AND ((@IsNull_IdArrive = 1 AND [IdArrive] IS NULL) OR ([IdArrive] = @Original_IdArrive)))</CommandText>
@@ -652,7 +621,7 @@ SELECT IdTrx, DateTrx, MonantTrx, Reportee, CodeTypeTrx, IdReser, NoCham, IdCli,
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="typechamTableAdapter" GeneratorDataComponentClassName="typechamTableAdapter" Name="typecham" UserDataComponentName="typechamTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="h18equipe4ConnectionString1 (Settings)" DbObjectName="h18equipe4.dbo.typecham" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="h18equipe4 (Settings)" DbObjectName="h18equipe4.dbo.typecham" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>DELETE FROM [dbo].[typecham] WHERE (([CodTypCham] = @Original_CodTypCham) AND ((@IsNull_DescTyp = 1 AND [DescTyp] IS NULL) OR ([DescTyp] = @Original_DescTyp)) AND ((@IsNull_NbDispo = 1 AND [NbDispo] IS NULL) OR ([NbDispo] = @Original_NbDispo)))</CommandText>
@@ -707,6 +676,63 @@ SELECT CodTypCham, DescTyp, NbDispo FROM typecham WHERE (CodTypCham = @CodTypCha
             </Mappings>
             <Sources />
           </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="typetrxTableAdapter" GeneratorDataComponentClassName="typetrxTableAdapter" Name="typetrx" UserDataComponentName="typetrxTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="h18equipe4 (Settings)" DbObjectName="h18equipe4.dbo.typetrx" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [dbo].[typetrx] WHERE (([CodeTypeTrx] = @Original_CodeTypeTrx) AND ((@IsNull_DescTrx = 1 AND [DescTrx] IS NULL) OR ([DescTrx] = @Original_DescTrx)) AND ((@IsNull_Nature = 1 AND [Nature] IS NULL) OR ([Nature] = @Original_Nature)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_CodeTypeTrx" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="CodeTypeTrx" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_DescTrx" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DescTrx" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_DescTrx" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="DescTrx" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Nature" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Nature" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Nature" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Nature" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [dbo].[typetrx] ([CodeTypeTrx], [DescTrx], [Nature]) VALUES (@CodeTypeTrx, @DescTrx, @Nature);
+SELECT CodeTypeTrx, DescTrx, Nature FROM typetrx WHERE (CodeTypeTrx = @CodeTypeTrx)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@CodeTypeTrx" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="CodeTypeTrx" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@DescTrx" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="DescTrx" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Nature" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Nature" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT CodeTypeTrx, DescTrx, Nature FROM dbo.typetrx</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [dbo].[typetrx] SET [CodeTypeTrx] = @CodeTypeTrx, [DescTrx] = @DescTrx, [Nature] = @Nature WHERE (([CodeTypeTrx] = @Original_CodeTypeTrx) AND ((@IsNull_DescTrx = 1 AND [DescTrx] IS NULL) OR ([DescTrx] = @Original_DescTrx)) AND ((@IsNull_Nature = 1 AND [Nature] IS NULL) OR ([Nature] = @Original_Nature)));
+SELECT CodeTypeTrx, DescTrx, Nature FROM typetrx WHERE (CodeTypeTrx = @CodeTypeTrx)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@CodeTypeTrx" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="CodeTypeTrx" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@DescTrx" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="DescTrx" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Nature" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Nature" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_CodeTypeTrx" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="CodeTypeTrx" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_DescTrx" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DescTrx" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_DescTrx" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="DescTrx" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Nature" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Nature" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Nature" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Nature" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="CodeTypeTrx" DataSetColumn="CodeTypeTrx" />
+              <Mapping SourceColumn="DescTrx" DataSetColumn="DescTrx" />
+              <Mapping SourceColumn="Nature" DataSetColumn="Nature" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
         </Tables>
         <Sources />
       </DataSource>
@@ -715,7 +741,7 @@ SELECT CodTypCham, DescTyp, NbDispo FROM typecham WHERE (CodTypCham = @CodTypCha
   <xs:element name="BR_DS_Chambres" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="BR_DS_Chambres" msprop:Generator_UserDSName="BR_DS_Chambres">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="arrive" msprop:Generator_TableClassName="arriveDataTable" msprop:Generator_TableVarName="tablearrive" msprop:Generator_TablePropName="arrive" msprop:Generator_RowDeletingName="arriveRowDeleting" msprop:Generator_RowChangingName="arriveRowChanging" msprop:Generator_RowEvHandlerName="arriveRowChangeEventHandler" msprop:Generator_RowDeletedName="arriveRowDeleted" msprop:Generator_UserTableName="arrive" msprop:Generator_RowChangedName="arriveRowChanged" msprop:Generator_RowEvArgName="arriveRowChangeEvent" msprop:Generator_RowClassName="arriveRow">
+        <xs:element name="arrive" msprop:Generator_TableClassName="arriveDataTable" msprop:Generator_TableVarName="tablearrive" msprop:Generator_RowChangedName="arriveRowChanged" msprop:Generator_TablePropName="arrive" msprop:Generator_RowDeletingName="arriveRowDeleting" msprop:Generator_RowChangingName="arriveRowChanging" msprop:Generator_RowEvHandlerName="arriveRowChangeEventHandler" msprop:Generator_RowDeletedName="arriveRowDeleted" msprop:Generator_RowClassName="arriveRow" msprop:Generator_UserTableName="arrive" msprop:Generator_RowEvArgName="arriveRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="IdArrive" msprop:Generator_ColumnVarNameInTable="columnIdArrive" msprop:Generator_ColumnPropNameInRow="IdArrive" msprop:Generator_ColumnPropNameInTable="IdArriveColumn" msprop:Generator_UserColumnName="IdArrive" type="xs:int" />
@@ -732,34 +758,7 @@ SELECT CodTypCham, DescTyp, NbDispo FROM typecham WHERE (CodTypCham = @CodTypCha
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="typetrx" msprop:Generator_TableClassName="typetrxDataTable" msprop:Generator_TableVarName="tabletypetrx" msprop:Generator_TablePropName="typetrx" msprop:Generator_RowDeletingName="typetrxRowDeleting" msprop:Generator_RowChangingName="typetrxRowChanging" msprop:Generator_RowEvHandlerName="typetrxRowChangeEventHandler" msprop:Generator_RowDeletedName="typetrxRowDeleted" msprop:Generator_UserTableName="typetrx" msprop:Generator_RowChangedName="typetrxRowChanged" msprop:Generator_RowEvArgName="typetrxRowChangeEvent" msprop:Generator_RowClassName="typetrxRow">
-          <xs:complexType>
-            <xs:sequence>
-              <xs:element name="CodeTypeTrx" msprop:Generator_ColumnVarNameInTable="columnCodeTypeTrx" msprop:Generator_ColumnPropNameInRow="CodeTypeTrx" msprop:Generator_ColumnPropNameInTable="CodeTypeTrxColumn" msprop:Generator_UserColumnName="CodeTypeTrx">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="2" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="DescTrx" msprop:Generator_ColumnVarNameInTable="columnDescTrx" msprop:Generator_ColumnPropNameInRow="DescTrx" msprop:Generator_ColumnPropNameInTable="DescTrxColumn" msprop:Generator_UserColumnName="DescTrx" minOccurs="0">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="25" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="Nature" msprop:Generator_ColumnVarNameInTable="columnNature" msprop:Generator_ColumnPropNameInRow="Nature" msprop:Generator_ColumnPropNameInTable="NatureColumn" msprop:Generator_UserColumnName="Nature" minOccurs="0">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="2" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-            </xs:sequence>
-          </xs:complexType>
-        </xs:element>
-        <xs:element name="ayant" msprop:Generator_TableClassName="ayantDataTable" msprop:Generator_TableVarName="tableayant" msprop:Generator_TablePropName="ayant" msprop:Generator_RowDeletingName="ayantRowDeleting" msprop:Generator_RowChangingName="ayantRowChanging" msprop:Generator_RowEvHandlerName="ayantRowChangeEventHandler" msprop:Generator_RowDeletedName="ayantRowDeleted" msprop:Generator_UserTableName="ayant" msprop:Generator_RowChangedName="ayantRowChanged" msprop:Generator_RowEvArgName="ayantRowChangeEvent" msprop:Generator_RowClassName="ayantRow">
+        <xs:element name="ayant" msprop:Generator_TableClassName="ayantDataTable" msprop:Generator_TableVarName="tableayant" msprop:Generator_RowChangedName="ayantRowChanged" msprop:Generator_TablePropName="ayant" msprop:Generator_RowDeletingName="ayantRowDeleting" msprop:Generator_RowChangingName="ayantRowChanging" msprop:Generator_RowEvHandlerName="ayantRowChangeEventHandler" msprop:Generator_RowDeletedName="ayantRowDeleted" msprop:Generator_RowClassName="ayantRow" msprop:Generator_UserTableName="ayant" msprop:Generator_RowEvArgName="ayantRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Nocham" msprop:Generator_ColumnVarNameInTable="columnNocham" msprop:Generator_ColumnPropNameInRow="Nocham" msprop:Generator_ColumnPropNameInTable="NochamColumn" msprop:Generator_UserColumnName="Nocham">
@@ -786,7 +785,7 @@ SELECT CodTypCham, DescTyp, NbDispo FROM typecham WHERE (CodTypCham = @CodTypCha
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="chambre" msprop:Generator_TableClassName="chambreDataTable" msprop:Generator_TableVarName="tablechambre" msprop:Generator_TablePropName="chambre" msprop:Generator_RowDeletingName="chambreRowDeleting" msprop:Generator_RowChangingName="chambreRowChanging" msprop:Generator_RowEvHandlerName="chambreRowChangeEventHandler" msprop:Generator_RowDeletedName="chambreRowDeleted" msprop:Generator_UserTableName="chambre" msprop:Generator_RowChangedName="chambreRowChanged" msprop:Generator_RowEvArgName="chambreRowChangeEvent" msprop:Generator_RowClassName="chambreRow">
+        <xs:element name="chambre" msprop:Generator_TableClassName="chambreDataTable" msprop:Generator_TableVarName="tablechambre" msprop:Generator_RowChangedName="chambreRowChanged" msprop:Generator_TablePropName="chambre" msprop:Generator_RowDeletingName="chambreRowDeleting" msprop:Generator_RowChangingName="chambreRowChanging" msprop:Generator_RowEvHandlerName="chambreRowChangeEventHandler" msprop:Generator_RowDeletedName="chambreRowDeleted" msprop:Generator_RowClassName="chambreRow" msprop:Generator_UserTableName="chambre" msprop:Generator_RowEvArgName="chambreRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="NoCham" msprop:Generator_ColumnVarNameInTable="columnNoCham" msprop:Generator_ColumnPropNameInRow="NoCham" msprop:Generator_ColumnPropNameInTable="NoChamColumn" msprop:Generator_UserColumnName="NoCham">
@@ -837,7 +836,7 @@ SELECT CodTypCham, DescTyp, NbDispo FROM typecham WHERE (CodTypCham = @CodTypCha
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="client" msprop:Generator_TableClassName="clientDataTable" msprop:Generator_TableVarName="tableclient" msprop:Generator_TablePropName="client" msprop:Generator_RowDeletingName="clientRowDeleting" msprop:Generator_RowChangingName="clientRowChanging" msprop:Generator_RowEvHandlerName="clientRowChangeEventHandler" msprop:Generator_RowDeletedName="clientRowDeleted" msprop:Generator_UserTableName="client" msprop:Generator_RowChangedName="clientRowChanged" msprop:Generator_RowEvArgName="clientRowChangeEvent" msprop:Generator_RowClassName="clientRow">
+        <xs:element name="client" msprop:Generator_TableClassName="clientDataTable" msprop:Generator_TableVarName="tableclient" msprop:Generator_RowChangedName="clientRowChanged" msprop:Generator_TablePropName="client" msprop:Generator_RowDeletingName="clientRowDeleting" msprop:Generator_RowChangingName="clientRowChanging" msprop:Generator_RowEvHandlerName="clientRowChangeEventHandler" msprop:Generator_RowDeletedName="clientRowDeleted" msprop:Generator_RowClassName="clientRow" msprop:Generator_UserTableName="client" msprop:Generator_RowEvArgName="clientRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="IdCli" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnIdCli" msprop:Generator_ColumnPropNameInRow="IdCli" msprop:Generator_ColumnPropNameInTable="IdCliColumn" msprop:Generator_UserColumnName="IdCli" type="xs:int" />
@@ -881,7 +880,7 @@ SELECT CodTypCham, DescTyp, NbDispo FROM typecham WHERE (CodTypCham = @CodTypCha
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="commodite" msprop:Generator_TableClassName="commoditeDataTable" msprop:Generator_TableVarName="tablecommodite" msprop:Generator_TablePropName="commodite" msprop:Generator_RowDeletingName="commoditeRowDeleting" msprop:Generator_RowChangingName="commoditeRowChanging" msprop:Generator_RowEvHandlerName="commoditeRowChangeEventHandler" msprop:Generator_RowDeletedName="commoditeRowDeleted" msprop:Generator_UserTableName="commodite" msprop:Generator_RowChangedName="commoditeRowChanged" msprop:Generator_RowEvArgName="commoditeRowChangeEvent" msprop:Generator_RowClassName="commoditeRow">
+        <xs:element name="commodite" msprop:Generator_TableClassName="commoditeDataTable" msprop:Generator_TableVarName="tablecommodite" msprop:Generator_RowChangedName="commoditeRowChanged" msprop:Generator_TablePropName="commodite" msprop:Generator_RowDeletingName="commoditeRowDeleting" msprop:Generator_RowChangingName="commoditeRowChanging" msprop:Generator_RowEvHandlerName="commoditeRowChangeEventHandler" msprop:Generator_RowDeletedName="commoditeRowDeleted" msprop:Generator_RowClassName="commoditeRow" msprop:Generator_UserTableName="commodite" msprop:Generator_RowEvArgName="commoditeRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Codcom" msprop:Generator_ColumnVarNameInTable="columnCodcom" msprop:Generator_ColumnPropNameInRow="Codcom" msprop:Generator_ColumnPropNameInTable="CodcomColumn" msprop:Generator_UserColumnName="Codcom">
@@ -901,12 +900,12 @@ SELECT CodTypCham, DescTyp, NbDispo FROM typecham WHERE (CodTypCham = @CodTypCha
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="de" msprop:Generator_TableClassName="deDataTable" msprop:Generator_TableVarName="tablede" msprop:Generator_TablePropName="de" msprop:Generator_RowDeletingName="deRowDeleting" msprop:Generator_RowChangingName="deRowChanging" msprop:Generator_RowEvHandlerName="deRowChangeEventHandler" msprop:Generator_RowDeletedName="deRowDeleted" msprop:Generator_UserTableName="de" msprop:Generator_RowChangedName="deRowChanged" msprop:Generator_RowEvArgName="deRowChangeEvent" msprop:Generator_RowClassName="deRow">
+        <xs:element name="de" msprop:Generator_TableClassName="deDataTable" msprop:Generator_TableVarName="tablede" msprop:Generator_RowChangedName="deRowChanged" msprop:Generator_TablePropName="de" msprop:Generator_RowDeletingName="deRowDeleting" msprop:Generator_RowChangingName="deRowChanging" msprop:Generator_RowEvHandlerName="deRowChangeEventHandler" msprop:Generator_RowDeletedName="deRowDeleted" msprop:Generator_RowClassName="deRow" msprop:Generator_UserTableName="de" msprop:Generator_RowEvArgName="deRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Attribuee" msprop:Generator_ColumnVarNameInTable="columnAttribuee" msprop:Generator_ColumnPropNameInRow="Attribuee" msprop:Generator_ColumnPropNameInTable="AttribueeColumn" msprop:Generator_UserColumnName="Attribuee" type="xs:int" minOccurs="0" />
-              <xs:element name="IdReser" msprop:Generator_ColumnVarNameInTable="columnIdReser" msprop:Generator_ColumnPropNameInRow="IdReser" msprop:Generator_ColumnPropNameInTable="IdReserColumn" msprop:Generator_UserColumnName="IdReser" type="xs:int" minOccurs="0" />
-              <xs:element name="NoCham" msprop:Generator_ColumnVarNameInTable="columnNoCham" msprop:Generator_ColumnPropNameInRow="NoCham" msprop:Generator_ColumnPropNameInTable="NoChamColumn" msprop:Generator_UserColumnName="NoCham" minOccurs="0">
+              <xs:element name="IdReser" msprop:Generator_ColumnVarNameInTable="columnIdReser" msprop:Generator_ColumnPropNameInRow="IdReser" msprop:Generator_ColumnPropNameInTable="IdReserColumn" msprop:Generator_UserColumnName="IdReser" type="xs:int" />
+              <xs:element name="NoCham" msprop:Generator_ColumnVarNameInTable="columnNoCham" msprop:Generator_ColumnPropNameInRow="NoCham" msprop:Generator_ColumnPropNameInTable="NoChamColumn" msprop:Generator_UserColumnName="NoCham">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="3" />
@@ -916,7 +915,7 @@ SELECT CodTypCham, DescTyp, NbDispo FROM typecham WHERE (CodTypCham = @CodTypCha
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="depart" msprop:Generator_TableClassName="departDataTable" msprop:Generator_TableVarName="tabledepart" msprop:Generator_TablePropName="depart" msprop:Generator_RowDeletingName="departRowDeleting" msprop:Generator_RowChangingName="departRowChanging" msprop:Generator_RowEvHandlerName="departRowChangeEventHandler" msprop:Generator_RowDeletedName="departRowDeleted" msprop:Generator_UserTableName="depart" msprop:Generator_RowChangedName="departRowChanged" msprop:Generator_RowEvArgName="departRowChangeEvent" msprop:Generator_RowClassName="departRow">
+        <xs:element name="depart" msprop:Generator_TableClassName="departDataTable" msprop:Generator_TableVarName="tabledepart" msprop:Generator_RowChangedName="departRowChanged" msprop:Generator_TablePropName="depart" msprop:Generator_RowDeletingName="departRowDeleting" msprop:Generator_RowChangingName="departRowChanging" msprop:Generator_RowEvHandlerName="departRowChangeEventHandler" msprop:Generator_RowDeletedName="departRowDeleted" msprop:Generator_RowClassName="departRow" msprop:Generator_UserTableName="depart" msprop:Generator_RowEvArgName="departRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="IdDepart" msprop:Generator_ColumnVarNameInTable="columnIdDepart" msprop:Generator_ColumnPropNameInRow="IdDepart" msprop:Generator_ColumnPropNameInTable="IdDepartColumn" msprop:Generator_UserColumnName="IdDepart" type="xs:int" />
@@ -940,7 +939,7 @@ SELECT CodTypCham, DescTyp, NbDispo FROM typecham WHERE (CodTypCham = @CodTypCha
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="localisation" msprop:Generator_TableClassName="localisationDataTable" msprop:Generator_TableVarName="tablelocalisation" msprop:Generator_TablePropName="localisation" msprop:Generator_RowDeletingName="localisationRowDeleting" msprop:Generator_RowChangingName="localisationRowChanging" msprop:Generator_RowEvHandlerName="localisationRowChangeEventHandler" msprop:Generator_RowDeletedName="localisationRowDeleted" msprop:Generator_UserTableName="localisation" msprop:Generator_RowChangedName="localisationRowChanged" msprop:Generator_RowEvArgName="localisationRowChangeEvent" msprop:Generator_RowClassName="localisationRow">
+        <xs:element name="localisation" msprop:Generator_TableClassName="localisationDataTable" msprop:Generator_TableVarName="tablelocalisation" msprop:Generator_RowChangedName="localisationRowChanged" msprop:Generator_TablePropName="localisation" msprop:Generator_RowDeletingName="localisationRowDeleting" msprop:Generator_RowChangingName="localisationRowChanging" msprop:Generator_RowEvHandlerName="localisationRowChangeEventHandler" msprop:Generator_RowDeletedName="localisationRowDeleted" msprop:Generator_RowClassName="localisationRow" msprop:Generator_UserTableName="localisation" msprop:Generator_RowEvArgName="localisationRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="CodLoc" msprop:Generator_ColumnVarNameInTable="columnCodLoc" msprop:Generator_ColumnPropNameInRow="CodLoc" msprop:Generator_ColumnPropNameInTable="CodLocColumn" msprop:Generator_UserColumnName="CodLoc">
@@ -960,7 +959,7 @@ SELECT CodTypCham, DescTyp, NbDispo FROM typecham WHERE (CodTypCham = @CodTypCha
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="reservation" msprop:Generator_TableClassName="reservationDataTable" msprop:Generator_TableVarName="tablereservation" msprop:Generator_TablePropName="reservation" msprop:Generator_RowDeletingName="reservationRowDeleting" msprop:Generator_RowChangingName="reservationRowChanging" msprop:Generator_RowEvHandlerName="reservationRowChangeEventHandler" msprop:Generator_RowDeletedName="reservationRowDeleted" msprop:Generator_UserTableName="reservation" msprop:Generator_RowChangedName="reservationRowChanged" msprop:Generator_RowEvArgName="reservationRowChangeEvent" msprop:Generator_RowClassName="reservationRow">
+        <xs:element name="reservation" msprop:Generator_TableClassName="reservationDataTable" msprop:Generator_TableVarName="tablereservation" msprop:Generator_RowChangedName="reservationRowChanged" msprop:Generator_TablePropName="reservation" msprop:Generator_RowDeletingName="reservationRowDeleting" msprop:Generator_RowChangingName="reservationRowChanging" msprop:Generator_RowEvHandlerName="reservationRowChangeEventHandler" msprop:Generator_RowDeletedName="reservationRowDeleted" msprop:Generator_RowClassName="reservationRow" msprop:Generator_UserTableName="reservation" msprop:Generator_RowEvArgName="reservationRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="IdReser" msprop:Generator_ColumnVarNameInTable="columnIdReser" msprop:Generator_ColumnPropNameInRow="IdReser" msprop:Generator_ColumnPropNameInTable="IdReserColumn" msprop:Generator_UserColumnName="IdReser" type="xs:int" />
@@ -971,7 +970,7 @@ SELECT CodTypCham, DescTyp, NbDispo FROM typecham WHERE (CodTypCham = @CodTypCha
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="trx" msprop:Generator_TableClassName="trxDataTable" msprop:Generator_TableVarName="tabletrx" msprop:Generator_TablePropName="trx" msprop:Generator_RowDeletingName="trxRowDeleting" msprop:Generator_RowChangingName="trxRowChanging" msprop:Generator_RowEvHandlerName="trxRowChangeEventHandler" msprop:Generator_RowDeletedName="trxRowDeleted" msprop:Generator_UserTableName="trx" msprop:Generator_RowChangedName="trxRowChanged" msprop:Generator_RowEvArgName="trxRowChangeEvent" msprop:Generator_RowClassName="trxRow">
+        <xs:element name="trx" msprop:Generator_TableClassName="trxDataTable" msprop:Generator_TableVarName="tabletrx" msprop:Generator_RowChangedName="trxRowChanged" msprop:Generator_TablePropName="trx" msprop:Generator_RowDeletingName="trxRowDeleting" msprop:Generator_RowChangingName="trxRowChanging" msprop:Generator_RowEvHandlerName="trxRowChangeEventHandler" msprop:Generator_RowDeletedName="trxRowDeleted" msprop:Generator_RowClassName="trxRow" msprop:Generator_UserTableName="trx" msprop:Generator_RowEvArgName="trxRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="IdTrx" msprop:Generator_ColumnVarNameInTable="columnIdTrx" msprop:Generator_ColumnPropNameInRow="IdTrx" msprop:Generator_ColumnPropNameInTable="IdTrxColumn" msprop:Generator_UserColumnName="IdTrx" type="xs:int" />
@@ -998,7 +997,7 @@ SELECT CodTypCham, DescTyp, NbDispo FROM typecham WHERE (CodTypCham = @CodTypCha
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="typecham" msprop:Generator_TableClassName="typechamDataTable" msprop:Generator_TableVarName="tabletypecham" msprop:Generator_TablePropName="typecham" msprop:Generator_RowDeletingName="typechamRowDeleting" msprop:Generator_RowChangingName="typechamRowChanging" msprop:Generator_RowEvHandlerName="typechamRowChangeEventHandler" msprop:Generator_RowDeletedName="typechamRowDeleted" msprop:Generator_UserTableName="typecham" msprop:Generator_RowChangedName="typechamRowChanged" msprop:Generator_RowEvArgName="typechamRowChangeEvent" msprop:Generator_RowClassName="typechamRow">
+        <xs:element name="typecham" msprop:Generator_TableClassName="typechamDataTable" msprop:Generator_TableVarName="tabletypecham" msprop:Generator_RowChangedName="typechamRowChanged" msprop:Generator_TablePropName="typecham" msprop:Generator_RowDeletingName="typechamRowDeleting" msprop:Generator_RowChangingName="typechamRowChanging" msprop:Generator_RowEvHandlerName="typechamRowChangeEventHandler" msprop:Generator_RowDeletedName="typechamRowDeleted" msprop:Generator_RowClassName="typechamRow" msprop:Generator_UserTableName="typecham" msprop:Generator_RowEvArgName="typechamRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="CodTypCham" msprop:Generator_ColumnVarNameInTable="columnCodTypCham" msprop:Generator_ColumnPropNameInRow="CodTypCham" msprop:Generator_ColumnPropNameInTable="CodTypChamColumn" msprop:Generator_UserColumnName="CodTypCham">
@@ -1019,15 +1018,43 @@ SELECT CodTypCham, DescTyp, NbDispo FROM typecham WHERE (CodTypCham = @CodTypCha
             </xs:sequence>
           </xs:complexType>
         </xs:element>
+        <xs:element name="typetrx" msprop:Generator_TableClassName="typetrxDataTable" msprop:Generator_TableVarName="tabletypetrx" msprop:Generator_RowChangedName="typetrxRowChanged" msprop:Generator_TablePropName="typetrx" msprop:Generator_RowDeletingName="typetrxRowDeleting" msprop:Generator_RowChangingName="typetrxRowChanging" msprop:Generator_RowEvHandlerName="typetrxRowChangeEventHandler" msprop:Generator_RowDeletedName="typetrxRowDeleted" msprop:Generator_RowClassName="typetrxRow" msprop:Generator_UserTableName="typetrx" msprop:Generator_RowEvArgName="typetrxRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CodeTypeTrx" msprop:Generator_ColumnVarNameInTable="columnCodeTypeTrx" msprop:Generator_ColumnPropNameInRow="CodeTypeTrx" msprop:Generator_ColumnPropNameInTable="CodeTypeTrxColumn" msprop:Generator_UserColumnName="CodeTypeTrx">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DescTrx" msprop:Generator_ColumnVarNameInTable="columnDescTrx" msprop:Generator_ColumnPropNameInRow="DescTrx" msprop:Generator_ColumnPropNameInTable="DescTrxColumn" msprop:Generator_UserColumnName="DescTrx" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Nature" msprop:Generator_ColumnVarNameInTable="columnNature" msprop:Generator_ColumnPropNameInRow="Nature" msprop:Generator_ColumnPropNameInTable="NatureColumn" msprop:Generator_UserColumnName="Nature" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
       </xs:choice>
     </xs:complexType>
     <xs:unique name="Constraint1" msdata:PrimaryKey="true">
       <xs:selector xpath=".//mstns:arrive" />
       <xs:field xpath="mstns:IdArrive" />
     </xs:unique>
-    <xs:unique name="typetrx_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
-      <xs:selector xpath=".//mstns:typetrx" />
-      <xs:field xpath="mstns:CodeTypeTrx" />
+    <xs:unique name="ayant_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ayant" />
+      <xs:field xpath="mstns:Nocham" />
+      <xs:field xpath="mstns:Codcom" />
     </xs:unique>
     <xs:unique name="chambre_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
       <xs:selector xpath=".//mstns:chambre" />
@@ -1040,6 +1067,11 @@ SELECT CodTypCham, DescTyp, NbDispo FROM typecham WHERE (CodTypCham = @CodTypCha
     <xs:unique name="commodite_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
       <xs:selector xpath=".//mstns:commodite" />
       <xs:field xpath="mstns:Codcom" />
+    </xs:unique>
+    <xs:unique name="de_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:de" />
+      <xs:field xpath="mstns:IdReser" />
+      <xs:field xpath="mstns:NoCham" />
     </xs:unique>
     <xs:unique name="depart_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
       <xs:selector xpath=".//mstns:depart" />
@@ -1061,27 +1093,31 @@ SELECT CodTypCham, DescTyp, NbDispo FROM typecham WHERE (CodTypCham = @CodTypCha
       <xs:selector xpath=".//mstns:typecham" />
       <xs:field xpath="mstns:CodTypCham" />
     </xs:unique>
+    <xs:unique name="typetrx_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:typetrx" />
+      <xs:field xpath="mstns:CodeTypeTrx" />
+    </xs:unique>
   </xs:element>
   <xs:annotation>
     <xs:appinfo>
-      <msdata:Relationship name="FK__arrive__IdCli__1C0818FF" msdata:parent="client" msdata:child="arrive" msdata:parentkey="IdCli" msdata:childkey="IdCli" msprop:Generator_UserChildTable="arrive" msprop:Generator_ChildPropName="GetarriveRows" msprop:Generator_UserRelationName="FK__arrive__IdCli__1C0818FF" msprop:Generator_RelationVarName="relationFK__arrive__IdCli__1C0818FF" msprop:Generator_UserParentTable="client" msprop:Generator_ParentPropName="clientRow" />
-      <msdata:Relationship name="FK__arrive__IdReser__1CFC3D38" msdata:parent="reservation" msdata:child="arrive" msdata:parentkey="IdReser" msdata:childkey="IdReser" msprop:Generator_UserChildTable="arrive" msprop:Generator_ChildPropName="GetarriveRows" msprop:Generator_UserRelationName="FK__arrive__IdReser__1CFC3D38" msprop:Generator_RelationVarName="relationFK__arrive__IdReser__1CFC3D38" msprop:Generator_UserParentTable="reservation" msprop:Generator_ParentPropName="reservationRow" />
-      <msdata:Relationship name="FK__arrive__NoCham__1DF06171" msdata:parent="chambre" msdata:child="arrive" msdata:parentkey="NoCham" msdata:childkey="NoCham" msprop:Generator_UserChildTable="arrive" msprop:Generator_ChildPropName="GetarriveRows" msprop:Generator_UserRelationName="FK__arrive__NoCham__1DF06171" msprop:Generator_RelationVarName="relationFK__arrive__NoCham__1DF06171" msprop:Generator_UserParentTable="chambre" msprop:Generator_ParentPropName="chambreRow" />
-      <msdata:Relationship name="FK__ayant__Codcom__192BAC54" msdata:parent="commodite" msdata:child="ayant" msdata:parentkey="Codcom" msdata:childkey="Codcom" msprop:Generator_UserChildTable="ayant" msprop:Generator_ChildPropName="GetayantRows" msprop:Generator_UserRelationName="FK__ayant__Codcom__192BAC54" msprop:Generator_RelationVarName="relationFK__ayant__Codcom__192BAC54" msprop:Generator_UserParentTable="commodite" msprop:Generator_ParentPropName="commoditeRow" />
-      <msdata:Relationship name="FK__ayant__Nocham__1837881B" msdata:parent="chambre" msdata:child="ayant" msdata:parentkey="NoCham" msdata:childkey="Nocham" msprop:Generator_UserChildTable="ayant" msprop:Generator_ChildPropName="GetayantRows" msprop:Generator_UserRelationName="FK__ayant__Nocham__1837881B" msprop:Generator_RelationVarName="relationFK__ayant__Nocham__1837881B" msprop:Generator_UserParentTable="chambre" msprop:Generator_ParentPropName="chambreRow" />
-      <msdata:Relationship name="FK__chambre__CodLoc__10966653" msdata:parent="localisation" msdata:child="chambre" msdata:parentkey="CodLoc" msdata:childkey="CodLoc" msprop:Generator_UserChildTable="chambre" msprop:Generator_ChildPropName="GetchambreRows" msprop:Generator_UserRelationName="FK__chambre__CodLoc__10966653" msprop:Generator_RelationVarName="relationFK__chambre__CodLoc__10966653" msprop:Generator_UserParentTable="localisation" msprop:Generator_ParentPropName="localisationRow" />
-      <msdata:Relationship name="FK__chambre__CodTypC__118A8A8C" msdata:parent="typecham" msdata:child="chambre" msdata:parentkey="CodTypCham" msdata:childkey="CodTypCham" msprop:Generator_UserChildTable="chambre" msprop:Generator_ChildPropName="GetchambreRows" msprop:Generator_UserRelationName="FK__chambre__CodTypC__118A8A8C" msprop:Generator_RelationVarName="relationFK__chambre__CodTypC__118A8A8C" msprop:Generator_UserParentTable="typecham" msprop:Generator_ParentPropName="typechamRow" />
-      <msdata:Relationship name="FK__de__IdReser__1372D2FE" msdata:parent="reservation" msdata:child="de" msdata:parentkey="IdReser" msdata:childkey="IdReser" msprop:Generator_UserChildTable="de" msprop:Generator_ChildPropName="GetdeRows" msprop:Generator_UserRelationName="FK__de__IdReser__1372D2FE" msprop:Generator_RelationVarName="relationFK__de__IdReser__1372D2FE" msprop:Generator_UserParentTable="reservation" msprop:Generator_ParentPropName="reservationRow" />
-      <msdata:Relationship name="FK__de__NoCham__1466F737" msdata:parent="chambre" msdata:child="de" msdata:parentkey="NoCham" msdata:childkey="NoCham" msprop:Generator_UserChildTable="de" msprop:Generator_ChildPropName="GetdeRows" msprop:Generator_UserRelationName="FK__de__NoCham__1466F737" msprop:Generator_ParentPropName="chambreRow" msprop:Generator_RelationVarName="relationFK__de__NoCham__1466F737" msprop:Generator_UserParentTable="chambre" />
-      <msdata:Relationship name="FK__depart__IdCli__22B5168E" msdata:parent="client" msdata:child="depart" msdata:parentkey="IdCli" msdata:childkey="IdCli" msprop:Generator_UserChildTable="depart" msprop:Generator_ChildPropName="GetdepartRows" msprop:Generator_UserRelationName="FK__depart__IdCli__22B5168E" msprop:Generator_ParentPropName="clientRow" msprop:Generator_RelationVarName="relationFK__depart__IdCli__22B5168E" msprop:Generator_UserParentTable="client" />
-      <msdata:Relationship name="FK__depart__IdReser__20CCCE1C" msdata:parent="reservation" msdata:child="depart" msdata:parentkey="IdReser" msdata:childkey="IdReser" msprop:Generator_UserChildTable="depart" msprop:Generator_ChildPropName="GetdepartRows" msprop:Generator_UserRelationName="FK__depart__IdReser__20CCCE1C" msprop:Generator_RelationVarName="relationFK__depart__IdReser__20CCCE1C" msprop:Generator_UserParentTable="reservation" msprop:Generator_ParentPropName="reservationRow" />
-      <msdata:Relationship name="FK__depart__NoCham__21C0F255" msdata:parent="chambre" msdata:child="depart" msdata:parentkey="NoCham" msdata:childkey="NoCham" msprop:Generator_UserChildTable="depart" msprop:Generator_ChildPropName="GetdepartRows" msprop:Generator_UserRelationName="FK__depart__NoCham__21C0F255" msprop:Generator_ParentPropName="chambreRow" msprop:Generator_RelationVarName="relationFK__depart__NoCham__21C0F255" msprop:Generator_UserParentTable="chambre" />
-      <msdata:Relationship name="FK__reservati__IdCli__09E968C4" msdata:parent="client" msdata:child="reservation" msdata:parentkey="IdCli" msdata:childkey="IdCli" msprop:Generator_UserChildTable="reservation" msprop:Generator_ChildPropName="GetreservationRows" msprop:Generator_UserRelationName="FK__reservati__IdCli__09E968C4" msprop:Generator_ParentPropName="clientRow" msprop:Generator_RelationVarName="relationFK__reservati__IdCli__09E968C4" msprop:Generator_UserParentTable="client" />
-      <msdata:Relationship name="FK__trx__CodeTypeTrx__2779CBAB" msdata:parent="typetrx" msdata:child="trx" msdata:parentkey="CodeTypeTrx" msdata:childkey="CodeTypeTrx" msprop:Generator_UserChildTable="trx" msprop:Generator_ChildPropName="GettrxRows" msprop:Generator_UserRelationName="FK__trx__CodeTypeTrx__2779CBAB" msprop:Generator_ParentPropName="typetrxRow" msprop:Generator_RelationVarName="relationFK__trx__CodeTypeTrx__2779CBAB" msprop:Generator_UserParentTable="typetrx" />
-      <msdata:Relationship name="FK__trx__IdArrive__2B4A5C8F" msdata:parent="arrive" msdata:child="trx" msdata:parentkey="IdArrive" msdata:childkey="IdArrive" msprop:Generator_UserChildTable="trx" msprop:Generator_ChildPropName="GettrxRows" msprop:Generator_UserRelationName="FK__trx__IdArrive__2B4A5C8F" msprop:Generator_ParentPropName="arriveRow" msprop:Generator_RelationVarName="relationFK__trx__IdArrive__2B4A5C8F" msprop:Generator_UserParentTable="arrive" />
-      <msdata:Relationship name="FK__trx__IdCli__2A563856" msdata:parent="client" msdata:child="trx" msdata:parentkey="IdCli" msdata:childkey="IdCli" msprop:Generator_UserChildTable="trx" msprop:Generator_ChildPropName="GettrxRows" msprop:Generator_UserRelationName="FK__trx__IdCli__2A563856" msprop:Generator_ParentPropName="clientRow" msprop:Generator_RelationVarName="relationFK__trx__IdCli__2A563856" msprop:Generator_UserParentTable="client" />
-      <msdata:Relationship name="FK__trx__IdReser__286DEFE4" msdata:parent="reservation" msdata:child="trx" msdata:parentkey="IdReser" msdata:childkey="IdReser" msprop:Generator_UserChildTable="trx" msprop:Generator_ChildPropName="GettrxRows" msprop:Generator_UserRelationName="FK__trx__IdReser__286DEFE4" msprop:Generator_ParentPropName="reservationRow" msprop:Generator_RelationVarName="relationFK__trx__IdReser__286DEFE4" msprop:Generator_UserParentTable="reservation" />
-      <msdata:Relationship name="FK__trx__NoCham__2962141D" msdata:parent="chambre" msdata:child="trx" msdata:parentkey="NoCham" msdata:childkey="NoCham" msprop:Generator_UserChildTable="trx" msprop:Generator_ChildPropName="GettrxRows" msprop:Generator_UserRelationName="FK__trx__NoCham__2962141D" msprop:Generator_ParentPropName="chambreRow" msprop:Generator_RelationVarName="relationFK__trx__NoCham__2962141D" msprop:Generator_UserParentTable="chambre" />
+      <msdata:Relationship name="FK__arrive__IdCli__68A8708A" msdata:parent="client" msdata:child="arrive" msdata:parentkey="IdCli" msdata:childkey="IdCli" msprop:Generator_UserChildTable="arrive" msprop:Generator_ChildPropName="GetarriveRows" msprop:Generator_UserRelationName="FK__arrive__IdCli__68A8708A" msprop:Generator_ParentPropName="clientRow" msprop:Generator_RelationVarName="relationFK__arrive__IdCli__68A8708A" msprop:Generator_UserParentTable="client" />
+      <msdata:Relationship name="FK__arrive__IdReser__699C94C3" msdata:parent="reservation" msdata:child="arrive" msdata:parentkey="IdReser" msdata:childkey="IdReser" msprop:Generator_UserChildTable="arrive" msprop:Generator_ChildPropName="GetarriveRows" msprop:Generator_UserRelationName="FK__arrive__IdReser__699C94C3" msprop:Generator_ParentPropName="reservationRow" msprop:Generator_RelationVarName="relationFK__arrive__IdReser__699C94C3" msprop:Generator_UserParentTable="reservation" />
+      <msdata:Relationship name="FK__arrive__NoCham__6A90B8FC" msdata:parent="chambre" msdata:child="arrive" msdata:parentkey="NoCham" msdata:childkey="NoCham" msprop:Generator_UserChildTable="arrive" msprop:Generator_ChildPropName="GetarriveRows" msprop:Generator_UserRelationName="FK__arrive__NoCham__6A90B8FC" msprop:Generator_ParentPropName="chambreRow" msprop:Generator_RelationVarName="relationFK__arrive__NoCham__6A90B8FC" msprop:Generator_UserParentTable="chambre" />
+      <msdata:Relationship name="FK__ayant__Codcom__65CC03DF" msdata:parent="commodite" msdata:child="ayant" msdata:parentkey="Codcom" msdata:childkey="Codcom" msprop:Generator_UserChildTable="ayant" msprop:Generator_ChildPropName="GetayantRows" msprop:Generator_UserRelationName="FK__ayant__Codcom__65CC03DF" msprop:Generator_ParentPropName="commoditeRow" msprop:Generator_RelationVarName="relationFK__ayant__Codcom__65CC03DF" msprop:Generator_UserParentTable="commodite" />
+      <msdata:Relationship name="FK__ayant__Nocham__64D7DFA6" msdata:parent="chambre" msdata:child="ayant" msdata:parentkey="NoCham" msdata:childkey="Nocham" msprop:Generator_UserChildTable="ayant" msprop:Generator_ChildPropName="GetayantRows" msprop:Generator_UserRelationName="FK__ayant__Nocham__64D7DFA6" msprop:Generator_ParentPropName="chambreRow" msprop:Generator_RelationVarName="relationFK__ayant__Nocham__64D7DFA6" msprop:Generator_UserParentTable="chambre" />
+      <msdata:Relationship name="FK__chambre__CodLoc__5B4E756C" msdata:parent="localisation" msdata:child="chambre" msdata:parentkey="CodLoc" msdata:childkey="CodLoc" msprop:Generator_UserChildTable="chambre" msprop:Generator_ChildPropName="GetchambreRows" msprop:Generator_UserRelationName="FK__chambre__CodLoc__5B4E756C" msprop:Generator_ParentPropName="localisationRow" msprop:Generator_RelationVarName="relationFK__chambre__CodLoc__5B4E756C" msprop:Generator_UserParentTable="localisation" />
+      <msdata:Relationship name="FK__chambre__CodTypC__5C4299A5" msdata:parent="typecham" msdata:child="chambre" msdata:parentkey="CodTypCham" msdata:childkey="CodTypCham" msprop:Generator_UserChildTable="chambre" msprop:Generator_ChildPropName="GetchambreRows" msprop:Generator_UserRelationName="FK__chambre__CodTypC__5C4299A5" msprop:Generator_ParentPropName="typechamRow" msprop:Generator_RelationVarName="relationFK__chambre__CodTypC__5C4299A5" msprop:Generator_UserParentTable="typecham" />
+      <msdata:Relationship name="FK__de__IdReser__5F1F0650" msdata:parent="reservation" msdata:child="de" msdata:parentkey="IdReser" msdata:childkey="IdReser" msprop:Generator_UserChildTable="de" msprop:Generator_ChildPropName="GetdeRows" msprop:Generator_UserRelationName="FK__de__IdReser__5F1F0650" msprop:Generator_ParentPropName="reservationRow" msprop:Generator_RelationVarName="relationFK__de__IdReser__5F1F0650" msprop:Generator_UserParentTable="reservation" />
+      <msdata:Relationship name="FK__de__NoCham__60132A89" msdata:parent="chambre" msdata:child="de" msdata:parentkey="NoCham" msdata:childkey="NoCham" msprop:Generator_UserChildTable="de" msprop:Generator_ChildPropName="GetdeRows" msprop:Generator_UserRelationName="FK__de__NoCham__60132A89" msprop:Generator_RelationVarName="relationFK__de__NoCham__60132A89" msprop:Generator_UserParentTable="chambre" msprop:Generator_ParentPropName="chambreRow" />
+      <msdata:Relationship name="FK__depart__IdCli__6F556E19" msdata:parent="client" msdata:child="depart" msdata:parentkey="IdCli" msdata:childkey="IdCli" msprop:Generator_UserChildTable="depart" msprop:Generator_ChildPropName="GetdepartRows" msprop:Generator_UserRelationName="FK__depart__IdCli__6F556E19" msprop:Generator_RelationVarName="relationFK__depart__IdCli__6F556E19" msprop:Generator_UserParentTable="client" msprop:Generator_ParentPropName="clientRow" />
+      <msdata:Relationship name="FK__depart__IdReser__6D6D25A7" msdata:parent="reservation" msdata:child="depart" msdata:parentkey="IdReser" msdata:childkey="IdReser" msprop:Generator_UserChildTable="depart" msprop:Generator_ChildPropName="GetdepartRows" msprop:Generator_UserRelationName="FK__depart__IdReser__6D6D25A7" msprop:Generator_ParentPropName="reservationRow" msprop:Generator_RelationVarName="relationFK__depart__IdReser__6D6D25A7" msprop:Generator_UserParentTable="reservation" />
+      <msdata:Relationship name="FK__depart__NoCham__6E6149E0" msdata:parent="chambre" msdata:child="depart" msdata:parentkey="NoCham" msdata:childkey="NoCham" msprop:Generator_UserChildTable="depart" msprop:Generator_ChildPropName="GetdepartRows" msprop:Generator_UserRelationName="FK__depart__NoCham__6E6149E0" msprop:Generator_RelationVarName="relationFK__depart__NoCham__6E6149E0" msprop:Generator_UserParentTable="chambre" msprop:Generator_ParentPropName="chambreRow" />
+      <msdata:Relationship name="FK__reservati__IdCli__54A177DD" msdata:parent="client" msdata:child="reservation" msdata:parentkey="IdCli" msdata:childkey="IdCli" msprop:Generator_UserChildTable="reservation" msprop:Generator_ChildPropName="GetreservationRows" msprop:Generator_UserRelationName="FK__reservati__IdCli__54A177DD" msprop:Generator_RelationVarName="relationFK__reservati__IdCli__54A177DD" msprop:Generator_UserParentTable="client" msprop:Generator_ParentPropName="clientRow" />
+      <msdata:Relationship name="FK__trx__CodeTypeTrx__741A2336" msdata:parent="typetrx" msdata:child="trx" msdata:parentkey="CodeTypeTrx" msdata:childkey="CodeTypeTrx" msprop:Generator_UserChildTable="trx" msprop:Generator_ChildPropName="GettrxRows" msprop:Generator_UserRelationName="FK__trx__CodeTypeTrx__741A2336" msprop:Generator_ParentPropName="typetrxRow" msprop:Generator_RelationVarName="relationFK__trx__CodeTypeTrx__741A2336" msprop:Generator_UserParentTable="typetrx" />
+      <msdata:Relationship name="FK__trx__IdArrive__77EAB41A" msdata:parent="arrive" msdata:child="trx" msdata:parentkey="IdArrive" msdata:childkey="IdArrive" msprop:Generator_UserChildTable="trx" msprop:Generator_ChildPropName="GettrxRows" msprop:Generator_UserRelationName="FK__trx__IdArrive__77EAB41A" msprop:Generator_RelationVarName="relationFK__trx__IdArrive__77EAB41A" msprop:Generator_UserParentTable="arrive" msprop:Generator_ParentPropName="arriveRow" />
+      <msdata:Relationship name="FK__trx__IdCli__76F68FE1" msdata:parent="client" msdata:child="trx" msdata:parentkey="IdCli" msdata:childkey="IdCli" msprop:Generator_UserChildTable="trx" msprop:Generator_ChildPropName="GettrxRows" msprop:Generator_UserRelationName="FK__trx__IdCli__76F68FE1" msprop:Generator_RelationVarName="relationFK__trx__IdCli__76F68FE1" msprop:Generator_UserParentTable="client" msprop:Generator_ParentPropName="clientRow" />
+      <msdata:Relationship name="FK__trx__IdReser__750E476F" msdata:parent="reservation" msdata:child="trx" msdata:parentkey="IdReser" msdata:childkey="IdReser" msprop:Generator_UserChildTable="trx" msprop:Generator_ChildPropName="GettrxRows" msprop:Generator_UserRelationName="FK__trx__IdReser__750E476F" msprop:Generator_RelationVarName="relationFK__trx__IdReser__750E476F" msprop:Generator_UserParentTable="reservation" msprop:Generator_ParentPropName="reservationRow" />
+      <msdata:Relationship name="FK__trx__NoCham__76026BA8" msdata:parent="chambre" msdata:child="trx" msdata:parentkey="NoCham" msdata:childkey="NoCham" msprop:Generator_UserChildTable="trx" msprop:Generator_ChildPropName="GettrxRows" msprop:Generator_UserRelationName="FK__trx__NoCham__76026BA8" msprop:Generator_RelationVarName="relationFK__trx__NoCham__76026BA8" msprop:Generator_UserParentTable="chambre" msprop:Generator_ParentPropName="chambreRow" />
     </xs:appinfo>
   </xs:annotation>
 </xs:schema>

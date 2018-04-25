@@ -26,24 +26,17 @@ namespace Bate_s_Reservation_Base_Biblioteque
             BR_LA_View_G.Visible = false;
             BR_LA_List_G.Visible = false;
             BR_LA_Quit_G.Visible = false;
-
             BR_LA_Add_S.Visible = false;
             BR_LA_Edit_S.Visible = false;
             BR_LA_Undo_S.Visible = false;
             BR_LA_Save_S.Visible = false;
             BR_LA_Del_S.Visible = false;
             BR_LA_View_S.Visible = false;
-            
-            BR_LA_Mode1_G.Visible = false;
-            BR_LA_Mode3_G.Visible = false; 
-            BR_LA_Mode2_G.Visible = true;
+            BR_LA_Mode_G.Text = "Consutation";
         }
 
         private void BR_Button_Add_G_Click(object sender, EventArgs e)
         {
-            BR_LA_Mode1_G.Visible = false;
-            BR_LA_Mode2_G.Text = "Mode Ajout";
-            BR_LA_Mode3_G.Visible = false;
             BR_Button_Add_G.Visible = false;
             BR_LA_Add_G.Visible = false;
             BR_Button_Del_G.Visible = false;
@@ -59,6 +52,7 @@ namespace Bate_s_Reservation_Base_Biblioteque
             BR_Button_List_G.Visible = false;
             BR_LA_List_G.Visible = false;
             EnabledButton();
+            BR_LA_Mode_G.Text = "Ajout";
         }
         private void BR_Button_Edit_G_Click(object sender, EventArgs e)
         {
@@ -67,17 +61,20 @@ namespace Bate_s_Reservation_Base_Biblioteque
         private void BR_Button_Undo_G_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Bouton ANNULER en construction...", "Information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            BR_LA_Mode_G.Text = "Consutation";
             DisableButton();
         }
 
         private void BR_Button_Save_G_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Bouton SAVE en construction...", "Information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            BR_LA_Mode_G.Text = "Consutation";
         }
 
         private void BR_Button_Del_G_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Bouton SUPPRIMER en construction...", "Information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            BR_LA_Mode_G.Text = "Consutation";
         }
 
         private void BR_Button_View_G_Click(object sender, EventArgs e)
@@ -107,15 +104,8 @@ namespace Bate_s_Reservation_Base_Biblioteque
 
         private void BR_Button_Undo_S_Click(object sender, EventArgs e)
         {
-            BR_LA_Mode2_G.Text = "Mode Consultation";
-            BR_Button_Add_G.Visible = true;
-            BR_Button_Del_G.Visible = true;
-            BR_Button_View_G.Visible = true;
-            BR_Button_Undo_G.Visible = true;
-            BR_Button_Edit_G.Visible = true;
-            BR_Button_Save_G.Visible = true;
-            BR_Button_List_G.Visible = true;
-            BR_LA_List_G.Visible = true;
+            
+           /* BR_LA_List_G.Visible = true;
             BR_LA_Add_G.Visible = false;
             BR_LA_Edit_G.Visible = false;
             BR_LA_Undo_G.Visible = false;
@@ -123,8 +113,16 @@ namespace Bate_s_Reservation_Base_Biblioteque
             BR_LA_Del_G.Visible = false;
             BR_LA_View_G.Visible = false;
             BR_LA_List_G.Visible = false;
-            BR_LA_Quit_G.Visible = false;
+            BR_LA_Quit_G.Visible = false;*/
             DisableButton();
+            BR_Button_Add_G.Visible = true;
+            BR_Button_Del_G.Visible = true;
+            BR_Button_View_G.Visible = true;
+            BR_Button_Undo_G.Visible = true;
+            BR_Button_Edit_G.Visible = true;
+            BR_Button_Save_G.Visible = true;
+            BR_Button_List_G.Visible = true;
+            BR_LA_Mode_G.Text = "Consutation";
             BR_LA_Heure_G.Text = DateTime.Now.ToLongDateString();//its for current time
             
 
@@ -143,114 +141,72 @@ namespace Bate_s_Reservation_Base_Biblioteque
         private void BR_Button_Add_G_MouseHover(object sender, EventArgs e)
         {
             BR_LA_Add_G.Visible = true;
-            BR_LA_Mode1_G.Visible = false;
-            BR_LA_Mode3_G.Visible = true;
-            BR_LA_Mode2_G.Visible = false;
         }
 
         private void BR_Button_Add_G_MouseLeave(object sender, EventArgs e)
         {
             BR_LA_Add_G.Visible = false;
-            BR_LA_Mode1_G.Visible = false;
-            BR_LA_Mode3_G.Visible = false;
-            BR_LA_Mode2_G.Visible = true;
         }
 
         private void BR_Button_Edit_G_MouseHover(object sender, EventArgs e)
         {
             BR_LA_Edit_G.Visible = true;
-            BR_LA_Mode1_G.Visible = false;
-            BR_LA_Mode3_G.Visible = true;
-            BR_LA_Mode2_G.Visible = false;
         }
 
         private void BR_Button_Edit_G_MouseLeave(object sender, EventArgs e)
         {
             BR_LA_Edit_G.Visible = false;
-            BR_LA_Mode1_G.Visible = false;
-            BR_LA_Mode3_G.Visible = false;
-            BR_LA_Mode2_G.Visible = true;
         }
 
         private void BR_Button_Undo_G_MouseHover(object sender, EventArgs e)
         {
             BR_LA_Undo_G.Visible = true;
-            BR_LA_Mode1_G.Visible = false;
-            BR_LA_Mode3_G.Visible = true;
-            BR_LA_Mode2_G.Visible = false;
         }
 
         private void BR_Button_Undo_G_MouseLeave(object sender, EventArgs e)
         {
             BR_LA_Undo_G.Visible = false;
-            BR_LA_Mode1_G.Visible = false;
-            BR_LA_Mode3_G.Visible = false;
-            BR_LA_Mode2_G.Visible = true;
         }
 
         private void BR_Button_Save_G_MouseHover(object sender, EventArgs e)
         {
             BR_LA_Save_G.Visible = true;
-            BR_LA_Mode1_G.Visible = false;
-            BR_LA_Mode3_G.Visible = true;
-            BR_LA_Mode2_G.Visible = false;
         }
 
         private void BR_Button_Save_G_MouseLeave(object sender, EventArgs e)
         {
             BR_LA_Save_G.Visible = false;
-            BR_LA_Mode1_G.Visible = false;
-            BR_LA_Mode3_G.Visible = false;
-            BR_LA_Mode2_G.Visible = true;
         }
 
         private void BR_Button_Del_G_MouseHover(object sender, EventArgs e)
         {
             BR_LA_Del_G.Visible = true;
-            BR_LA_Mode1_G.Visible = true;
-            BR_LA_Mode3_G.Visible = false;
-            BR_LA_Mode2_G.Visible = false;
 
         }
 
         private void BR_Button_Del_G_MouseLeave(object sender, EventArgs e)
         {
             BR_LA_Del_G.Visible = false;
-            BR_LA_Mode1_G.Visible = false;
-            BR_LA_Mode3_G.Visible = false;
-            BR_LA_Mode2_G.Visible = true;
         }
 
         private void BR_Button_View_G_MouseHover(object sender, EventArgs e)
         {
             BR_LA_View_G.Visible = true;
-            BR_LA_Mode1_G.Visible = true;
-            BR_LA_Mode3_G.Visible = false;
-            BR_LA_Mode2_G.Visible = false;
         }
 
         private void BR_Button_View_G_MouseLeave(object sender, EventArgs e)
         {
             BR_LA_View_G.Visible = false;
-            BR_LA_Mode1_G.Visible = false;
-            BR_LA_Mode3_G.Visible = false;
-            BR_LA_Mode2_G.Visible = true;
         }
 
         private void BR_Button_List_G_MouseHover(object sender, EventArgs e)
         {
             BR_LA_List_G.Visible = true;
-            BR_LA_Mode1_G.Visible = true;
-            BR_LA_Mode3_G.Visible = false;
-            BR_LA_Mode2_G.Visible = false;
         }
 
         private void BR_Button_List_G_MouseLeave(object sender, EventArgs e)
         {
             BR_LA_List_G.Visible = false;
-            BR_LA_Mode1_G.Visible = false;
-            BR_LA_Mode3_G.Visible = false;
-            BR_LA_Mode2_G.Visible = true;
         }
 
         private void BR_Button_Quit_G_MouseHover(object sender, EventArgs e)
