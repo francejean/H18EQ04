@@ -32,15 +32,15 @@
             this.BR_LS_Chambres_OK = new System.Windows.Forms.Button();
             this.BR_LS_Chambres_Cancel = new System.Windows.Forms.Button();
             this.BR_LS_DGV_Chambre = new System.Windows.Forms.DataGridView();
-            this.BR_DS_Chambres = new Bates_Reservation_Chambres.BR_DS_Chambres();
-            this.BR_LS_BS_Chambres_TypeChambre = new System.Windows.Forms.BindingSource(this.components);
-            this.BR_LS_TA_Chambres_TypeChambre = new Bates_Reservation_Chambres.BR_DS_ChambresTableAdapters.typechamTableAdapter();
             this.codTypChamDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.descTypDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nbDispoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DescTyp = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NbDispo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BR_BS_LS_typecham = new System.Windows.Forms.BindingSource(this.components);
+            this.bR_DS_Chambres = new Bates_Reservation_Chambres.BR_DS_Chambres();
+            this.BR_TA_LS_typecham = new Bates_Reservation_Chambres.BR_DS_ChambresTableAdapters.typechamTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.BR_LS_DGV_Chambre)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BR_DS_Chambres)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BR_LS_BS_Chambres_TypeChambre)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BR_BS_LS_typecham)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bR_DS_Chambres)).BeginInit();
             this.SuspendLayout();
             // 
             // BR_LS_Chambres_OK
@@ -71,28 +71,14 @@
             this.BR_LS_DGV_Chambre.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.BR_LS_DGV_Chambre.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.codTypChamDataGridViewTextBoxColumn,
-            this.descTypDataGridViewTextBoxColumn,
-            this.nbDispoDataGridViewTextBoxColumn});
-            this.BR_LS_DGV_Chambre.DataSource = this.BR_LS_BS_Chambres_TypeChambre;
+            this.DescTyp,
+            this.NbDispo});
+            this.BR_LS_DGV_Chambre.DataSource = this.BR_BS_LS_typecham;
             this.BR_LS_DGV_Chambre.Location = new System.Drawing.Point(13, 13);
             this.BR_LS_DGV_Chambre.Name = "BR_LS_DGV_Chambre";
             this.BR_LS_DGV_Chambre.ReadOnly = true;
             this.BR_LS_DGV_Chambre.Size = new System.Drawing.Size(775, 390);
             this.BR_LS_DGV_Chambre.TabIndex = 6;
-            // 
-            // BR_DS_Chambres
-            // 
-            this.BR_DS_Chambres.DataSetName = "BR_DS_Chambres";
-            this.BR_DS_Chambres.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // BR_LS_BS_Chambres_TypeChambre
-            // 
-            this.BR_LS_BS_Chambres_TypeChambre.DataMember = "typecham";
-            this.BR_LS_BS_Chambres_TypeChambre.DataSource = this.BR_DS_Chambres;
-            // 
-            // BR_LS_TA_Chambres_TypeChambre
-            // 
-            this.BR_LS_TA_Chambres_TypeChambre.ClearBeforeFill = true;
             // 
             // codTypChamDataGridViewTextBoxColumn
             // 
@@ -101,19 +87,33 @@
             this.codTypChamDataGridViewTextBoxColumn.Name = "codTypChamDataGridViewTextBoxColumn";
             this.codTypChamDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // descTypDataGridViewTextBoxColumn
+            // DescTyp
             // 
-            this.descTypDataGridViewTextBoxColumn.DataPropertyName = "DescTyp";
-            this.descTypDataGridViewTextBoxColumn.HeaderText = "DescTyp";
-            this.descTypDataGridViewTextBoxColumn.Name = "descTypDataGridViewTextBoxColumn";
-            this.descTypDataGridViewTextBoxColumn.ReadOnly = true;
+            this.DescTyp.DataPropertyName = "DescTyp";
+            this.DescTyp.HeaderText = "DescTyp";
+            this.DescTyp.Name = "DescTyp";
+            this.DescTyp.ReadOnly = true;
             // 
-            // nbDispoDataGridViewTextBoxColumn
+            // NbDispo
             // 
-            this.nbDispoDataGridViewTextBoxColumn.DataPropertyName = "NbDispo";
-            this.nbDispoDataGridViewTextBoxColumn.HeaderText = "NbDispo";
-            this.nbDispoDataGridViewTextBoxColumn.Name = "nbDispoDataGridViewTextBoxColumn";
-            this.nbDispoDataGridViewTextBoxColumn.ReadOnly = true;
+            this.NbDispo.DataPropertyName = "NbDispo";
+            this.NbDispo.HeaderText = "NbDispo";
+            this.NbDispo.Name = "NbDispo";
+            this.NbDispo.ReadOnly = true;
+            // 
+            // BR_BS_LS_typecham
+            // 
+            this.BR_BS_LS_typecham.DataMember = "typecham";
+            this.BR_BS_LS_typecham.DataSource = this.bR_DS_Chambres;
+            // 
+            // bR_DS_Chambres
+            // 
+            this.bR_DS_Chambres.DataSetName = "BR_DS_Chambres";
+            this.bR_DS_Chambres.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // BR_TA_LS_typecham
+            // 
+            this.BR_TA_LS_typecham.ClearBeforeFill = true;
             // 
             // BR_LS_Chambres_CodeType
             // 
@@ -130,8 +130,8 @@
             this.Text = "BR_LS_Chambres_CodeType";
             this.Load += new System.EventHandler(this.BR_LS_Chambres_CodeType_Load);
             ((System.ComponentModel.ISupportInitialize)(this.BR_LS_DGV_Chambre)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BR_DS_Chambres)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BR_LS_BS_Chambres_TypeChambre)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BR_BS_LS_typecham)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bR_DS_Chambres)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -141,11 +141,11 @@
         private System.Windows.Forms.Button BR_LS_Chambres_OK;
         private System.Windows.Forms.Button BR_LS_Chambres_Cancel;
         private System.Windows.Forms.DataGridView BR_LS_DGV_Chambre;
-        private BR_DS_Chambres BR_DS_Chambres;
-        private System.Windows.Forms.BindingSource BR_LS_BS_Chambres_TypeChambre;
-        private BR_DS_ChambresTableAdapters.typechamTableAdapter BR_LS_TA_Chambres_TypeChambre;
+        private BR_DS_Chambres bR_DS_Chambres;
+        private System.Windows.Forms.BindingSource BR_BS_LS_typecham;
+        private BR_DS_ChambresTableAdapters.typechamTableAdapter BR_TA_LS_typecham;
         private System.Windows.Forms.DataGridViewTextBoxColumn codTypChamDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn descTypDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nbDispoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DescTyp;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NbDispo;
     }
 }

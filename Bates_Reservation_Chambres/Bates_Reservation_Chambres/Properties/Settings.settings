@@ -5,18 +5,22 @@
     <Setting Name="h18equipe4ConnectionString" Type="(Connection string)" Scope="Application">
       <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
-  &lt;ConnectionString&gt;Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=h18equipe4;Integrated Security=True&lt;/ConnectionString&gt;
+  &lt;ConnectionString&gt;
+Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=H18equipe04;Integrated Security=True&lt;/ConnectionString&gt;
   &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
 &lt;/SerializableConnectionString&gt;</DesignTimeValue>
-      <Value Profile="(Default)">Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=h18equipe4;Integrated Security=True</Value>
+      <Value Profile="(Default)">
+Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=H18equipe04;Integrated Security=True</Value>
     </Setting>
     <Setting Name="h18equipe4" Type="(Connection string)" Scope="Application">
       <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
-  &lt;ConnectionString&gt;Data Source=mssql.local.shawinigan.info;Initial Catalog=h18equipe4;Persist Security Info=True;User ID=h18equipe4etd2;Password=1401429862&lt;/ConnectionString&gt;
+  &lt;ConnectionString&gt;
+Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=H18equipe04;Integrated Security=True&lt;/ConnectionString&gt;
   &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
 &lt;/SerializableConnectionString&gt;</DesignTimeValue>
-      <Value Profile="(Default)">Data Source=mssql.local.shawinigan.info;Initial Catalog=h18equipe4;Persist Security Info=True;User ID=h18equipe4etd2;Password=1401429862</Value>
+      <Value Profile="(Default)">
+Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=H18equipe04;Integrated Security=True</Value>
     </Setting>
   </Settings>
 </SettingsFile>

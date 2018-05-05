@@ -16,17 +16,22 @@ namespace Bates_Reservation_Chambres
         {
             InitializeComponent();
         }
+        private void BR_LS_Chambres_CodeLoc_Load(object sender, EventArgs e)
+        {
 
-        public DataGridView DBR_LS_DGW_Chambre
+        }
+        public DataGridView DBR_LS_DGW_Chambre_CodeLoc
         {
             set
             {
-                BR_LS_DGV_Chambre = value;
+                BR_LS_DGW_Chambre_CodeLoc = value;
             }
             get
             {
-                return BR_LS_DGV_Chambre;
+                return BR_LS_DGW_Chambre_CodeLoc;
             }
         }
+
+
     }
 }

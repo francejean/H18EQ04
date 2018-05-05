@@ -16,14 +16,10 @@ namespace Bates_Reservation_Chambres
         {
             InitializeComponent();
         }
-
         private void BR_LS_Chambres_CodeType_Load(object sender, EventArgs e)
         {
-            // TODO: cette ligne de code charge les données dans la table 'bR_DS_Chambres.typecham'. Vous pouvez la déplacer ou la supprimer selon les besoins.
-            // this.BR_LS_TA_Chambres_TypeChambre.Fill(this.BR_DS_Chambres.typecham);
 
         }
-
         public DataGridView DBR_LS_DGW_Chambre
         {
             set
@@ -35,6 +31,7 @@ namespace Bates_Reservation_Chambres
                 return BR_LS_DGV_Chambre;
             }
         }
+
 
     }
 }

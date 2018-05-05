@@ -31,6 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BR_Biblio));
             this.BR_LA_version_G = new System.Windows.Forms.Label();
             this.BR_PA_G = new System.Windows.Forms.Panel();
+            this.BR_LA_Modes_S = new System.Windows.Forms.Label();
+            this.BR_LA_Mode_G = new System.Windows.Forms.Label();
             this.BR_LA_Heure_G = new System.Windows.Forms.Label();
             this.BR_Button_Del_S = new System.Windows.Forms.Button();
             this.BR_Button_Add_S = new System.Windows.Forms.Button();
@@ -72,9 +74,7 @@
             this.BR_Button_Edit_G = new System.Windows.Forms.Button();
             this.BR_Button_Add_G = new System.Windows.Forms.Button();
             this.BR_PictureBox_G = new System.Windows.Forms.PictureBox();
-            this.BR_LA_Mode_G = new System.Windows.Forms.Label();
             this.dateTimePicker_S1 = new Bate_s_Reservation_Base_Biblioteque.BR_DTP_S();
-            this.BR_LA_Modes_S = new System.Windows.Forms.Label();
             this.BR_PA_G.SuspendLayout();
             this.BR_TP_S.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BR_PictureBox_G)).BeginInit();
@@ -124,6 +124,29 @@
             this.BR_PA_G.Name = "BR_PA_G";
             this.BR_PA_G.Size = new System.Drawing.Size(1284, 569);
             this.BR_PA_G.TabIndex = 30;
+            // 
+            // BR_LA_Modes_S
+            // 
+            this.BR_LA_Modes_S.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.BR_LA_Modes_S.AutoSize = true;
+            this.BR_LA_Modes_S.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BR_LA_Modes_S.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.BR_LA_Modes_S.Location = new System.Drawing.Point(-1, 516);
+            this.BR_LA_Modes_S.Name = "BR_LA_Modes_S";
+            this.BR_LA_Modes_S.Size = new System.Drawing.Size(113, 39);
+            this.BR_LA_Modes_S.TabIndex = 46;
+            this.BR_LA_Modes_S.Text = "Mode:";
+            // 
+            // BR_LA_Mode_G
+            // 
+            this.BR_LA_Mode_G.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.BR_LA_Mode_G.AutoSize = true;
+            this.BR_LA_Mode_G.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BR_LA_Mode_G.Location = new System.Drawing.Point(107, 516);
+            this.BR_LA_Mode_G.Name = "BR_LA_Mode_G";
+            this.BR_LA_Mode_G.Size = new System.Drawing.Size(210, 39);
+            this.BR_LA_Mode_G.TabIndex = 45;
+            this.BR_LA_Mode_G.Text = "Consultation";
             // 
             // BR_LA_Heure_G
             // 
@@ -663,16 +686,6 @@
             this.BR_PictureBox_G.TabIndex = 35;
             this.BR_PictureBox_G.TabStop = false;
             // 
-            // BR_LA_Mode_G
-            // 
-            this.BR_LA_Mode_G.AutoSize = true;
-            this.BR_LA_Mode_G.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BR_LA_Mode_G.Location = new System.Drawing.Point(107, 516);
-            this.BR_LA_Mode_G.Name = "BR_LA_Mode_G";
-            this.BR_LA_Mode_G.Size = new System.Drawing.Size(210, 39);
-            this.BR_LA_Mode_G.TabIndex = 45;
-            this.BR_LA_Mode_G.Text = "Consultation";
-            // 
             // dateTimePicker_S1
             // 
             this.dateTimePicker_S1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -682,17 +695,6 @@
             this.dateTimePicker_S1.Name = "dateTimePicker_S1";
             this.dateTimePicker_S1.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker_S1.TabIndex = 48;
-            // 
-            // BR_LA_Modes_S
-            // 
-            this.BR_LA_Modes_S.AutoSize = true;
-            this.BR_LA_Modes_S.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BR_LA_Modes_S.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.BR_LA_Modes_S.Location = new System.Drawing.Point(-1, 516);
-            this.BR_LA_Modes_S.Name = "BR_LA_Modes_S";
-            this.BR_LA_Modes_S.Size = new System.Drawing.Size(113, 39);
-            this.BR_LA_Modes_S.TabIndex = 46;
-            this.BR_LA_Modes_S.Text = "Mode:";
             // 
             // BR_Biblio
             // 

@@ -28,10 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.BR_LS_Chambres_OK = new System.Windows.Forms.Button();
             this.BR_LS_Chambres_Cancel = new System.Windows.Forms.Button();
-            this.BR_LS_DGV_Chambre = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.BR_LS_DGV_Chambre)).BeginInit();
+            this.BR_LS_DGW_Chambre_CodeLoc = new System.Windows.Forms.DataGridView();
+            this.codLocDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DescLoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BR_LS_BS_localisation = new System.Windows.Forms.BindingSource(this.components);
+            this.BR_DS_Chambres = new Bates_Reservation_Chambres.BR_DS_Chambres();
+            this.BR_LS_TA_localisation = new Bates_Reservation_Chambres.BR_DS_ChambresTableAdapters.localisationTableAdapter();
+            ((System.ComponentModel.ISupportInitialize)(this.BR_LS_DGW_Chambre_CodeLoc)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BR_LS_BS_localisation)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BR_DS_Chambres)).BeginInit();
             this.SuspendLayout();
             // 
             // BR_LS_Chambres_OK
@@ -54,19 +62,52 @@
             this.BR_LS_Chambres_Cancel.Text = "OK";
             this.BR_LS_Chambres_Cancel.UseVisualStyleBackColor = true;
             // 
-            // BR_LS_DGV_Chambre
+            // BR_LS_DGW_Chambre_CodeLoc
             // 
-            this.BR_LS_DGV_Chambre.AllowUserToAddRows = false;
-            this.BR_LS_DGV_Chambre.AllowUserToDeleteRows = false;
-            this.BR_LS_DGV_Chambre.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.BR_LS_DGW_Chambre_CodeLoc.AllowUserToAddRows = false;
+            this.BR_LS_DGW_Chambre_CodeLoc.AllowUserToDeleteRows = false;
+            this.BR_LS_DGW_Chambre_CodeLoc.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.BR_LS_DGV_Chambre.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.BR_LS_DGV_Chambre.Location = new System.Drawing.Point(13, 13);
-            this.BR_LS_DGV_Chambre.Name = "BR_LS_DGV_Chambre";
-            this.BR_LS_DGV_Chambre.ReadOnly = true;
-            this.BR_LS_DGV_Chambre.Size = new System.Drawing.Size(775, 390);
-            this.BR_LS_DGV_Chambre.TabIndex = 6;
+            this.BR_LS_DGW_Chambre_CodeLoc.AutoGenerateColumns = false;
+            this.BR_LS_DGW_Chambre_CodeLoc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.BR_LS_DGW_Chambre_CodeLoc.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.codLocDataGridViewTextBoxColumn,
+            this.DescLoc});
+            this.BR_LS_DGW_Chambre_CodeLoc.DataSource = this.BR_LS_BS_localisation;
+            this.BR_LS_DGW_Chambre_CodeLoc.Location = new System.Drawing.Point(13, 13);
+            this.BR_LS_DGW_Chambre_CodeLoc.Name = "BR_LS_DGW_Chambre_CodeLoc";
+            this.BR_LS_DGW_Chambre_CodeLoc.ReadOnly = true;
+            this.BR_LS_DGW_Chambre_CodeLoc.Size = new System.Drawing.Size(775, 390);
+            this.BR_LS_DGW_Chambre_CodeLoc.TabIndex = 0;
+            // 
+            // codLocDataGridViewTextBoxColumn
+            // 
+            this.codLocDataGridViewTextBoxColumn.DataPropertyName = "CodLoc";
+            this.codLocDataGridViewTextBoxColumn.HeaderText = "CodLoc";
+            this.codLocDataGridViewTextBoxColumn.Name = "codLocDataGridViewTextBoxColumn";
+            this.codLocDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // DescLoc
+            // 
+            this.DescLoc.DataPropertyName = "DescLoc";
+            this.DescLoc.HeaderText = "DescLoc";
+            this.DescLoc.Name = "DescLoc";
+            this.DescLoc.ReadOnly = true;
+            // 
+            // BR_LS_BS_localisation
+            // 
+            this.BR_LS_BS_localisation.DataMember = "localisation";
+            this.BR_LS_BS_localisation.DataSource = this.BR_DS_Chambres;
+            // 
+            // BR_DS_Chambres
+            // 
+            this.BR_DS_Chambres.DataSetName = "BR_DS_Chambres";
+            this.BR_DS_Chambres.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // BR_LS_TA_localisation
+            // 
+            this.BR_LS_TA_localisation.ClearBeforeFill = true;
             // 
             // BR_LS_Chambres_CodeLoc
             // 
@@ -75,14 +116,17 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.BR_LS_Chambres_OK);
             this.Controls.Add(this.BR_LS_Chambres_Cancel);
-            this.Controls.Add(this.BR_LS_DGV_Chambre);
+            this.Controls.Add(this.BR_LS_DGW_Chambre_CodeLoc);
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(816, 489);
             this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(816, 489);
             this.Name = "BR_LS_Chambres_CodeLoc";
             this.Text = "BR_LS_Chambres_CodeLoc";
-            ((System.ComponentModel.ISupportInitialize)(this.BR_LS_DGV_Chambre)).EndInit();
+            this.Load += new System.EventHandler(this.BR_LS_Chambres_CodeLoc_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.BR_LS_DGW_Chambre_CodeLoc)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BR_LS_BS_localisation)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BR_DS_Chambres)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -91,6 +135,11 @@
 
         private System.Windows.Forms.Button BR_LS_Chambres_OK;
         private System.Windows.Forms.Button BR_LS_Chambres_Cancel;
-        private System.Windows.Forms.DataGridView BR_LS_DGV_Chambre;
+        private System.Windows.Forms.DataGridView BR_LS_DGW_Chambre_CodeLoc;
+        private BR_DS_Chambres BR_DS_Chambres;
+        private System.Windows.Forms.BindingSource BR_LS_BS_localisation;
+        private BR_DS_ChambresTableAdapters.localisationTableAdapter BR_LS_TA_localisation;
+        private System.Windows.Forms.DataGridViewTextBoxColumn codLocDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DescLoc;
     }
 }

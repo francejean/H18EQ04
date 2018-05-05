@@ -26,8 +26,8 @@ namespace Bates_Reservation_Chambres.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=h18equipe4;Integrated Security" +
-            "=True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("\nData Source=(localdb)\\MSSQLLocalDB;Initial Catalog=H18equipe04;Integrated Securi" +
+            "ty=True")]
         public string h18equipe4ConnectionString {
             get {
                 return ((string)(this["h18equipe4ConnectionString"]));
@@ -37,8 +37,8 @@ namespace Bates_Reservation_Chambres.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=mssql.local.shawinigan.info;Initial Catalog=h18equipe4;Persist Securi" +
-            "ty Info=True;User ID=h18equipe4etd2;Password=1401429862")]
+        [global::System.Configuration.DefaultSettingValueAttribute("\nData Source=(localdb)\\MSSQLLocalDB;Initial Catalog=H18equipe04;Integrated Securi" +
+            "ty=True")]
         public string h18equipe4 {
             get {
                 return ((string)(this["h18equipe4"]));

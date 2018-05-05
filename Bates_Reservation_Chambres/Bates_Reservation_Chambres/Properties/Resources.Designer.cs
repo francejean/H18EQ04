@@ -63,9 +63,39 @@ namespace Bates_Reservation_Chambres.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap BR_Ico_Add_S {
+            get {
+                object obj = ResourceManager.GetObject("BR_Ico_Add_S", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap BR_Ico_LS_S {
             get {
                 object obj = ResourceManager.GetObject("BR_Ico_LS_S", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BR_Ico_Supp_S {
+            get {
+                object obj = ResourceManager.GetObject("BR_Ico_Supp_S", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BR_LS_S {
+            get {
+                object obj = ResourceManager.GetObject("BR_LS_S", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
