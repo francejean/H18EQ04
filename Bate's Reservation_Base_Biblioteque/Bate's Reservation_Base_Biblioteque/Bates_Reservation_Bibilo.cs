@@ -55,13 +55,15 @@ namespace Bate_s_Reservation_Base_Biblioteque
         }
         private void BR_Button_Undo_G_Click(object sender, EventArgs e)
         {
+            BR_LA_Heure_G.Text = DateTime.Now.ToLongDateString();//its for current time
             BR_LA_Mode_G.Text = "Consutation";
             DisableButton();
         }
         private void BR_Button_Save_G_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Bouton SAVE en construction...", "Information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            BR_LA_Heure_G.Text = DateTime.Now.ToLongDateString();//its for current time
             BR_LA_Mode_G.Text = "Consutation";
+            DisableButton();
         }
         private void BR_Button_Del_G_Click(object sender, EventArgs e)
         {
@@ -162,9 +164,7 @@ namespace Bate_s_Reservation_Base_Biblioteque
         }
         private void BR_Button_Undo_S_Click(object sender, EventArgs e)
         {
-            DisableButton();
-            BR_LA_Mode_G.Text = "Consutation";
-            BR_LA_Heure_G.Text = DateTime.Now.ToLongDateString();//its for current time
+            BR_Button_Undo_G_Click(this, e);
         }
         private void BR_Button_Edit_S_Click(object sender, EventArgs e)
         {
@@ -172,9 +172,7 @@ namespace Bate_s_Reservation_Base_Biblioteque
         }
         private void BR_Button_Save_S_Click(object sender, EventArgs e)
         {
-            DisableButton();
-            BR_LA_Mode_G.Text = "Consutation";
-            BR_LA_Heure_G.Text = DateTime.Now.ToLongDateString();//its for current time
+            BR_Button_Save_G_Click(this, e);
         }
 
         private void BR_Button_Add_S_MouseHover(object sender, EventArgs e)

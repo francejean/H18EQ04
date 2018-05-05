@@ -130,4 +130,97 @@
   <data name="BR_LS_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BR_LS_S.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="BR_Add_Block_G" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BR_Add_Block_G.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BR_add_block_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BR_add_block_S.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BR_Add_G" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BR_Add_G.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BR_add_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BR_add_S.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BR_Cancel_Block_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BR_Cancel_Block_S.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BR_Cancel_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BR_Cancel_S.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BR_Consulter_G" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BR_Consulter_G.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BR_Del_G" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BR_Del_G.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BR_document_save_Block_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BR_document-save_Block_S.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BR_document_save_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BR_document-save_S.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BR_edit_G" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BR_edit_G.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BR_go_first_block_G" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BR_go-first_block_G.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BR_go_first_G" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BR_go-first_G.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BR_go_last_block_G" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BR_go-last_block_G.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BR_go_last_G" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BR_go-last_G.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BR_go_next_block_G" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BR_go-next_block_G.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BR_go_next_G" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BR_go-next_G.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BR_go_previous_block_G" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BR_go-previous_block_G.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BR_go_previous_G" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BR_go-previous_G.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BR_layer_visible_off_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BR_layer-visible-off_S.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BR_layer_visible_on_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BR_layer-visible-on_S.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BR_Lister_G" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BR_Lister_G.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BR_list_remove_block_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BR_list-remove_block_S.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BR_list_remove_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BR_list-remove_S.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BR_Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BR_Logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BR_notes_128x128_Block" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BR_notes_128x128_Block.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BR_Notes_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BR_Notes_S.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BR_Quit_G" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BR_Quit_G.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BR_save_G" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BR_save_G.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BR_search_G" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BR_search_G.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BR_Undo_G" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BR_Undo_G.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

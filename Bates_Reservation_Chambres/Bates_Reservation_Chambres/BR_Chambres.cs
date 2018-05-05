@@ -27,7 +27,7 @@ namespace Bates_Reservation_Chambres
             ActiveControl_TB(false, false, false, false, false, false, false, false);
             Visible_LS(true, false, false, false);
             Visible_B_ADD(false, false);
-            Visible_Label(false, false, false, false);
+            Visible_LS_Label(false, false, false, false);
             //TA_ach.Fill(ds_Ach.ACH);
         }
 
@@ -177,15 +177,6 @@ namespace Bates_Reservation_Chambres
             BR_Button_Next_G.Enabled = B_Next_G;
             BR_Button_Gotoend_G.Enabled = B_Gotoend_G;
         }
-        private void ActiveControle_S(bool B_Add_S, bool B_Edit_S, bool B_Undo_S, bool B_Save_S, bool B_Del_S, bool B_View_S)
-        {
-            BR_Button_Add_S.Enabled = B_Add_S;
-            BR_Button_Edit_S.Enabled = B_Edit_S;
-            BR_Button_Undo_S.Enabled = B_Undo_S;
-            BR_Button_Save_S.Enabled = B_Save_S;
-            BR_Button_Del_S.Enabled = B_Del_S;
-            BR_Button_View_S.Enabled = B_View_S;
-        }
         private void VisibleControle_G(bool B_Add_G, bool B_Edit_G, bool B_Undo_G, bool B_Save_G, bool B_Del_G, bool B_View_G, bool B_List_G)
         {
             BR_Button_Add_G.Visible = B_Add_G;
@@ -195,6 +186,16 @@ namespace Bates_Reservation_Chambres
             BR_Button_Del_G.Visible = B_Del_G;
             BR_Button_View_G.Visible = B_View_G;
             BR_Button_List_G.Visible = B_List_G;
+        }
+
+        private void ActiveControle_S(bool B_Add_S, bool B_Edit_S, bool B_Undo_S, bool B_Save_S, bool B_Del_S, bool B_View_S)
+        {
+            BR_Button_Add_S.Enabled = B_Add_S;
+            BR_Button_Edit_S.Enabled = B_Edit_S;
+            BR_Button_Undo_S.Enabled = B_Undo_S;
+            BR_Button_Save_S.Enabled = B_Save_S;
+            BR_Button_Del_S.Enabled = B_Del_S;
+            BR_Button_View_S.Enabled = B_View_S;
         }
         private void VisibleControle_S(bool B_Add_S, bool B_Del_S, bool B_View_S, bool B_Undo_S, bool B_Edit_S, bool B_Save_S)
         {
@@ -220,7 +221,7 @@ namespace Bates_Reservation_Chambres
             BR_Button_LS_CodeCom_S.Visible = BR_LS_Commodite;
 
         }
-        private void Visible_Label(bool BR_LA_NoCham, bool BR_LA_CodeType, bool BR_LA_CodeLoc, bool BR_LA_LS_CodeCom)
+        private void Visible_LS_Label(bool BR_LA_NoCham, bool BR_LA_CodeType, bool BR_LA_CodeLoc, bool BR_LA_LS_CodeCom)
         {
             BR_LA_LS_NoCham_S.Visible = BR_LA_NoCham;
             BR_LA_LS_CodeType_S.Visible = BR_LA_CodeType;
@@ -334,7 +335,7 @@ namespace Bates_Reservation_Chambres
                             BR_EP.SetError(BR_TB_Chambre_NoCham, "");
                             BR_TB_Chambre_NoCham.BackColor = Color.LawnGreen;
                             Visible_B_ADD(true, true);
-                            Visible_LS(false, true, true, true);
+                            Visible_LS(false, false, false, false); // affichage des listes de selection
                             CreateChamber();
                         }
                         else
@@ -367,17 +368,24 @@ namespace Bates_Reservation_Chambres
                     {
                         if (BR_TB_Chambre_CodeType.Text.ToUpper() == "1S")
                         {
+                            BR_TB_Chambre_CodeType.Text = "1S";
                             BR_TB_Chambre_Desc1.Text = "un lit simple";
                         }
                         else if (BR_TB_Chambre_CodeType.Text.ToUpper() == "2S")
                         {
+                            BR_TB_Chambre_CodeType.Text = "2S";
                             BR_TB_Chambre_Desc1.Text = "deux lits simples";
                         }
                         else if (BR_TB_Chambre_CodeType.Text == "1D")
                         {
+                            BR_TB_Chambre_CodeType.Text = "1D";
                             BR_TB_Chambre_Desc1.Text = "un lit double";
                         }
-                        else BR_TB_Chambre_Desc1.Text = "deux lits double";
+                        else
+                        {
+                            BR_TB_Chambre_CodeType.Text = "2D";
+                            BR_TB_Chambre_Desc1.Text = "deux lits double";
+                        }
 
                         BR_EP.SetError(BR_TB_Chambre_CodeType, "");
                         BR_TB_Chambre_CodeType.BackColor = Color.LawnGreen;
@@ -411,13 +419,19 @@ namespace Bates_Reservation_Chambres
                     {
                         if (BR_TB_Chambre_CodeLoc.Text.ToUpper() == "AR")
                         {
+                            BR_TB_Chambre_CodeLoc.Text = "AR";
                             BR_TB_Chambre_Desc2.Text = "arriere";
                         }
                         else if (BR_TB_Chambre_CodeLoc.Text.ToUpper() == "AV")
                         {
+                            BR_TB_Chambre_CodeLoc.Text = "AV";
                             BR_TB_Chambre_Desc2.Text = "avant";
                         }
-                        else BR_TB_Chambre_Desc2.Text = "vu sur cimetiere";
+                        else
+                        {
+                            BR_TB_Chambre_CodeLoc.Text = "VC";
+                            BR_TB_Chambre_Desc2.Text = "vu sur cimetiere";
+                        }
 
                         BR_EP.SetError(BR_TB_Chambre_CodeLoc, "");
                         BR_TB_Chambre_CodeLoc.BackColor = Color.LawnGreen;
@@ -525,16 +539,16 @@ namespace Bates_Reservation_Chambres
         {
             if (Valide())
             {
-                BR_BS_Chambres.Position = 0;  //' positionne au 1er enregistrement
-                BR_dataRow_Chambre.EndEdit();
-                BR_TA_Chambres.Update(BR_DS_Chambres.chambre);
                 abandon = false;
+                Visible_B_ADD(false, false);
                 BR_Button_Save_S_Click(this, e);
             }
         }
         private void BR_Button_DelChamber_S_Click(object sender, EventArgs e)
         {
+            abandon = true;
             BR_Button_Undo_S_Click(this, e);
+            Visible_B_ADD(false, false);
         }
 
         private void BR_Button_Edit_S_Click(object sender, EventArgs e)
@@ -568,13 +582,22 @@ namespace Bates_Reservation_Chambres
             VisibleControle_S(true, true, true, true, true, true);
             ActiveControle_S(false, false, false, false, false, false);
             VisibleControle_G(true, true, true, true, true, true, true);
+            DisableButton();
         }
         private void BR_Button_Save_S_Click(object sender, EventArgs e)
         {
+            BR_BS_Chambres.Position = 0;  //' positionne au 1er enregistrement
+            BR_dataRow_Chambre.EndEdit();
+            BR_TA_Chambres.Update(BR_DS_Chambres.chambre);
+
             ActiveControl_TB(false, false, false, false, false, false, false, false);
             VisibleControle_S(true, true, true, true, true, true);
             ActiveControle_S(false, false, false, false, false, false);
+
             VisibleControle_G(true, true, true, true, true, true, true);
+            ActiveControle_G(true, true, true, true, true, true, true, true, true, true, true);
+            DisableButton();
+            ClearError();
         }
         #endregion
 
@@ -582,10 +605,17 @@ namespace Bates_Reservation_Chambres
         private void BR_Button_Add_G_Click(object sender, EventArgs e)
         {
             abandon = false;
-            ActiveControl_TB(true, false, false, false, false, false, false, false);
+
+            VisibleControle_G(false, false, false, false, false, false, false);
+            ActiveControle_G(false, false, false, false, false, false, false, false, false, false, false);
+
             VisibleControle_S(false, false, false, true, false, true);
             ActiveControle_S(true, true, true, true, true, true);
+
+            ActiveControl_TB(true, false, false, false, false, false, false, false);
+
             BR_RTB_Chambres.Enabled = true;
+
             UnLink();
             ClearField();
             BR_TB_Chambre_NoCham.Focus();
@@ -598,18 +628,22 @@ namespace Bates_Reservation_Chambres
         }
         private void BR_Button_Gotofirst_G_Click(object sender, EventArgs e)
         {
+            ClearError();
             BR_BS_Chambres.MoveFirst();
         }
         private void BR_Button_Previous_G_Click(object sender, EventArgs e)
         {
+            ClearError();
             BR_BS_Chambres.MovePrevious();
         }
         private void BR_Button_Next_G_Click(object sender, EventArgs e)
         {
+            ClearError();
             BR_BS_Chambres.MoveNext();
         }
         private void BR_Button_Gotoend_G_Click(object sender, EventArgs e)
         {
+            ClearError();
             BR_BS_Chambres.MoveLast();
         }
         #endregion
@@ -617,35 +651,35 @@ namespace Bates_Reservation_Chambres
         #region Button_LS
         private void BR_Button_LS_Chambre_S_MouseHover(object sender, EventArgs e)
         {
-            Visible_Label(true, false, false, false);
+            Visible_LS_Label(true, false, false, false);
         }
         private void BR_Button_LS_Chambre_S_MouseLeave(object sender, EventArgs e)
         {
-            Visible_Label(false, false, false, false);
+            Visible_LS_Label(false, false, false, false);
         }
         private void BR_Button_LS_CodeType_S_MouseHover(object sender, EventArgs e)
         {
-            Visible_Label(false, true, false, false);
+            Visible_LS_Label(false, true, false, false);
         }
         private void BR_Button_LS_CodeType_S_MouseLeave(object sender, EventArgs e)
         {
-            Visible_Label(false, false, false, false);
+            Visible_LS_Label(false, false, false, false);
         }
         private void BR_Button_LS_CodeLoc_S_MouseHover(object sender, EventArgs e)
         {
-            Visible_Label(false, false, true, false);
+            Visible_LS_Label(false, false, true, false);
         }
         private void BR_Button_LS_CodeLoc_S_MouseLeave(object sender, EventArgs e)
         {
-            Visible_Label(false, false, false, false);
+            Visible_LS_Label(false, false, false, false);
         }
         private void BR_Button_LS_CodeCom_S_MouseHover(object sender, EventArgs e)
         {
-            Visible_Label(false, false, false, true);
+            Visible_LS_Label(false, false, false, true);
         }
         private void BR_Button_LS_CodeCom_S_MouseLeave(object sender, EventArgs e)
         {
-            Visible_Label(false, false, false, false);
+            Visible_LS_Label(false, false, false, false);
         }
 
         private void BR_Button_LS_S_Click(object sender, EventArgs e)
@@ -709,6 +743,34 @@ namespace Bates_Reservation_Chambres
 
         #endregion
 
+        #region PixsChange
+        private void EnabledButton()
+        {
+            BR_Button_Add_S.BackgroundImage = global::Bates_Reservation_Chambres.Properties.Resources.BR_add_S;
+            BR_Button_Del_S.BackgroundImage = global::Bates_Reservation_Chambres.Properties.Resources.BR_list_remove_S;
+            BR_Button_View_S.BackgroundImage = global::Bates_Reservation_Chambres.Properties.Resources.BR_layer_visible_on_S;
+            BR_Button_Undo_S.BackgroundImage = global::Bates_Reservation_Chambres.Properties.Resources.BR_Cancel_S;
+            BR_Button_Edit_S.BackgroundImage = global::Bates_Reservation_Chambres.Properties.Resources.BR_Notes_S;
+            BR_Button_Save_S.BackgroundImage = global::Bates_Reservation_Chambres.Properties.Resources.BR_document_save_S;
+            BR_Button_Gotoend_G.BackgroundImage = global::Bates_Reservation_Chambres.Properties.Resources.BR_go_last_block_G;
+            BR_Button_Gotofirst_G.BackgroundImage = global::Bates_Reservation_Chambres.Properties.Resources.BR_go_first_block_G;
+            BR_Button_Next_G.BackgroundImage = global::Bates_Reservation_Chambres.Properties.Resources.BR_go_next_block_G;
+            BR_Button_Previous_G.BackgroundImage = global::Bates_Reservation_Chambres.Properties.Resources.BR_go_previous_block_G;
+        }
+        private void DisableButton()
+        {
+            BR_Button_Add_S.BackgroundImage = global::Bates_Reservation_Chambres.Properties.Resources.BR_add_block_S;
+            BR_Button_Del_S.BackgroundImage = global::Bates_Reservation_Chambres.Properties.Resources.BR_list_remove_block_S;
+            BR_Button_View_S.BackgroundImage = global::Bates_Reservation_Chambres.Properties.Resources.BR_layer_visible_off_S;
+            BR_Button_Undo_S.BackgroundImage = global::Bates_Reservation_Chambres.Properties.Resources.BR_Cancel_Block_S;
+            BR_Button_Edit_S.BackgroundImage = global::Bates_Reservation_Chambres.Properties.Resources.BR_notes_128x128_Block;
+            BR_Button_Save_S.BackgroundImage = global::Bates_Reservation_Chambres.Properties.Resources.BR_document_save_Block_S;
+            BR_Button_Gotoend_G.BackgroundImage = global::Bates_Reservation_Chambres.Properties.Resources.BR_go_last_G;
+            BR_Button_Gotofirst_G.BackgroundImage = global::Bates_Reservation_Chambres.Properties.Resources.BR_go_first_G;
+            BR_Button_Next_G.BackgroundImage = global::Bates_Reservation_Chambres.Properties.Resources.BR_go_next_G;
+            BR_Button_Previous_G.BackgroundImage = global::Bates_Reservation_Chambres.Properties.Resources.BR_go_previous_G;
+        }
+        #endregion
 
         /*public bool ValidEmailAddress(string CodeTypeCham, out string errorMessage)
            {

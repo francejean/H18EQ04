@@ -18,7 +18,7 @@ namespace Bates_Reservation_Chambres
         }
         private void BR_LS_Chambres_CodeType_Load(object sender, EventArgs e)
         {
-
+  
         }
         public DataGridView DBR_LS_DGW_Chambre
         {
